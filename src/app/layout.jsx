@@ -1,7 +1,8 @@
-// The shell around every page: fonts, page title and description.
+// The shell around every page: fonts, default title and description, and the footer.
 // Headlines use Inter Tight, body text uses Inter (see --font-display and --font-sans in globals.css).
 
 import { Inter, Inter_Tight } from "next/font/google";
+import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
@@ -18,7 +19,7 @@ const interTight = Inter_Tight({
 
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: siteConfig.title,
+  title: { default: siteConfig.title, template: `%s | ${siteConfig.name}` },
   description: siteConfig.description,
   alternates: { canonical: "/" },
   openGraph: {
@@ -35,7 +36,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${interTight.variable} antialiased`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

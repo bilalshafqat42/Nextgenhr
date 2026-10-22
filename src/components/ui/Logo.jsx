@@ -19,7 +19,7 @@ export default function Logo({ theme = "light", className = "" }) {
   const hrColor = theme === "dark" ? "text-muted-on-dark" : "text-muted";
 
   return (
-    <span className={`flex items-center gap-3 ${className}`}>
+    <span className={`flex items-center gap-3 whitespace-nowrap ${className}`}>
       <LogoMark theme={theme} className="h-[1.2em] w-auto" />
       <span className={`font-display font-semibold tracking-[-0.04em] ${nameColor}`}>
         NextGen <span className={`font-normal ${hrColor}`}>HR</span>

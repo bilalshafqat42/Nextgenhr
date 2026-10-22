@@ -24,6 +24,7 @@
   --accent-mark: #c9875e;
 }
 
+/* Saved for later: a blue version. To use it, add data-theme="blue" to the <html> tag in src/app/layout.jsx. */
 [data-theme="blue"] {
   --paper: #f7f8fa;
   --stone: #edf0f5;
