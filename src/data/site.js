@@ -8,7 +8,7 @@ export const siteConfig = {
   legalName: "NextGen HR Consultancy L.L.C-FZ",
   title: "NextGen HR | Recruitment agency and HR consultancy in Dubai",
   description:
-    "NextGen HR Consultancy is a recruitment agency and HR consultancy in Dubai, licensed by Meydan Free Zone, with 20+ years of UAE market experience.",
+    "NextGen HR Consultancy is a recruitment agency and HR consultancy in Dubai, licensed by Meydan Free Zone, backed by a team with 20+ years of UAE recruitment experience.",
   phone: "[+971 XX XXX XXXX]",
   email: "[hello@nextgenhr.ae]",
   address: ["Meydan Grandstand, 6th floor, Meydan Road", "Nad Al Sheba, Dubai, UAE"],
@@ -29,12 +29,12 @@ export const hero = {
   heading: "Recruitment agency and HR consultancy in Dubai, UAE",
   titleLine1: "People first.",
   titleLine2: "Hiring done right.",
-  text: "Recruitment and HR consultancy in Dubai, led by a founder with two decades of experience placing people across the UAE.",
+  text: "Recruitment and HR consultancy in Dubai, backed by a team with more than 20 years of experience placing people across the UAE.",
   links: [
     { label: "I'm hiring →", href: "#contact" },
     { label: "I'm looking for a job →", href: "#jobs" },
   ],
-  photo: "Founder with a client, Dubai office (video loop or photo)",
+  photo: "Our team with a client, Dubai office (video loop or photo)",
 };
 
 export const about = {
@@ -43,7 +43,7 @@ export const about = {
   rest: "We help UAE employers hire permanent, contract and project staff, and advise on HR policy and team structure.",
   facts: [
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
-    { label: "Experience", value: "20+ years in the UAE" },
+    { label: "Team experience", value: "20+ years in UAE recruitment" },
     { label: "Based in", value: "Meydan, Dubai, UAE" },
     { label: "Licensed by", value: "Meydan Free Zone, no. [Licence No.]" },
     { label: "Services", value: "Recruitment, HR consultancy, skilled workforce recruitment" },
@@ -52,7 +52,7 @@ export const about = {
 };
 
 export const stats = [
-  { value: "20+", label: "Years in the UAE market", highlight: true },
+  { value: "20+", label: "Years of UAE recruitment experience", highlight: true },
   { value: "[X]+", label: "Placements" },
   { value: "[X]", label: "Employers served" },
   { value: "[X]d", label: "Average time to shortlist" },
@@ -80,27 +80,25 @@ export const services = {
   ],
 };
 
-export const founder = {
-  label: "The founder",
-  quote: "[Founder's personal quote: why they started NextGen and what they promise every client.]",
-  name: "[Founder name]",
-  role: "Founder and Managing Director · 20+ years in UAE recruitment",
-  credentials: [
-    "[Previous senior role]",
-    "[Professional certification]",
-    "[Number] hires led personally",
-    "[Key sectors of expertise]",
-  ],
-  photo: "Founder portrait, black and white, natural light",
-};
-
-export const timeline = {
-  title: "Two decades in the UAE.",
+export const whyUs = {
+  title: "Why companies hire with NextGen",
   items: [
-    { year: "[Year]", text: "[Founder starts career in UAE recruitment]" },
-    { year: "[Year]", text: "[Milestone]" },
-    { year: "[Year]", text: "[Milestone]" },
-    { year: "2024", text: "NextGen HR Consultancy founded in Meydan Free Zone, Dubai" },
+    {
+      title: "20+ years of UAE experience",
+      text: "Our team has spent more than two decades recruiting across the UAE market.",
+    },
+    {
+      title: "Screened short lists",
+      text: "Every candidate is interviewed and checked before you meet them.",
+    },
+    {
+      title: "Recruitment and HR in one place",
+      text: "Hiring support plus HR policies, handbooks and day-to-day advice.",
+    },
+    {
+      title: "Licensed and transparent",
+      text: "Licensed by Meydan Free Zone, Dubai. Candidates never pay a fee.",
+    },
   ],
 };
 
@@ -112,7 +110,7 @@ export const testimonial = {
 
 export const process = {
   title: "How hiring works",
-  steps: [
+  items: [
     { title: "Share your brief", text: "Role, skills, salary range and start date." },
     { title: "We source and screen", text: "Interviews and checks on every candidate." },
     { title: "You interview", text: "A short list of people who fit." },
@@ -133,7 +131,7 @@ export const jobSeekers = {
 
 export const faq = {
   title: "Questions, answered",
-  byline: "Answered by [Founder name], 20+ years in UAE recruitment. Last updated [date].",
+  byline: "Answered by the NextGen HR recruitment team. Last updated [date].",
   items: [
     {
       question: "What does a recruitment agency in Dubai do?",
@@ -158,9 +156,9 @@ export const faq = {
 export const insights = {
   title: "Insights",
   items: [
-    { title: "How to hire your first employee in Dubai", meta: "[Date] · By [Founder name]" },
-    { title: "What every UAE employee handbook should cover", meta: "[Date] · By [Founder name]" },
-    { title: "20 years of UAE hiring: what has changed", meta: "[Date] · By [Founder name]" },
+    { title: "How to hire your first employee in Dubai", meta: "[Date] · By NextGen HR" },
+    { title: "What every UAE employee handbook should cover", meta: "[Date] · By NextGen HR" },
+    { title: "20 years of UAE hiring: what has changed", meta: "[Date] · By NextGen HR" },
   ],
 };
 

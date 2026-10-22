@@ -8,14 +8,13 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Stats from "@/components/sections/Stats";
 import Services from "@/components/sections/Services";
-import Founder from "@/components/sections/Founder";
-import Timeline from "@/components/sections/Timeline";
+import ItemGrid from "@/components/sections/ItemGrid";
 import Testimonial from "@/components/sections/Testimonial";
-import Process from "@/components/sections/Process";
 import JobSeekers from "@/components/sections/JobSeekers";
 import Faq from "@/components/sections/Faq";
 import Insights from "@/components/sections/Insights";
 import Contact from "@/components/sections/Contact";
+import { process, whyUs } from "@/data/site";
 
 export default function HomePage({ theme = "copper" }) {
   return (
@@ -26,10 +25,9 @@ export default function HomePage({ theme = "copper" }) {
         <About />
         <Stats />
         <Services />
-        <Founder />
-        <Timeline />
+        <ItemGrid title={whyUs.title} items={whyUs.items} />
         <Testimonial />
-        <Process />
+        <ItemGrid title={process.title} items={process.items} prefix="Step" />
         <JobSeekers />
         <Faq />
         <Insights />

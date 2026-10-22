@@ -1,4 +1,4 @@
-// Latest articles, each credited to the founder (builds trust with clients, Google and AI search).
+// Latest articles from the NextGen HR team (builds trust with clients, Google and AI search).
 
 import Link from "next/link";
 import Heading from "@/components/ui/Heading";
