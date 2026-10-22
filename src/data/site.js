@@ -3,6 +3,7 @@
 // Anything in [brackets] is a placeholder waiting for the client's real details.
 
 export const siteConfig = {
+  url: "https://nextgenhr.ae",
   name: "NextGen HR",
   legalName: "NextGen HR Consultancy L.L.C-FZ",
   title: "NextGen HR | Recruitment agency and HR consultancy in Dubai",
@@ -24,7 +25,8 @@ export const navLinks = [
 ];
 
 export const hero = {
-  eyebrow: "20+ years in the UAE market · Licensed by Meydan Free Zone",
+  // The page's main heading (H1) for Google: says exactly what NextGen is and where.
+  heading: "Recruitment agency and HR consultancy in Dubai, UAE",
   titleLine1: "People first.",
   titleLine2: "Hiring done right.",
   text: "Recruitment and HR consultancy in Dubai, led by a founder with two decades of experience placing people across the UAE.",
@@ -44,7 +46,7 @@ export const about = {
     { label: "Experience", value: "20+ years in the UAE" },
     { label: "Based in", value: "Meydan, Dubai, UAE" },
     { label: "Licensed by", value: "Meydan Free Zone, no. [Licence No.]" },
-    { label: "Services", value: "Recruitment, HR consultancy, workforce supply" },
+    { label: "Services", value: "Recruitment, HR consultancy, skilled workforce recruitment" },
     { label: "Languages", value: "English, Arabic, [others]" },
   ],
 };
@@ -71,9 +73,9 @@ export const services = {
         "HR policies, employee handbooks, team structure and ongoing HR advice for growing UAE companies.",
     },
     {
-      title: "Workforce supply",
+      title: "Skilled workforce recruitment",
       description:
-        "Labour recruitment brokerage for projects and operations that need skilled and general workers.",
+        "We find skilled and general workers for your projects and operations, hired directly by your company.",
     },
   ],
 };
@@ -145,7 +147,11 @@ export const faq = {
         "Yes. NextGen HR Consultancy L.L.C-FZ is licensed by Meydan Free Zone, Dubai, licence no. [Licence No.], for HR consultancy and labour recruitment brokerage.",
     },
     { question: "How long does it take to hire?", answer: "[Typical time to shortlist and to signed offer.]" },
-    { question: "Do job seekers pay a fee?", answer: "[Confirm your policy.]" },
+    {
+      question: "Do job seekers pay a fee?",
+      answer:
+        "No. NextGen HR never charges candidates. In the UAE, recruitment costs are paid by the employer, not the job seeker.",
+    },
   ],
 };
 

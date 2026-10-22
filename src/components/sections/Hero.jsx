@@ -13,16 +13,16 @@ export default function Hero() {
       <Header />
 
       <Container className="relative mt-auto flex flex-col gap-12 pb-16">
-        <span className="rise flex items-center gap-3 text-sm text-text-on-dark">
-          <span className="h-2 w-2 rounded-full bg-accent-light" />
-          {hero.eyebrow}
-        </span>
+        <h1 className="rise flex items-center gap-3 text-sm text-text-on-dark">
+          <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-full bg-accent-light" />
+          {hero.heading}
+        </h1>
 
-        <h1 className="rise font-display text-[clamp(3.25rem,9vw,8rem)] leading-[0.92] font-medium tracking-[-0.045em]">
+        <p className="rise font-display text-[clamp(3.25rem,9vw,8rem)] leading-[0.92] font-medium tracking-[-0.045em]">
           {hero.titleLine1}
           <br />
           <span className="text-accent-light">{hero.titleLine2}</span>
-        </h1>
+        </p>
 
         <div className="rise-late flex flex-wrap items-end justify-between gap-8 border-t border-paper/25 pt-7">
           <p className="max-w-[500px] text-lg leading-relaxed text-text-on-dark">{hero.text}</p>
