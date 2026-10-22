@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------
+   Brand colours
+   The copper theme is the default. The blue theme only overrides the
+   colours that change. Components use these as Tailwind classes,
+   for example bg-paper, text-ink, text-accent, border-line.
+   ------------------------------------------------------------------ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #111418;
+  --paper: #faf8f4;
+  --stone: #f1ece4;
+  --line: #e4ddd2;
+  --muted: #5b6472;
+  --muted-on-dark: #aeb6c1;
+  --text-on-dark: #dce1e7;
+  --line-dark: #2e353f;
+  --photo: #2b323c;
+  --photo-alt: #3a424d;
+
+  /* Copper */
+  --accent: #9a4f28;
+  --accent-light: #e2b08c;
+  --accent-mark: #c9875e;
+}
+
+[data-theme="blue"] {
+  --paper: #f7f8fa;
+  --stone: #edf0f5;
+  --line: #e1e5ec;
+
+  /* Blue */
+  --accent: #1e4db7;
+  --accent-light: #9db8f5;
+  --accent-mark: #6f94ee;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-stone: var(--stone);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-muted-on-dark: var(--muted-on-dark);
+  --color-text-on-dark: var(--text-on-dark);
+  --color-line-dark: var(--line-dark);
+  --color-photo: var(--photo);
+  --color-photo-alt: var(--photo-alt);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-mark: var(--accent-mark);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter-tight);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* ------------------------------------------------------------------
+   Animations
+   ------------------------------------------------------------------ */
+
+/* Slow zoom on full-bleed photos ("Ken Burns") */
+@keyframes slow-zoom {
+  from { transform: scale(1) translate(0, 0); }
+  to { transform: scale(1.14) translate(-2%, -1.5%); }
+}
+.slow-zoom {
+  animation: slow-zoom 24s ease-in-out infinite alternate;
+}
+
+/* Text rising into place */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+.rise { animation: rise 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 2.4s both; }
+.rise-late { animation: rise 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 2.65s both; }
+
+/* Logo intro: one circle splits into two, then the name appears */
+@keyframes split-left {
+  0%, 30% { transform: translateX(10px); }
+  60%, 100% { transform: translateX(0); }
+}
+@keyframes split-right {
+  0%, 30% { transform: translateX(-10px); }
+  60%, 100% { transform: translateX(0); }
+}
+@keyframes mark-in {
+  from { opacity: 0; transform: scale(0.6); }
+  to { opacity: 1; transform: scale(1); }
+}
+/* The name grows from zero width, so the symbol starts centred and slides left as the name appears */
+@keyframes name-in {
+  from { opacity: 0; max-width: 0; }
+  to { opacity: 1; max-width: 12em; }
+}
+@keyframes intro-out {
+  to { opacity: 0; visibility: hidden; }
+}
+.intro-overlay { animation: intro-out 0.6s ease 2.2s forwards; }
+.intro-mark { animation: mark-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: center; }
+.intro-ring { animation: split-left 1.4s cubic-bezier(0.65, 0, 0.35, 1) both; }
+.intro-dot { animation: split-right 1.4s cubic-bezier(0.65, 0, 0.35, 1) both; }
+.intro-name { animation: name-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) 1.1s both; overflow: hidden; white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  .slow-zoom, .rise, .rise-late, .intro-mark, .intro-ring, .intro-dot, .intro-name {
+    animation: none;
+  }
+  .intro-overlay { display: none; }
 }

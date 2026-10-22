@@ -1,27 +1,38 @@
-// The big intro section at the top of the home page.
+// The full-screen opening section: animated photo, header on top, big headline at the bottom.
 
+import Header from "@/components/layout/Header";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
+import Photo from "@/components/ui/Photo";
+import TextLink from "@/components/ui/TextLink";
 import { hero } from "@/data/site";
 
 export default function Hero() {
   return (
-    <section id="home" className="py-24 sm:py-32">
-      <Container>
-        <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
-          {hero.title}
-        </h1>
-        <p className="mt-6 max-w-xl text-lg text-foreground/70">
-          {hero.subtitle}
-        </p>
+    <section className="relative flex min-h-[100svh] flex-col bg-photo text-paper">
+      <Photo note={hero.photo} notePosition="right-5 top-28" />
+      <Header />
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Button href={hero.primaryButton.href}>
-            {hero.primaryButton.label}
-          </Button>
-          <Button href={hero.secondaryButton.href} variant="secondary">
-            {hero.secondaryButton.label}
-          </Button>
+      <Container className="relative mt-auto flex flex-col gap-12 pb-16">
+        <span className="rise flex items-center gap-3 text-sm text-text-on-dark">
+          <span className="h-2 w-2 rounded-full bg-accent-light" />
+          {hero.eyebrow}
+        </span>
+
+        <h1 className="rise font-display text-[clamp(3.25rem,9vw,8rem)] leading-[0.92] font-medium tracking-[-0.045em]">
+          {hero.titleLine1}
+          <br />
+          <span className="text-accent-light">{hero.titleLine2}</span>
+        </h1>
+
+        <div className="rise-late flex flex-wrap items-end justify-between gap-8 border-t border-paper/25 pt-7">
+          <p className="max-w-[500px] text-lg leading-relaxed text-text-on-dark">{hero.text}</p>
+          <div className="flex flex-wrap gap-10">
+            {hero.links.map((link) => (
+              <TextLink key={link.label} href={link.href} dark>
+                {link.label}
+              </TextLink>
+            ))}
+          </div>
         </div>
       </Container>
     </section>
