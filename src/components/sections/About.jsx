@@ -1,5 +1,5 @@
 // "Who we are" in one clear statement. Written so Google and AI assistants can quote NextGen accurately.
-// On the home page it sits beside a blue brand panel with a link to /about.
+// On the home page it sits beside a dark brand panel with a link to /about.
 // On the About page (facts={true}) the panel is swapped for the key facts list.
 
 import Section from "@/components/ui/Section";
@@ -35,10 +35,10 @@ export default function About({ facts = false }) {
           ))}
         </dl>
       ) : (
-        <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-brand-blue lg:aspect-square">
+        <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-ink lg:aspect-square">
           {/* A large, faint copy of the symbol behind the logo */}
           <LogoMark theme="dark" className="absolute -right-[30%] -bottom-[20%] h-[110%] w-auto opacity-15" />
-          <Logo theme="blue" className="relative text-[clamp(1.75rem,3vw,2.5rem)]" />
+          <Logo theme="dark" className="relative text-[clamp(1.75rem,3vw,2.5rem)]" />
         </div>
       )}
     </Section>
