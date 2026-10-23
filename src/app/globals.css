@@ -8,6 +8,7 @@
    ------------------------------------------------------------------ */
 :root {
   --ink: #111418;
+  --brand-blue: #1e4db7; /* Used for the About panel on the home page */
   --paper: #faf8f4;
   --stone: #f1ece4;
   --line: #e4ddd2;
@@ -50,6 +51,7 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-mark: var(--accent-mark);
+  --color-brand-blue: var(--brand-blue);
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-inter-tight);

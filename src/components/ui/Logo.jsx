@@ -1,10 +1,10 @@
 // The NextGen HR logo: "The Match" symbol plus the name.
 // The ring is the employer, the solid circle is the candidate.
-// theme="dark" is for dark backgrounds, theme="light" for light ones.
+// theme="dark" is for dark backgrounds, theme="light" for light ones, theme="blue" for the blue brand panel.
 
 export function LogoMark({ theme = "light", className = "" }) {
-  const ring = theme === "dark" ? "var(--paper)" : "var(--ink)";
-  const dot = theme === "dark" ? "var(--accent-mark)" : "var(--accent)";
+  const ring = theme === "light" ? "var(--ink)" : "var(--paper)";
+  const dot = theme === "light" ? "var(--accent)" : "var(--accent-mark)";
 
   return (
     <svg viewBox="0 0 64 44" className={className} aria-hidden="true">
@@ -15,8 +15,8 @@ export function LogoMark({ theme = "light", className = "" }) {
 }
 
 export default function Logo({ theme = "light", className = "" }) {
-  const nameColor = theme === "dark" ? "text-paper" : "text-ink";
-  const hrColor = theme === "dark" ? "text-muted-on-dark" : "text-muted";
+  const nameColor = theme === "light" ? "text-ink" : "text-paper";
+  const hrColor = { light: "text-muted", dark: "text-muted-on-dark", blue: "text-paper/70" }[theme];
 
   return (
     <span className={`flex items-center gap-3 whitespace-nowrap ${className}`}>

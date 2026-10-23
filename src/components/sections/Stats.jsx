@@ -15,7 +15,7 @@ export default function Stats() {
         {shown.map((stat) => (
           <div key={stat.label} className="flex flex-col gap-2.5 pt-8 pr-8">
             <span
-              className={`font-display text-6xl leading-none font-light tracking-[-0.05em] sm:text-[104px] ${
+              className={`font-display text-6xl leading-none font-light tracking-[-0.05em] sm:text-[88px] lg:text-[clamp(4rem,6.5vw,6.5rem)] ${
                 stat.highlight ? "text-accent" : ""
               }`}
             >

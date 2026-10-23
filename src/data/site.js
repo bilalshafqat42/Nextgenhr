@@ -52,8 +52,11 @@ export const hero = {
 
 export const about = {
   label: "About NextGen HR",
-  lead: "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai.",
-  rest: "We help employers in Dubai, Abu Dhabi and Sharjah hire permanent and fixed-term staff directly, and we set up the HR policies, handbooks and team structure growing companies need.",
+  // Heading in two lines: the first large, the second about 70% of its size.
+  titleLine1: "A licensed recruitment agency",
+  titleLine2: "and HR consultancy in Dubai.",
+  text: "NextGen HR Consultancy helps employers in Dubai, Abu Dhabi and Sharjah hire permanent and fixed-term staff directly, and sets up the HR policies, handbooks and team structure growing companies need.",
+  link: { label: "More about us →", href: "/about" },
   facts: [
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
     { label: "Founded", value: "2024, Dubai" },
