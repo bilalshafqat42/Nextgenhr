@@ -11,7 +11,7 @@ export const siteConfig = {
     "NextGen HR Consultancy is a recruitment agency and HR consultancy in Dubai, licensed by Meydan Free Zone, backed by a team with 20+ years of UAE recruitment experience.",
   phone: "[+971 XX XXX XXXX]",
   whatsapp: "[+971 XX XXX XXXX]",
-  email: "[hello@nextgenhr.ae]",
+  email: "info@nextgenhr.ae",
   address: ["Meydan Grandstand, 6th floor, Meydan Road", "Nad Al Sheba, Dubai, UAE"],
   hours: "Monday to Friday, [9am to 6pm]",
   licence: "Licensed by Meydan Free Zone, Dubai",
@@ -141,7 +141,12 @@ export const faq = {
 export const contact = {
   title: "Let's talk.",
   intro: "Tell us who you need to hire, or send your CV. We reply on working days.",
-  fields: ["Full name", "Company", "Phone or email", "Who do you need to hire?"],
+  fields: [
+    { name: "name", label: "Full name", required: true, autoComplete: "name" },
+    { name: "company", label: "Company", autoComplete: "organization" },
+    { name: "contact", label: "Phone or email", required: true, autoComplete: "email" },
+    { name: "message", label: "Who do you need to hire, or which role are you looking for?", required: true },
+  ],
   consent:
     "I agree to NextGen HR processing my details to reply to this enquiry, as set out in the Privacy Policy.",
   button: "Send enquiry",

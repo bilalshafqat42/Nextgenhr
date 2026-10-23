@@ -47,7 +47,7 @@ export const privacyPolicy = {
       heading: "Your rights",
       paragraphs: [
         "Under UAE data protection law, including Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data, you can ask to see the personal data we hold about you, correct it, delete it, or withdraw your consent.",
-        "To make a request, email us at [privacy email]. We will reply within a reasonable time.",
+        "To make a request, email us at info@nextgenhr.ae. We will reply within a reasonable time.",
       ],
     },
     {
@@ -92,7 +92,7 @@ export const cookiePolicy = {
     },
     {
       heading: "Questions",
-      paragraphs: ["If you have questions about this policy, email us at [privacy email]."],
+      paragraphs: ["If you have questions about this policy, email us at info@nextgenhr.ae."],
     },
   ],
 };
