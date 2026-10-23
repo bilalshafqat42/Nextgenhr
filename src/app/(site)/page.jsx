@@ -10,7 +10,8 @@ import Hero from "@/components/sections/Hero";
 import ItemGrid from "@/components/sections/ItemGrid";
 import JobSeekers from "@/components/sections/JobSeekers";
 import LinkList from "@/components/sections/LinkList";
-import Stats from "@/components/sections/Stats";
+// Stats (the six-tile key facts grid) is hidden for now. To show it again, add back:
+//   import Stats from "@/components/sections/Stats";  and  <Stats />  below <About />
 import Testimonial from "@/components/sections/Testimonial";
 import { locations } from "@/data/locations";
 import { sectors } from "@/data/sectors";
@@ -33,7 +34,6 @@ export default function HomePage() {
       <LogoIntro />
       <Hero />
       <About />
-      <Stats />
       <LinkList
         id="services"
         spacing="bottom"
