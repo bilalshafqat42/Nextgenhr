@@ -70,10 +70,10 @@ export const about = {
 // Only true, checkable facts. When real figures are available (placements, employers served,
 // average days to shortlist), they can replace the last three.
 export const stats = [
-  { value: "20+", label: "Years of UAE recruitment experience in our team", highlight: true },
-  { value: "Direct", label: "You hire every candidate on your own contract" },
-  { value: "No fees", label: "For candidates, ever" },
-  { value: "2024", label: "Founded in Meydan, Dubai" },
+  { value: "20+", label: "Years of UAE recruitment experience in our team", icon: "experience", highlight: true },
+  { value: "Direct", label: "You hire every candidate on your own contract", icon: "direct" },
+  { value: "No fees", label: "For candidates, ever", icon: "shield" },
+  { value: "2024", label: "Founded in Meydan, Dubai", icon: "location" },
 ];
 
 export const servicesIntro = {
