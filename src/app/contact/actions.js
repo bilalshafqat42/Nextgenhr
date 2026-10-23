@@ -1,6 +1,6 @@
 "use server";
 
-// Sends a contact form enquiry to the company inbox through the Hostinger mailbox.
+// Sends a contact form enquiry to the company inbox through the company mailbox (Titan Mail).
 // Mail settings come from environment variables (see .env.example), never from the code.
 
 import nodemailer from "nodemailer";
@@ -17,6 +17,7 @@ export async function sendEnquiry(formData) {
   const contact = clean(formData.get("contact"), 160);
   const message = clean(formData.get("message"));
   const consent = formData.get("consent") === "on";
+  const source = formData.get("source") === "hire" ? "hire" : "contact";
 
   if (!name || !contact || !message || !consent) redirect("/contact/error");
 
@@ -40,13 +41,14 @@ export async function sendEnquiry(formData) {
       from: `NextGen HR website <${SMTP_USER}>`,
       to: CONTACT_TO || SMTP_USER,
       replyTo: contact.includes("@") ? contact : undefined,
-      subject: `Website enquiry from ${name.replace(/[\r\n]+/g, " ")}`,
-      text: [`Name: ${name}`, `Company: ${company || "-"}`, `Phone or email: ${contact}`, "", message].join("\n"),
+      subject: `${source === "hire" ? "Ad enquiry" : "Website enquiry"} from ${name.replace(/[\r\n]+/g, " ")}`,
+      text: [`Name: ${name}`, `Company: ${company || "-"}`, `Phone or email: ${contact}`, `Page: /${source}`, "", message].join("\n"),
     });
   } catch (error) {
     console.error("Contact form: sending failed.", error);
     reason = error.code === "EAUTH" ? "login" : ["ESOCKET", "ETIMEDOUT", "ECONNECTION", "EDNS"].includes(error.code) ? "network" : "other";
   }
 
-  redirect(reason ? `/contact/error/${reason}` : "/contact/sent");
+  // Visitors from the Hire landing page (Google Ads) get their own thank-you page, so ad conversions can be counted.
+  redirect(reason ? `/contact/error/${reason}` : source === "hire" ? "/hire/thank-you" : "/contact/sent");
 }

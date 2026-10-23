@@ -3,6 +3,7 @@
 
 import { Inter, Inter_Tight } from "next/font/google";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { siteConfig } from "@/data/site";
 import { isReal } from "@/lib/content";
 import "./globals.css";
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans">
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

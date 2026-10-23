@@ -166,3 +166,25 @@ export const aboutPage = {
     "We work for employers. We never charge candidates a fee, and the companies we work with hire their new team members directly.",
   ],
 };
+
+// The Hire landing page (/hire), used only for Google Ads visitors. Kept short and focused on one action.
+export const hirePage = {
+  title: "Hire screened candidates in the UAE",
+  description: "Tell NextGen HR the role you need to fill and receive a short list of interviewed, checked candidates.",
+  intro:
+    "Tell us the role you need to fill. Our team, with 20+ years of UAE recruitment experience, sends you a short list of interviewed and checked candidates.",
+  points: [
+    "Screened, interview-ready candidates",
+    "Permanent, contract and skilled roles",
+    "Licensed by Meydan Free Zone, Dubai",
+    "Candidates never pay a fee",
+  ],
+  formTitle: "Get candidates for your role",
+  fields: [
+    { name: "name", label: "Full name", required: true, autoComplete: "name" },
+    { name: "company", label: "Company", required: true, autoComplete: "organization" },
+    { name: "contact", label: "Phone or email", required: true, autoComplete: "tel" },
+    { name: "message", label: "Which role do you need to fill?", required: true },
+  ],
+  button: "Request candidates",
+};

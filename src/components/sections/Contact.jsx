@@ -1,19 +1,17 @@
 // "Let's talk." Contact details on the left, enquiry form on the right.
 // Email, phone, WhatsApp and hours appear only once they are filled in (not in [brackets]) in src/data/site.js.
-// The form emails each enquiry to the company inbox (see src/app/contact/actions.js).
 
-import { sendEnquiry } from "@/app/contact/actions";
+import EnquiryForm from "@/components/ui/EnquiryForm";
 import Section from "@/components/ui/Section";
 import { contact, siteConfig } from "@/data/site";
 import { isReal } from "@/lib/content";
-
-const digits = (number) => number.replace(/[^\d]/g, "");
+import { phoneLink, whatsappLink } from "@/lib/contactLinks";
 
 export default function Contact() {
   const links = [
     isReal(siteConfig.email) && { label: siteConfig.email, href: `mailto:${siteConfig.email}` },
-    isReal(siteConfig.phone) && { label: siteConfig.phone, href: `tel:+${digits(siteConfig.phone)}` },
-    isReal(siteConfig.whatsapp) && { label: "WhatsApp →", href: `https://wa.me/${digits(siteConfig.whatsapp)}` },
+    phoneLink && { label: siteConfig.phone, href: phoneLink },
+    whatsappLink && { label: "WhatsApp →", href: whatsappLink },
   ].filter(Boolean);
 
   return (
@@ -44,32 +42,7 @@ export default function Contact() {
         </address>
       </div>
 
-      <form action={sendEnquiry} className="flex min-w-0 flex-[1_1_480px] flex-col gap-7 self-end">
-        {contact.fields.map((field) => (
-          <label key={field.name} className="flex flex-col gap-1.5 text-sm text-muted">
-            {field.label}
-            <input
-              type="text"
-              name={field.name}
-              required={field.required}
-              autoComplete={field.autoComplete}
-              className="h-12 border-b border-ink bg-transparent text-lg text-ink outline-none focus:border-accent"
-            />
-          </label>
-        ))}
-        {/* Spam trap: hidden from people, but bots fill it in */}
-        <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
-        <label className="flex items-start gap-2.5 text-[13px] leading-normal text-muted">
-          <input type="checkbox" name="consent" required className="mt-1 accent-[var(--accent)]" />
-          {contact.consent}
-        </label>
-        <button
-          type="submit"
-          className="h-14 self-start rounded-full bg-accent px-9 font-medium text-paper hover:opacity-90"
-        >
-          {contact.button}
-        </button>
-      </form>
+      <EnquiryForm className="min-w-0 flex-[1_1_480px] self-end" />
     </Section>
   );
 }
