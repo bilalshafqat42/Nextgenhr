@@ -23,10 +23,11 @@ export async function sendEnquiry(formData) {
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_TO } = process.env;
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
     console.error("Contact form: email settings are missing.");
-    redirect("/contact/error");
+    redirect("/contact/error/setup");
   }
 
-  let sent = false;
+  // A short, password-free reason shown on the error page, so problems can be diagnosed.
+  let reason = null;
   try {
     const transport = nodemailer.createTransport({
       host: SMTP_HOST,
@@ -42,10 +43,10 @@ export async function sendEnquiry(formData) {
       subject: `Website enquiry from ${name.replace(/[\r\n]+/g, " ")}`,
       text: [`Name: ${name}`, `Company: ${company || "-"}`, `Phone or email: ${contact}`, "", message].join("\n"),
     });
-    sent = true;
   } catch (error) {
     console.error("Contact form: sending failed.", error);
+    reason = error.code === "EAUTH" ? "login" : ["ESOCKET", "ETIMEDOUT", "ECONNECTION", "EDNS"].includes(error.code) ? "network" : "other";
   }
 
-  redirect(sent ? "/contact/sent" : "/contact/error");
+  redirect(reason ? `/contact/error/${reason}` : "/contact/sent");
 }
