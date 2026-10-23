@@ -5,7 +5,7 @@
 import Section from "@/components/ui/Section";
 import SectionLabel from "@/components/ui/SectionLabel";
 import TextLink from "@/components/ui/TextLink";
-import Logo, { LogoMark } from "@/components/ui/Logo";
+import Logo from "@/components/ui/Logo";
 import { about } from "@/data/site";
 
 export default function About({ facts = false }) {
@@ -35,10 +35,8 @@ export default function About({ facts = false }) {
           ))}
         </dl>
       ) : (
-        <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-ink lg:aspect-square">
-          {/* A large, faint copy of the symbol behind the logo */}
-          <LogoMark theme="dark" className="absolute -right-[30%] -bottom-[20%] h-[110%] w-auto opacity-15" />
-          <Logo theme="dark" className="relative text-[clamp(1.75rem,3vw,2.5rem)]" />
+        <div className="relative flex aspect-[4/3] items-center justify-center bg-ink lg:aspect-square">
+          <Logo theme="dark" className="text-[clamp(1.75rem,3vw,2.5rem)]" />
         </div>
       )}
     </Section>
