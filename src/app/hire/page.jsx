@@ -55,7 +55,7 @@ export default function HirePage() {
             </ul>
           </div>
 
-          <div className="min-w-0 flex-[1_1_400px] rounded-3xl bg-paper p-8 text-ink sm:p-10">
+          <div className="min-w-0 flex-[1_1_400px] bg-paper p-8 text-ink sm:p-10">
             <h2 className="mb-6 font-display text-3xl font-medium tracking-[-0.03em]">{hirePage.formTitle}</h2>
             <EnquiryForm fields={hirePage.fields} button={hirePage.button} source="hire" />
           </div>

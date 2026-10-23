@@ -37,10 +37,10 @@ export default function Header() {
             </summary>
             <nav
               aria-label="Mobile"
-              className="absolute inset-x-5 top-full flex flex-col rounded-2xl bg-paper p-2 text-lg text-ink shadow-xl"
+              className="absolute inset-x-5 top-full flex flex-col bg-paper p-2 text-lg text-ink shadow-xl"
             >
               {navLinks.map((link) => (
-                <Link key={link.label} href={link.href} className="rounded-xl px-4 py-3 hover:bg-stone">
+                <Link key={link.label} href={link.href} className="px-4 py-3 hover:bg-stone">
                   {link.label}
                 </Link>
               ))}

@@ -7,7 +7,7 @@ export default function CtaBand({ title = "Ready to hire? Send us your brief." }
   return (
     <section className="pb-28 lg:pb-40">
       <Container>
-        <div className="flex flex-wrap items-center justify-between gap-8 rounded-3xl bg-ink px-8 py-16 text-paper sm:px-14">
+        <div className="flex flex-wrap items-center justify-between gap-8 bg-ink px-8 py-16 text-paper sm:px-14">
           <h2 className="max-w-[640px] font-display text-4xl leading-tight font-medium tracking-[-0.03em] sm:text-5xl">
             {title}
           </h2>
