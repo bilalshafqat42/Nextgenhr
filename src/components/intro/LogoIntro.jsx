@@ -9,7 +9,7 @@ export default function LogoIntro() {
   return (
     <div
       aria-hidden="true"
-      className="intro-overlay fixed inset-0 z-50 flex items-center justify-center bg-ink"
+      className="intro-overlay pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-ink"
     >
       <div className="flex items-center">
         <svg viewBox="0 0 64 44" className="intro-mark h-16 w-auto shrink-0 sm:h-20">

@@ -29,7 +29,7 @@ export default function LinkList({ id, title, intro, items, spacing = "full" }) 
                 {item.description}
               </p>
             )}
-            <span className="col-start-3 row-start-1 flex h-14 w-14 items-center justify-center rounded-full border border-ink text-xl transition-colors group-hover:bg-ink group-hover:text-paper lg:col-start-4">
+            <span className="col-start-3 row-start-1 flex h-14 w-14 items-center justify-center rounded-full border border-ink text-xl transition-colors group-hover:bg-ink group-hover:text-paper lg:col-start-4" aria-hidden="true">
               →
             </span>
           </Link>

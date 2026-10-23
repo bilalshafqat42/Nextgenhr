@@ -33,7 +33,7 @@ export default function OpengraphImage() {
           <span style={{ color: "#E2B08C" }}>Hiring done right.</span>
         </div>
         <span style={{ fontSize: 28, color: "#AEB6C1" }}>
-          Recruitment agency and HR consultancy in Dubai · 20+ years of UAE experience
+          Recruitment agency and HR consultancy in Dubai · Team with 20+ years of UAE hiring experience
         </span>
       </div>
     ),

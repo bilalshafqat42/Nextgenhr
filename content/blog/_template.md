@@ -1,8 +1,10 @@
 ---
 title: "Your headline, including the main search term"
+seoTitle: "Optional shorter title for Google, under 55 characters"
 description: "One or two sentences that summarise the article. About 150 characters."
 date: "2026-01-01"
 author: "NextGen HR team"
+draft: false
 ---
 
 Start with a short paragraph that answers the question straight away.

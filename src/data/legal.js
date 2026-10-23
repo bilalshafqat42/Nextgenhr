@@ -40,7 +40,8 @@ export const privacyPolicy = {
     {
       heading: "How long we keep it",
       paragraphs: [
-        "We keep enquiry details for as long as needed to respond and follow up. We keep candidate CVs for [X months] after our last contact, unless you ask us to delete them sooner.",
+        "We keep enquiry details for as long as needed to respond and follow up.",
+        "We keep candidate CVs for [X months] after our last contact, unless you ask us to delete them sooner.",
       ],
     },
     {

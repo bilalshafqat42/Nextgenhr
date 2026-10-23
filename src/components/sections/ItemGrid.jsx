@@ -11,7 +11,7 @@ export default function ItemGrid({ title, items, prefix }) {
       <ol className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, index) => (
           <li key={item.title} className="flex flex-col gap-3 border-t border-ink pt-5">
-            <span className="text-sm text-accent">{prefix ? `${prefix} ${index + 1}` : `0${index + 1}`}</span>
+            <span className="text-sm text-accent">{prefix ? `${prefix} ${index + 1}` : String(index + 1).padStart(2, "0")}</span>
             <h3 className="font-display text-[26px] leading-tight font-medium tracking-[-0.02em]">{item.title}</h3>
             <p className="text-base leading-relaxed text-muted">{item.text}</p>
           </li>

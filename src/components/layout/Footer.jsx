@@ -33,7 +33,7 @@ export default async function Footer() {
   return (
     <footer className="bg-ink text-muted-on-dark">
       <Container className="flex flex-col gap-16 pt-18 pb-8">
-        <div className="grid grid-cols-2 gap-10 text-[15px] lg:grid-cols-4">
+        <nav aria-label="Footer" className="grid grid-cols-2 gap-10 text-[15px] lg:grid-cols-4">
           {columns.map((column) => (
             <div key={column.title} className="flex flex-col gap-3">
               <span className="font-medium text-paper">{column.title}</span>
@@ -44,7 +44,7 @@ export default async function Footer() {
               ))}
             </div>
           ))}
-        </div>
+        </nav>
 
         <div className="flex flex-wrap items-center gap-6 sm:gap-9">
           <LogoMark theme="dark" className="h-16 w-auto sm:h-32" />
@@ -53,8 +53,13 @@ export default async function Footer() {
           </span>
         </div>
 
-        <div className="border-t border-line-dark pt-6 text-sm">
-          © {year} {siteConfig.legalName} · {siteConfig.licence}
+        <div className="flex flex-col gap-2 border-t border-line-dark pt-6 pb-20 text-sm sm:pb-0">
+          <span>
+            <a href={`mailto:${siteConfig.email}`} className="hover:text-paper">{siteConfig.email}</a> · {siteConfig.address[0]}, Dubai
+          </span>
+          <span>
+            © {year} {siteConfig.legalName} · {siteConfig.licence}
+          </span>
         </div>
       </Container>
     </footer>

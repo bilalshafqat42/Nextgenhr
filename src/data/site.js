@@ -1,14 +1,17 @@
 // All the website's general text lives here.
 // Services, sectors and city pages have their own files: services.js, sectors.js, locations.js.
-// Anything in [brackets] is a placeholder waiting for the client's real details.
+// Anything in [brackets] is a placeholder waiting for the client's real details; it stays hidden until filled in.
+// House style: British English, "shortlist" as one word, no em dashes.
 
 export const siteConfig = {
   url: "https://nextgenhr.ae",
   name: "NextGen HR",
   legalName: "NextGen HR Consultancy L.L.C-FZ",
+  alternateName: "NextGen HR Consultancy",
+  foundingYear: "2024",
   title: "Recruitment Agency & HR Consultancy in Dubai | NextGen HR",
   description:
-    "Licensed recruitment agency and HR consultancy in Dubai. Screened short lists and practical HR support for employers across the UAE. Candidates never pay a fee.",
+    "Licensed recruitment agency and HR consultancy in Dubai. Screened shortlists and practical HR support for employers across the UAE. Candidates never pay a fee.",
   phone: "[+971 XX XXX XXXX]",
   whatsapp: "[+971 XX XXX XXXX]",
   email: "info@nextgenhr.ae",
@@ -16,7 +19,7 @@ export const siteConfig = {
   hours: "Monday to Friday, [9am to 6pm]",
   licence: "Licensed by Meydan Free Zone, Dubai",
   licenceNumber: "[Licence No.]",
-  // Google Search Console "HTML tag" code: only the part inside content="..."
+  // Google Search Console "HTML tag" code: only the part inside content="..." (verification is already done by file).
   googleVerification: "[Google code]",
   // The two activities on the trade licence, word for word.
   activities: [
@@ -39,10 +42,10 @@ export const hero = {
   heading: "Recruitment agency and HR consultancy in Dubai, UAE",
   titleLine1: "People first.",
   titleLine2: "Hiring done right.",
-  text: "A licensed recruitment agency and HR consultancy in Dubai. Our team brings 20+ years of UAE hiring experience and sends you a short list of screened candidates, not a pile of CVs.",
+  text: "A licensed recruitment agency and HR consultancy in Dubai. Share your brief and our team, with 20+ years of UAE hiring experience, sends you a shortlist of interviewed, checked candidates you hire directly.",
   links: [
-    { label: "I'm hiring →", href: "/contact" },
-    { label: "I'm looking for a job →", href: "/#jobs" },
+    { label: "Send your hiring brief →", href: "/contact" },
+    { label: "Looking for a job? →", href: "/#jobs" },
   ],
   photo: "Our team with a client, Dubai office (video loop or photo)",
 };
@@ -50,9 +53,10 @@ export const hero = {
 export const about = {
   label: "About NextGen HR",
   lead: "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai.",
-  rest: "We help employers in Dubai, Abu Dhabi and Sharjah hire permanent and contract staff, and we set up the HR policies, handbooks and team structure growing companies need.",
+  rest: "We help employers in Dubai, Abu Dhabi and Sharjah hire permanent and fixed-term staff directly, and we set up the HR policies, handbooks and team structure growing companies need.",
   facts: [
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
+    { label: "Founded", value: "2024, Dubai" },
     { label: "Team experience", value: "20+ years in UAE recruitment" },
     { label: "Based in", value: "Meydan, Dubai, UAE" },
     { label: "Licensed by", value: "Meydan Free Zone, Dubai" },
@@ -61,12 +65,12 @@ export const about = {
 };
 
 // Only true, checkable facts. When real figures are available (placements, employers served,
-// average days to short list), they can replace the last three.
+// average days to shortlist), they can replace the last three.
 export const stats = [
-  { value: "20+", label: "Years of UAE recruitment experience", highlight: true },
-  { value: "5", label: "Recruitment and HR services" },
-  { value: "5", label: "Sectors we recruit for" },
-  { value: "3", label: "Emirates covered: Dubai, Abu Dhabi, Sharjah" },
+  { value: "20+", label: "Years of UAE recruitment experience in our team", highlight: true },
+  { value: "Direct", label: "You hire every candidate on your own contract" },
+  { value: "No fees", label: "For candidates, ever" },
+  { value: "2024", label: "Founded in Meydan, Dubai" },
 ];
 
 export const servicesIntro = {
@@ -80,10 +84,13 @@ export const sectorsIntro = {
 };
 
 export const whyUs = {
-  title: "Why companies hire with NextGen",
+  title: "Why companies hire with NextGen HR",
   items: [
-    { title: "20+ years of UAE experience", text: "Our team has spent more than two decades recruiting across the UAE market." },
-    { title: "Screened short lists", text: "Every candidate is interviewed and checked before you meet them." },
+    {
+      title: "A team with 20+ years in UAE hiring",
+      text: "Founded in 2024, NextGen HR is run by recruiters with more than 20 years of UAE hiring experience.",
+    },
+    { title: "Screened shortlists", text: "Every candidate is interviewed and checked before you meet them." },
     { title: "Recruitment and HR in one place", text: "Hiring support plus HR policies, handbooks and day-to-day advice." },
     { title: "Licensed and transparent", text: "Licensed by Meydan Free Zone, Dubai. Candidates never pay a fee." },
   ],
@@ -100,16 +107,27 @@ export const process = {
   items: [
     { title: "Share your brief", text: "Role, skills, salary range and start date." },
     { title: "We source and screen", text: "Interviews and checks on every candidate." },
-    { title: "You interview", text: "A short list of people who fit." },
-    { title: "We place and follow up", text: "Onboarding support after the hire." },
+    { title: "You interview", text: "A shortlist of people who fit." },
+    { title: "You hire, we follow up", text: "You hire directly; we support onboarding." },
+  ],
+};
+
+// The process shown on the HR consultancy page instead of the hiring process.
+export const hrProcess = {
+  title: "How HR consultancy works",
+  items: [
+    { title: "Tell us what you need", text: "Your team size, current HR set-up and priorities." },
+    { title: "We review", text: "We look at your existing policies, documents and structure." },
+    { title: "We draft", text: "Policies, handbook or structure, written for how you work." },
+    { title: "You review and launch", text: "We refine the documents with you and stay on hand for questions." },
   ],
 };
 
 export const jobSeekers = {
   label: "For job seekers",
   title: "Find your next role in the UAE.",
-  text: "Send us your CV and we will match you with suitable roles. We never charge candidates a fee.",
-  links: [{ label: "Send your CV →", href: "/contact" }],
+  text: "Email your CV to info@nextgenhr.ae with the role you want in the subject line. We match you with suitable roles and never charge candidates a fee.",
+  links: [{ label: "Email your CV →", href: "mailto:info@nextgenhr.ae?subject=CV%3A%20role%20I%20am%20looking%20for" }],
   photo: "Job seeker in an interview",
 };
 
@@ -121,7 +139,7 @@ export const faq = {
     {
       question: "What does a recruitment agency in Dubai do?",
       answer:
-        "A recruitment agency finds, screens and shortlists candidates for an employer's open roles. NextGen HR handles sourcing, interviews and reference checks, so employers only meet suitable candidates.",
+        "A recruitment agency finds, screens and shortlists candidates for an employer's open roles. NextGen HR handles sourcing, interviews and experience checks, so employers meet candidates who fit the brief.",
     },
     {
       question: "Is NextGen HR a licensed company?",
@@ -137,6 +155,11 @@ export const faq = {
       question: "Who employs the candidates you find?",
       answer:
         "The employer does. NextGen HR finds and introduces candidates, and the employer hires them directly on its own contract and visa.",
+    },
+    {
+      question: "Is NextGen HR an employment agency?",
+      answer:
+        "We are a licensed recruitment brokerage and HR consultancy: we introduce candidates, and employers hire them directly. We recruit for businesses, not for private households.",
     },
     {
       question: "Which parts of the UAE do you recruit for?",
@@ -155,24 +178,25 @@ export const faq = {
 
 export const contact = {
   title: "Let's talk.",
-  intro: "Tell us who you need to hire, or send your CV. We reply on working days.",
+  intro: "Employers: tell us who you need to hire. Job seekers: email your CV to info@nextgenhr.ae. We reply on working days, Monday to Friday.",
   fields: [
-    { name: "name", label: "Full name", required: true, autoComplete: "name" },
-    { name: "company", label: "Company", autoComplete: "organization" },
-    { name: "contact", label: "Phone or email", required: true, autoComplete: "email" },
-    { name: "message", label: "Who do you need to hire, or which role are you looking for?", required: true },
+    { name: "name", label: "Full name", required: true, autoComplete: "name", maxLength: 120 },
+    { name: "company", label: "Company", autoComplete: "organization", maxLength: 120 },
+    { name: "contact", label: "Work email or mobile", required: true, autoComplete: "off", maxLength: 160 },
+    { name: "message", label: "How can we help?", required: true, multiline: true, maxLength: 2000 },
   ],
+  // The words "Privacy Policy" become a link to /privacy-policy.
   consent:
-    "I agree to NextGen HR processing my details to reply to this enquiry, as set out in the Privacy Policy.",
-  button: "Send enquiry",
+    "I agree that NextGen HR may use these details to reply to my enquiry and, if I am a job seeker, to match me with suitable roles, as explained in the Privacy Policy.",
+  button: "Send message",
 };
 
 export const aboutPage = {
   title: "About NextGen HR",
   description:
-    "NextGen HR Consultancy is a Dubai recruitment agency and HR consultancy licensed by Meydan Free Zone, backed by a team with 20+ years of UAE recruitment experience.",
+    "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai, Meydan Free Zone. Our team has 20+ years of UAE hiring experience.",
   intro:
-    "NextGen HR Consultancy helps UAE employers find the right people and put good HR foundations in place. We are based in Meydan, Dubai, and licensed by Meydan Free Zone.",
+    "We help UAE employers find the right people and put good HR foundations in place, from our office in Meydan, Dubai.",
   story: [
     "NextGen HR was founded in Dubai in 2024 to offer a more personal kind of recruitment: fewer CVs, better matches and honest advice.",
     "Our team brings more than 20 years of experience recruiting across the UAE market, in sectors from real estate and construction to hospitality, retail and technology.",
@@ -183,21 +207,38 @@ export const aboutPage = {
 // The Hire landing page (/hire), used only for Google Ads visitors. Kept short and focused on one action.
 export const hirePage = {
   title: "Hire screened candidates in the UAE",
-  description: "Tell NextGen HR the role you need to fill and receive a short list of interviewed, checked candidates.",
+  description: "Tell NextGen HR the role you need to fill and receive a shortlist of interviewed, checked candidates.",
   intro:
-    "Tell us the role you need to fill. Our team, with 20+ years of UAE recruitment experience, sends you a short list of interviewed and checked candidates.",
+    "Tell us the role you need to fill. Our team, with 20+ years of UAE recruitment experience, sends you a shortlist of interviewed and checked candidates.",
   points: [
     "Screened, interview-ready candidates",
-    "Permanent, contract and skilled roles",
+    "Permanent and fixed-term roles, hired directly by you",
     "Licensed by Meydan Free Zone, Dubai",
-    "Candidates never pay a fee",
+    "You hire directly, on your own contract and visa",
   ],
   formTitle: "Get candidates for your role",
   fields: [
-    { name: "name", label: "Full name", required: true, autoComplete: "name" },
-    { name: "company", label: "Company", required: true, autoComplete: "organization" },
-    { name: "contact", label: "Phone or email", required: true, autoComplete: "tel" },
-    { name: "message", label: "Which role do you need to fill?", required: true },
+    { name: "name", label: "Full name", required: true, autoComplete: "name", maxLength: 120 },
+    { name: "company", label: "Company", required: true, autoComplete: "organization", maxLength: 120 },
+    { name: "contact", label: "Work email or mobile", required: true, autoComplete: "off", maxLength: 160 },
+    {
+      name: "message",
+      label: "Which role do you need to fill? (Role, number of hires, location, start date)",
+      required: true,
+      multiline: true,
+      maxLength: 2000,
+    },
   ],
-  button: "Request candidates",
+  button: "Send my brief",
+};
+
+// The page shown for any address that does not exist.
+export const notFoundPage = {
+  title: "Page not found",
+  intro: "The page you are looking for has moved or no longer exists.",
+  links: [
+    { label: "Go to the home page →", href: "/" },
+    { label: "See our services →", href: "/services" },
+    { label: "Send your hiring brief →", href: "/contact" },
+  ],
 };

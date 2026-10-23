@@ -1,5 +1,6 @@
 ---
 title: "What does an HR consultancy do for a growing UAE company?"
+seoTitle: "What Does an HR Consultancy Do? A UAE Guide"
 description: "An HR consultancy helps UAE companies set up HR policies, employee handbooks and team structure. Here is what it covers and when you need one."
 date: "2026-10-23"
 author: "NextGen HR team"
@@ -30,6 +31,6 @@ An in-house HR team makes sense once a company is large enough to keep HR profes
 
 ## How NextGen HR can help
 
-NextGen HR Consultancy is licensed by Meydan Free Zone, Dubai, for human resources consultancy and recruitment. We help UAE companies with HR policies, employee handbooks and team structure, and can recruit the people you need as you grow.
+NextGen HR Consultancy is licensed by Meydan Free Zone, Dubai, for Human resources consultancy and Labor Recruitment Brokerage Office Services. We help UAE companies with HR policies, employee handbooks and team structure, and can recruit the people you need as you grow.
 
-See our [HR consultancy services](/services/hr-consultancy) or [contact our team](/contact).
+See our [HR consultancy in the UAE](/services/hr-consultancy) or [contact our team](/contact).

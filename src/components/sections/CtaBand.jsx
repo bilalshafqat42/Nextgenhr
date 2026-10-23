@@ -12,7 +12,7 @@ export default function CtaBand({ title = "Ready to hire? Send us your brief." }
             {title}
           </h2>
           <Link href="/contact" className="rounded-full bg-accent px-8 py-4 font-medium text-paper hover:opacity-90">
-            Contact us
+            Send your brief
           </Link>
         </div>
       </Container>
