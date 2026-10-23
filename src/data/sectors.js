@@ -51,23 +51,6 @@ export const sectors = [
     ],
   },
   {
-    slug: "healthcare",
-    title: "Healthcare",
-    seoTitle: "Healthcare Recruitment Agency in the UAE",
-    description:
-      "Healthcare recruitment in the UAE: nurses, allied health, clinic and administrative staff for clinics and hospitals, recruited by NextGen HR.",
-    intro:
-      "Healthcare hiring needs care and accuracy. We recruit for clinics, medical centres and hospitals, and check early whether candidates hold the professional licence the role requires.",
-    roles: ["Nurses", "Allied health professionals", "Clinic and front-desk staff", "Medical administrators", "Pharmacy staff", "Practice managers"],
-    faq: [
-      {
-        question: "Do candidates need a UAE healthcare licence?",
-        answer:
-          "Most clinical roles need a professional licence from the health authority in the relevant emirate, such as DHA in Dubai or DOH in Abu Dhabi. We check this early in the process.",
-      },
-    ],
-  },
-  {
     slug: "retail",
     title: "Retail",
     seoTitle: "Retail Recruitment Agency in Dubai",

@@ -25,7 +25,7 @@ export const services = [
       {
         question: "What roles do you recruit for?",
         answer:
-          "We recruit for permanent and contract roles from entry level to management, across sectors including real estate, construction, hospitality, healthcare, retail and technology.",
+          "We recruit for permanent and contract roles from entry level to management, across sectors including real estate, construction, hospitality, retail and technology.",
       },
       {
         question: "Who employs the candidate?",

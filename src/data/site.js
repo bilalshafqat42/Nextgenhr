@@ -162,7 +162,7 @@ export const aboutPage = {
     "NextGen HR Consultancy helps UAE employers find the right people and put good HR foundations in place. We are based in Meydan, Dubai, and licensed by Meydan Free Zone.",
   story: [
     "NextGen HR was founded in Dubai in 2024 to offer a more personal kind of recruitment: fewer CVs, better matches and honest advice.",
-    "Our team brings more than 20 years of experience recruiting across the UAE market, in sectors from real estate and construction to hospitality, healthcare, retail and technology.",
+    "Our team brings more than 20 years of experience recruiting across the UAE market, in sectors from real estate and construction to hospitality, retail and technology.",
     "We work for employers. We never charge candidates a fee, and the companies we work with hire their new team members directly.",
   ],
 };

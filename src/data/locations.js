@@ -8,7 +8,7 @@ export const locations = [
     description:
       "NextGen HR is a licensed recruitment agency and HR consultancy based in Meydan, Dubai, helping Dubai employers hire permanent and contract staff.",
     intro:
-      "Our office is in Meydan, Dubai. We recruit for Dubai employers across real estate, construction, hospitality, healthcare, retail and technology, and advise on HR as companies grow.",
+      "Our office is in Meydan, Dubai. We recruit for Dubai employers across real estate, construction, hospitality, retail and technology, and advise on HR as companies grow.",
     points: [
       "Office in Meydan Grandstand, Dubai",
       "Permanent, contract and skilled workforce recruitment",
@@ -26,7 +26,7 @@ export const locations = [
     points: [
       "Recruitment for Abu Dhabi employers",
       "Candidates screened before you meet them",
-      "Healthcare candidates checked for DOH licensing needs",
+      "Office, skilled and operations roles",
     ],
   },
   {
