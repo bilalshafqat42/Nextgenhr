@@ -47,7 +47,7 @@ export const hero = {
     { label: "Send your hiring brief →", href: "/contact" },
     { label: "Looking for a job? →", href: "/#jobs" },
   ],
-  photo: "Our team with a client, Dubai office (video loop or photo)",
+  image: { src: "/images/hero-dubai-skyline.jpg", alt: "Dubai skyline at night with the Burj Khalifa" },
 };
 
 export const about = {
@@ -128,7 +128,7 @@ export const jobSeekers = {
   title: "Find your next role in the UAE.",
   text: "Email your CV to info@nextgenhr.ae with the role you want in the subject line. We match you with suitable roles and never charge candidates a fee.",
   links: [{ label: "Email your CV →", href: "mailto:info@nextgenhr.ae?subject=CV%3A%20role%20I%20am%20looking%20for" }],
-  photo: "Job seeker in an interview",
+  image: { src: "/images/job-seekers-handshake.jpg", alt: "A candidate and an employer shaking hands after an interview" },
 };
 
 // General questions, shown on the home page and the FAQ page.

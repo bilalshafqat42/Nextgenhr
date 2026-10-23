@@ -9,7 +9,9 @@ import { hero } from "@/data/site";
 export default function Hero() {
   return (
     <section className="relative flex min-h-[100svh] flex-col bg-photo text-paper">
-      <Photo note={hero.photo} notePosition="right-5 top-28" />
+      <Photo src={hero.image.src} alt={hero.image.alt} preload />
+      {/* Extra shade behind the headline so it stays readable over the city lights */}
+      <div aria-hidden="true" className="absolute inset-0 bg-linear-to-t from-ink/85 via-ink/40 to-transparent" />
       <Header />
 
       <Container className="relative mt-auto flex flex-col gap-12 pb-16">

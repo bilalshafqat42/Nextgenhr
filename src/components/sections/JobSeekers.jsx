@@ -9,7 +9,7 @@ export default function JobSeekers() {
   return (
     <section id="jobs" className="flex flex-wrap lg:min-h-[760px]">
       <div className="relative min-h-[480px] flex-[1_1_560px]">
-        <Photo note={jobSeekers.photo} notePosition="left-5 top-5" />
+        <Photo src={jobSeekers.image.src} alt={jobSeekers.image.alt} sizes="(min-width: 1120px) 50vw, 100vw" />
       </div>
 
       <div className="flex min-w-0 flex-[1_1_560px] flex-col justify-center gap-7 bg-stone px-5 py-20 sm:px-18 sm:py-24">

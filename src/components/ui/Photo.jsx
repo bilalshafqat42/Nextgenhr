@@ -1,18 +1,18 @@
 // A full-bleed image area with a slow zoom animation.
-// Pass src="/images/hero.jpg" to show a real photo. Until real photos arrive, it shows a large, faint
+// Pass src="/images/hero.jpg" to show a real photo, and preload for the first photo on a page (loads it sooner). Until real photos arrive, it shows a large, faint
 // version of the NextGen symbol (the two circles) so the area looks designed rather than empty.
 // While developing, a note says which photo goes there (hidden on the live site).
 
 import Image from "next/image";
 
-export default function Photo({ src, alt = "", note, notePosition = "right-5 top-5", className = "", tone = "photo" }) {
+export default function Photo({ src, alt = "", note, notePosition = "right-5 top-5", className = "", tone = "photo", preload = false, sizes = "100vw" }) {
   const background = tone === "alt" ? "bg-photo-alt" : "bg-photo";
 
   return (
     <div className={`absolute inset-0 overflow-hidden ${background} ${className}`}>
       <div className="slow-zoom absolute inset-0">
         {src ? (
-          <Image src={src} alt={alt} fill sizes="100vw" className="object-cover" />
+          <Image src={src} alt={alt} fill sizes={sizes} preload={preload} className="object-cover" />
         ) : (
           <svg
             viewBox="0 0 64 44"
