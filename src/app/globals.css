@@ -60,6 +60,19 @@ body {
   color: var(--ink);
 }
 
+/* Show the pointing-hand cursor on everything clickable.
+   Tailwind v4 gives buttons the normal arrow cursor by default, so this restores it site-wide. */
+@layer base {
+  a[href],
+  button:not(:disabled),
+  summary,
+  label:has(input[type="checkbox"]),
+  input[type="checkbox"],
+  input[type="submit"] {
+    cursor: pointer;
+  }
+}
+
 /* ------------------------------------------------------------------
    Animations
    ------------------------------------------------------------------ */
