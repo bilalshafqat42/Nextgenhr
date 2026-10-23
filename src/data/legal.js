@@ -6,7 +6,7 @@ export const privacyPolicy = {
   slug: "privacy-policy",
   title: "Privacy Policy",
   description: "How NextGen HR Consultancy collects, uses and protects personal data.",
-  lastUpdated: "[Date]",
+  lastUpdated: "23 October 2026",
   sections: [
     {
       heading: "Who we are",
@@ -69,7 +69,7 @@ export const cookiePolicy = {
   slug: "cookie-policy",
   title: "Cookie Policy",
   description: "How the NextGen HR website uses cookies.",
-  lastUpdated: "[Date]",
+  lastUpdated: "23 October 2026",
   sections: [
     {
       heading: "What cookies are",

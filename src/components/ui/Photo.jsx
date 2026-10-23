@@ -1,5 +1,6 @@
 // A full-bleed photo area with a slow zoom animation.
-// Until real photos arrive it shows a dark placeholder with a note saying what goes there.
+// Until real photos arrive it shows a dark placeholder. While developing, a note says which photo goes there
+// (the note is hidden on the live site).
 // Later: pass src="/images/hero.jpg" and it shows the real photo instead.
 
 import Image from "next/image";
@@ -18,7 +19,7 @@ export default function Photo({ src, alt = "", note, notePosition = "right-5 top
       </div>
       {/* Darkens the photo slightly so white text on top stays readable */}
       <div className="absolute inset-0 bg-ink/35" />
-      {!src && note && (
+      {!src && note && process.env.NODE_ENV !== "production" && (
         <span className={`absolute ${notePosition} rounded border border-dashed border-muted-on-dark/60 px-2.5 py-1.5 text-xs text-muted-on-dark`}>
           Photo: {note}
         </span>

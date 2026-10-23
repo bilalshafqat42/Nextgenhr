@@ -1,10 +1,14 @@
 // A full-bleed animated photo with a client quote on top.
+// Hidden until a real testimonial is added in src/data/site.js.
 
 import Container from "@/components/ui/Container";
 import Photo from "@/components/ui/Photo";
 import { testimonial } from "@/data/site";
+import { isReal } from "@/lib/content";
 
 export default function Testimonial() {
+  if (!isReal(testimonial.quote)) return null;
+
   return (
     <section className="relative flex min-h-[640px] items-end bg-photo-alt text-paper lg:min-h-[800px]">
       <Photo note={testimonial.photo} tone="alt" />

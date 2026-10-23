@@ -2,8 +2,8 @@
 // Anything still in [brackets] is left out, so placeholders are never published to search engines.
 
 import { siteConfig } from "@/data/site";
+import { isReal } from "@/lib/content";
 
-const isReal = (value) => Boolean(value) && !value.includes("[");
 const url = (path = "/") => new URL(path, siteConfig.url).toString();
 
 export function organizationSchema() {
@@ -24,7 +24,7 @@ export function organizationSchema() {
       addressCountry: "AE",
     },
     areaServed: { "@type": "Country", name: "United Arab Emirates" },
-    knowsLanguage: ["en", "ar"],
+    knowsLanguage: ["en"],
   };
 }
 

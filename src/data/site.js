@@ -10,10 +10,12 @@ export const siteConfig = {
   description:
     "NextGen HR Consultancy is a recruitment agency and HR consultancy in Dubai, licensed by Meydan Free Zone, backed by a team with 20+ years of UAE recruitment experience.",
   phone: "[+971 XX XXX XXXX]",
+  whatsapp: "[+971 XX XXX XXXX]",
   email: "[hello@nextgenhr.ae]",
   address: ["Meydan Grandstand, 6th floor, Meydan Road", "Nad Al Sheba, Dubai, UAE"],
   hours: "Monday to Friday, [9am to 6pm]",
-  licence: "Meydan Free Zone licence no. [Licence No.]",
+  licence: "Licensed by Meydan Free Zone, Dubai",
+  licenceNumber: "[Licence No.]",
   // The two activities on the trade licence, word for word.
   activities: [
     { name: "Human resources consultancy", code: "7490.14" },
@@ -50,9 +52,8 @@ export const about = {
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
     { label: "Team experience", value: "20+ years in UAE recruitment" },
     { label: "Based in", value: "Meydan, Dubai, UAE" },
-    { label: "Licensed by", value: "Meydan Free Zone, no. [Licence No.]" },
+    { label: "Licensed by", value: "Meydan Free Zone, Dubai" },
     { label: "Services", value: "Recruitment and HR consultancy" },
-    { label: "Languages", value: "English, Arabic, [others]" },
   ],
 };
 
@@ -110,7 +111,7 @@ export const jobSeekers = {
 // General questions, shown on the home page and the FAQ page.
 export const faq = {
   title: "Questions, answered",
-  byline: "Answered by the NextGen HR recruitment team. Last updated [date].",
+  byline: "Answered by the NextGen HR recruitment team.",
   items: [
     {
       question: "What does a recruitment agency in Dubai do?",
