@@ -67,13 +67,41 @@ export const about = {
   ],
 };
 
-// Only true, checkable facts. When real figures are available (placements, employers served,
-// average days to shortlist), they can replace the last three.
+// The key facts, shown as a "bento" grid of tiles. Only true, checkable facts.
+// tone: "bronze", "stone", "dark" or "white". size: "big" (the large tile) or "wide" (spans two columns).
+// links: optional small tags shown on a wide tile. When real figures are available
+// (placements, employers served, average days to shortlist), they can replace any tile.
 export const stats = [
-  { value: "20+", label: "Years of UAE recruitment experience in our team", icon: "experience", highlight: true },
-  { value: "Direct", label: "You hire every candidate on your own contract", icon: "direct" },
-  { value: "No fees", label: "For candidates, ever", icon: "shield" },
-  { value: "2024", label: "Founded in Meydan, Dubai", icon: "location" },
+  { value: "20+", label: "Years of UAE recruitment experience in our team", icon: "experience", tone: "bronze", size: "big" },
+  { value: "Direct", label: "You hire every candidate on your own contract", icon: "direct", tone: "stone" },
+  { value: "No fees", label: "For candidates, ever", icon: "shield", tone: "dark" },
+  {
+    value: "3 Emirates",
+    label: "Recruitment and HR support for employers across the UAE, from our base in Dubai.",
+    icon: "map",
+    tone: "white",
+    size: "wide",
+    links: [
+      { label: "Dubai", href: "/recruitment-agency/dubai" },
+      { label: "Abu Dhabi", href: "/recruitment-agency/abu-dhabi" },
+      { label: "Sharjah", href: "/recruitment-agency/sharjah" },
+    ],
+  },
+  { value: "2024", label: "Founded in Meydan, Dubai", icon: "location", tone: "stone" },
+  {
+    value: "5 Sectors",
+    label: "Hiring for the industries driving the UAE economy.",
+    icon: "sectors",
+    tone: "white",
+    size: "wide",
+    links: [
+      { label: "Real estate", href: "/sectors/real-estate" },
+      { label: "Construction", href: "/sectors/construction" },
+      { label: "Hospitality", href: "/sectors/hospitality" },
+      { label: "Retail", href: "/sectors/retail" },
+      { label: "Technology", href: "/sectors/technology" },
+    ],
+  },
 ];
 
 export const servicesIntro = {
