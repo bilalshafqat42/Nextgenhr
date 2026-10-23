@@ -128,3 +128,16 @@ body {
   }
   .intro-overlay { display: none; }
 }
+
+/* Blog article text (the Markdown body of each post) */
+@layer components {
+  .article { font-size: 1.125rem; line-height: 1.75; color: color-mix(in srgb, var(--ink) 85%, transparent); }
+  .article > * + * { margin-top: 1.25rem; }
+  .article h2 { margin-top: 3rem; font-family: var(--font-inter-tight), sans-serif; font-size: 2rem; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; color: var(--ink); }
+  .article h3 { margin-top: 2rem; font-family: var(--font-inter-tight), sans-serif; font-size: 1.5rem; font-weight: 500; color: var(--ink); }
+  .article ul { list-style: disc; padding-left: 1.5rem; }
+  .article ol { list-style: decimal; padding-left: 1.5rem; }
+  .article li + li { margin-top: 0.5rem; }
+  .article a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .article strong { color: var(--ink); font-weight: 600; }
+}

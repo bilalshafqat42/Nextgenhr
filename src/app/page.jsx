@@ -15,9 +15,12 @@ import JsonLd from "@/components/ui/JsonLd";
 import { sectors } from "@/data/sectors";
 import { services } from "@/data/services";
 import { process, sectorsIntro, servicesIntro, whyUs } from "@/data/site";
+import { getPosts } from "@/lib/blog";
 import { organizationSchema } from "@/lib/schema";
 
 export default function HomePage() {
+  const latestPosts = getPosts().slice(0, 3);
+
   return (
     <>
       <JsonLd data={organizationSchema()} />
@@ -42,6 +45,12 @@ export default function HomePage() {
       />
       <JobSeekers />
       <Faq />
+      {latestPosts.length > 0 && (
+        <LinkList
+          title="From the blog"
+          items={latestPosts.map((p) => ({ title: p.title, description: p.description, href: `/blog/${p.slug}` }))}
+        />
+      )}
       <Contact />
     </>
   );

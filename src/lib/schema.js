@@ -67,3 +67,16 @@ export function breadcrumbSchema(crumbs) {
     })),
   };
 }
+
+export function articleSchema({ title, description, date, author, path }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    datePublished: date,
+    author: { "@type": "Organization", name: author },
+    publisher: { "@id": url("/#organization") },
+    mainEntityOfPage: url(path),
+  };
+}

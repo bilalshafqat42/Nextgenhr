@@ -1,4 +1,5 @@
 // The city pages, one each at /recruitment-agency/<slug>.
+// Each page targets "recruitment agency in <city>" and related searches (recruitment companies, recruiters).
 
 export const locations = [
   {
@@ -6,13 +7,16 @@ export const locations = [
     city: "Dubai",
     seoTitle: "Recruitment Agency in Dubai",
     description:
-      "NextGen HR is a licensed recruitment agency and HR consultancy based in Meydan, Dubai, helping Dubai employers hire permanent and contract staff.",
+      "Licensed recruitment agency in Dubai. NextGen HR finds, interviews and shortlists permanent and contract candidates for Dubai employers, and offers HR consultancy.",
     intro:
-      "Our office is in Meydan, Dubai. We recruit for Dubai employers across real estate, construction, hospitality, retail and technology, and advise on HR as companies grow.",
+      "Our office is in Meydan, Dubai. As a licensed recruitment agency, we help Dubai employers hire permanent and contract staff across real estate, construction, hospitality, retail and technology, and we support growing companies with HR consultancy.",
     points: [
       "Office in Meydan Grandstand, Dubai",
       "Permanent, contract and skilled workforce recruitment",
+      "Screened short lists, not piles of CVs",
       "HR consultancy for growing Dubai companies",
+      "Licensed by Meydan Free Zone, Dubai",
+      "Candidates never pay a fee",
     ],
   },
   {
@@ -20,13 +24,16 @@ export const locations = [
     city: "Abu Dhabi",
     seoTitle: "Recruitment Agency in Abu Dhabi",
     description:
-      "Recruitment for Abu Dhabi employers: NextGen HR finds and screens permanent and contract candidates for companies across Abu Dhabi.",
+      "Recruitment agency for Abu Dhabi employers. NextGen HR finds and screens permanent and contract candidates, and provides HR consultancy in Abu Dhabi.",
     intro:
-      "We recruit for employers across Abu Dhabi from our Dubai office, with the same screening and short-list process we use everywhere in the UAE.",
+      "We recruit for employers across Abu Dhabi from our Dubai office, with the same interview-and-check process we use across the UAE. Abu Dhabi companies also work with us for HR consultancy: HR policies, employee handbooks and team structure.",
     points: [
       "Recruitment for Abu Dhabi employers",
-      "Candidates screened before you meet them",
-      "Office, skilled and operations roles",
+      "Permanent and contract roles",
+      "Office, skilled and operations staff",
+      "Every candidate interviewed and checked",
+      "HR consultancy for Abu Dhabi companies",
+      "Candidates never pay a fee",
     ],
   },
   {
@@ -34,13 +41,16 @@ export const locations = [
     city: "Sharjah",
     seoTitle: "Recruitment Agency in Sharjah",
     description:
-      "Recruitment for Sharjah employers: NextGen HR finds and screens permanent, contract and skilled workforce candidates for Sharjah companies.",
+      "Recruitment agency for Sharjah employers. NextGen HR finds and screens permanent, contract and skilled workforce candidates for Sharjah companies.",
     intro:
-      "Sharjah is home to many manufacturing, logistics and trading businesses. We recruit office, skilled and operations staff for Sharjah employers from our Dubai office.",
+      "Sharjah is home to many manufacturing, logistics and trading businesses. We recruit office, skilled and operations staff for Sharjah employers from our Dubai office, and help growing companies put their HR foundations in place.",
     points: [
       "Recruitment for Sharjah employers",
       "Skilled workforce and operations roles",
       "Office and management roles",
+      "Every candidate interviewed and checked",
+      "HR consultancy for growing companies",
+      "Candidates never pay a fee",
     ],
   },
 ];

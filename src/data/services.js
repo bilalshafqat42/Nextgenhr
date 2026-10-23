@@ -9,12 +9,12 @@ export const services = [
     title: "Recruitment",
     navTitle: "Recruitment",
     licence: "Labor Recruitment Brokerage Office Services",
-    seoTitle: "Recruitment Agency in Dubai and the UAE",
+    seoTitle: "Recruitment Services in Dubai and the UAE",
     description:
-      "NextGen HR is a licensed recruitment agency in Dubai. We find, screen and shortlist permanent and contract candidates for employers across the UAE.",
+      "Recruitment services in Dubai from a licensed agency. We find, interview and shortlist permanent and contract candidates for employers across the UAE.",
     summary: "Permanent and contract hiring. We source, interview and check candidates, then send you a short list.",
     intro:
-      "Hiring the wrong person costs time and money. We take your brief, search our network and the market, interview and check every candidate, and send you a short list of people who genuinely fit the role.",
+      "Hiring the wrong person costs time and money. As a licensed recruitment agency in Dubai, we take your brief, search our network and the market, interview and check every candidate, and send you a short list of people who genuinely fit the role.",
     includes: [
       { title: "Role brief and market check", text: "We agree the role, skills, salary range and timeline before the search starts." },
       { title: "Sourcing", text: "We search our UAE network, referrals and the open market for suitable people." },
@@ -41,7 +41,7 @@ export const services = [
     licence: "Human resources consultancy",
     seoTitle: "HR Consultancy in Dubai and the UAE",
     description:
-      "HR consultancy in Dubai: HR policies, employee handbooks, team structure and practical HR advice for growing companies across the UAE.",
+      "HR consultancy in Dubai, Abu Dhabi and across the UAE: HR policies, employee handbooks, team structure and practical HR advice for growing companies.",
     summary: "HR policies, employee handbooks, team structure and ongoing HR advice for growing UAE companies.",
     intro:
       "Growing companies often hire faster than their HR can keep up. We help you put the basics in place, clear policies, a handbook your team understands and a structure that scales, so you can grow with confidence.",
@@ -56,6 +56,11 @@ export const services = [
         question: "Do you replace an in-house HR team?",
         answer:
           "No. We support companies that have no HR function yet, and HR teams that need extra hands or a second opinion.",
+      },
+      {
+        question: "Do you provide HR consultancy in Abu Dhabi and the rest of the UAE?",
+        answer:
+          "Yes. We work with companies in Dubai, Abu Dhabi, Sharjah and across the UAE from our office in Meydan, Dubai.",
       },
       {
         question: "Do you give legal advice?",
@@ -128,9 +133,9 @@ export const services = [
     title: "Executive search",
     navTitle: "Executive search",
     licence: "Labor Recruitment Brokerage Office Services",
-    seoTitle: "Executive Search Firm in Dubai",
+    seoTitle: "Executive Search Firm and Headhunters in Dubai",
     description:
-      "Executive search in Dubai: NextGen HR finds senior managers and leaders for UAE companies through a confidential, research-led search.",
+      "Executive search and headhunting in Dubai: NextGen HR finds senior managers and leaders for UAE companies through a confidential, research-led search.",
     summary: "Confidential search for senior managers and leaders.",
     intro:
       "Senior hires shape a company for years. We run a confidential, research-led search, approach people who are not actively looking, and present a small number of leaders worth your time.",

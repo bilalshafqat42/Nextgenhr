@@ -6,9 +6,9 @@ export const siteConfig = {
   url: "https://nextgenhr.ae",
   name: "NextGen HR",
   legalName: "NextGen HR Consultancy L.L.C-FZ",
-  title: "NextGen HR | Recruitment agency and HR consultancy in Dubai",
+  title: "Recruitment Agency & HR Consultancy in Dubai | NextGen HR",
   description:
-    "NextGen HR Consultancy is a recruitment agency and HR consultancy in Dubai, licensed by Meydan Free Zone, backed by a team with 20+ years of UAE recruitment experience.",
+    "Licensed recruitment agency and HR consultancy in Dubai. Screened short lists and practical HR support for employers across the UAE. Candidates never pay a fee.",
   phone: "[+971 XX XXX XXXX]",
   whatsapp: "[+971 XX XXX XXXX]",
   email: "info@nextgenhr.ae",
@@ -29,6 +29,7 @@ export const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Sectors", href: "/sectors" },
   { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
@@ -38,7 +39,7 @@ export const hero = {
   heading: "Recruitment agency and HR consultancy in Dubai, UAE",
   titleLine1: "People first.",
   titleLine2: "Hiring done right.",
-  text: "Recruitment and HR consultancy in Dubai, backed by a team with more than 20 years of experience placing people across the UAE.",
+  text: "A licensed recruitment agency and HR consultancy in Dubai. Our team brings 20+ years of UAE hiring experience and sends you a short list of screened candidates, not a pile of CVs.",
   links: [
     { label: "I'm hiring →", href: "/contact" },
     { label: "I'm looking for a job →", href: "/#jobs" },
@@ -48,8 +49,8 @@ export const hero = {
 
 export const about = {
   label: "About NextGen HR",
-  lead: "NextGen HR Consultancy is a recruitment agency and HR consultancy in Dubai, licensed by Meydan Free Zone.",
-  rest: "We help UAE employers hire permanent and contract staff, and advise on HR policy and team structure.",
+  lead: "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai.",
+  rest: "We help employers in Dubai, Abu Dhabi and Sharjah hire permanent and contract staff, and we set up the HR policies, handbooks and team structure growing companies need.",
   facts: [
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
     { label: "Team experience", value: "20+ years in UAE recruitment" },
@@ -59,21 +60,23 @@ export const about = {
   ],
 };
 
+// Only true, checkable facts. When real figures are available (placements, employers served,
+// average days to short list), they can replace the last three.
 export const stats = [
   { value: "20+", label: "Years of UAE recruitment experience", highlight: true },
-  { value: "[X]+", label: "Placements" },
-  { value: "[X]", label: "Employers served" },
-  { value: "[X]d", label: "Average time to shortlist" },
+  { value: "5", label: "Recruitment and HR services" },
+  { value: "5", label: "Sectors we recruit for" },
+  { value: "3", label: "Emirates covered: Dubai, Abu Dhabi, Sharjah" },
 ];
 
 export const servicesIntro = {
   title: "Services",
-  intro: "Recruitment and HR consultancy from one team that knows UAE hiring inside out.",
+  intro: "Recruitment services and HR consultancy from one licensed Dubai team that knows UAE hiring inside out.",
 };
 
 export const sectorsIntro = {
   title: "Sectors",
-  intro: "We recruit across the UAE's busiest sectors.",
+  intro: "Specialist recruitment for the sectors that keep the UAE growing.",
 };
 
 export const whyUs = {
@@ -134,6 +137,16 @@ export const faq = {
       question: "Who employs the candidates you find?",
       answer:
         "The employer does. NextGen HR finds and introduces candidates, and the employer hires them directly on its own contract and visa.",
+    },
+    {
+      question: "Which parts of the UAE do you recruit for?",
+      answer:
+        "We recruit for employers in Dubai, Abu Dhabi, Sharjah and across the wider UAE from our office in Meydan, Dubai.",
+    },
+    {
+      question: "Do you offer HR consultancy as well as recruitment?",
+      answer:
+        "Yes. Besides recruitment, we help companies with HR policies, employee handbooks and team structure, so hiring and HR are handled by one team.",
     },
     { question: "How much does a recruitment agency cost in the UAE?", answer: "[Your fee model.]" },
     { question: "How long does it take to hire?", answer: "[Typical time to shortlist and to signed offer.]" },
