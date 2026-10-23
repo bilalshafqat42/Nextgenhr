@@ -16,6 +16,8 @@ export const siteConfig = {
   hours: "Monday to Friday, [9am to 6pm]",
   licence: "Licensed by Meydan Free Zone, Dubai",
   licenceNumber: "[Licence No.]",
+  // Google Search Console "HTML tag" code: only the part inside content="..."
+  googleVerification: "[Google code]",
   // The two activities on the trade licence, word for word.
   activities: [
     { name: "Human resources consultancy", code: "7490.14" },

@@ -4,6 +4,7 @@
 import { Inter, Inter_Tight } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
+import { isReal } from "@/lib/content";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,6 +32,8 @@ export const metadata = {
     description: siteConfig.description,
   },
   twitter: { card: "summary_large_image" },
+  // Proves ownership to Google Search Console once the code is added in src/data/site.js.
+  verification: isReal(siteConfig.googleVerification) ? { google: siteConfig.googleVerification } : undefined,
 };
 
 export default function RootLayout({ children }) {
