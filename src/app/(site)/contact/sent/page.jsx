@@ -2,6 +2,7 @@
 
 import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
+import LeadEvent from "@/components/ui/LeadEvent";
 import TextLink from "@/components/ui/TextLink";
 
 export const metadata = { title: "Message sent", robots: { index: false } };
@@ -9,6 +10,7 @@ export const metadata = { title: "Message sent", robots: { index: false } };
 export default function SentPage() {
   return (
     <>
+      <LeadEvent source="contact" />
       <PageHero
         title="Thank you. Your message is on its way."
         intro="We reply on working days, Monday to Friday. Job seekers: if you have not yet sent your CV, email it to info@nextgenhr.ae."

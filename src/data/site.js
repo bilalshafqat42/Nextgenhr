@@ -28,6 +28,20 @@ export const siteConfig = {
   ],
 };
 
+// Google Analytics, Google Ads and Meta Pixel IDs. Paste each ID in place of the [bracket] text.
+// While an ID is still in [brackets], that tool stays off. When at least one is real, the site shows
+// a cookie banner and loads the tool only after the visitor clicks "Accept".
+export const tracking = {
+  // Google Analytics 4 measurement ID, e.g. "G-ABC123XYZ9"
+  ga4: "[G-XXXXXXXXXX]",
+  // Google Ads tag ID, e.g. "AW-123456789"
+  googleAds: "[AW-XXXXXXXXX]",
+  // Google Ads conversion label for the "Lead" conversion, e.g. "AbC-D_efG-h12_34-567"
+  googleAdsLeadLabel: "[conversion label]",
+  // Meta (Facebook and Instagram) Pixel ID, e.g. "123456789012345"
+  metaPixel: "[Meta Pixel ID]",
+};
+
 export const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Sectors", href: "/sectors" },
@@ -243,7 +257,7 @@ export const hirePage = {
     "Tell us the role you need to fill. Our team, with 20+ years of UAE recruitment experience, sends you a shortlist of interviewed and checked candidates.",
   points: [
     "Screened, interview-ready candidates",
-    "Permanent and fixed-term roles, hired directly by you",
+    "Permanent and fixed-term roles, from entry level to management",
     "Licensed by Meydan Free Zone, Dubai",
     "You hire directly, on your own contract and visa",
   ],

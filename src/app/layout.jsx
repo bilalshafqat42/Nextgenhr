@@ -4,6 +4,7 @@
 // Headlines use Inter Tight, body text uses Inter (see --font-display and --font-sans in globals.css).
 
 import { Inter, Inter_Tight } from "next/font/google";
+import Tracking from "@/components/ui/Tracking";
 import JsonLd from "@/components/ui/JsonLd";
 import { siteConfig } from "@/data/site";
 import { isReal } from "@/lib/content";
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
         </a>
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         {children}
+        <Tracking />
       </body>
     </html>
   );

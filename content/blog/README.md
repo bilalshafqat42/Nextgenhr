@@ -24,3 +24,4 @@ Writing tips for search:
 - One main search term per article, used naturally in the title, first paragraph and one heading.
 - Link to the matching service page, e.g. `[HR consultancy](/services/hr-consultancy)`.
 - Check facts about laws and regulations against official sources (MOHRE, u.ae) before publishing.
+- If you add a post, also add a line for it under "Guides" in `public/llms.txt` (a summary file for AI assistants).

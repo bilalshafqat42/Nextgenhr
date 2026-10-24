@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import CookieSettings from "@/components/ui/CookieSettings";
 import { LogoMark } from "@/components/ui/Logo";
 import { locations } from "@/data/locations";
 import { sectors } from "@/data/sectors";
@@ -60,6 +61,7 @@ export default async function Footer() {
           <span>
             © {year} {siteConfig.legalName} · {siteConfig.licence}
           </span>
+          <CookieSettings />
         </div>
       </Container>
     </footer>
