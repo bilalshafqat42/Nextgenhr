@@ -33,7 +33,7 @@ export const siteConfig = {
 // a cookie banner and loads the tool only after the visitor clicks "Accept".
 export const tracking = {
   // Google Analytics 4 measurement ID, e.g. "G-ABC123XYZ9"
-  ga4: "[G-XXXXXXXXXX]",
+  ga4: "G-2W6RZTBJJE",
   // Google Ads tag ID, e.g. "AW-123456789"
   googleAds: "[AW-XXXXXXXXX]",
   // Google Ads conversion label for the "Lead" conversion, e.g. "AbC-D_efG-h12_34-567"

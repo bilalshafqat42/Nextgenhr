@@ -2,7 +2,7 @@
 // This is a starting point, not legal advice: have it reviewed by a qualified UAE adviser before launch.
 // Update "lastUpdated" whenever the text changes.
 
-import { trackingEnabled } from "@/lib/tracking";
+import { ids, trackingEnabled } from "@/lib/tracking";
 
 export const privacyPolicy = {
   slug: "privacy-policy",
@@ -72,7 +72,7 @@ export const cookiePolicy = {
   slug: "cookie-policy",
   title: "Cookie Policy",
   description: "How the NextGen HR website uses cookies.",
-  lastUpdated: "23 October 2026",
+  lastUpdated: "24 October 2026",
   sections: [
     {
       heading: "What cookies are",
@@ -86,10 +86,11 @@ export const cookiePolicy = {
       paragraphs: trackingEnabled
         ? [
             "We use a small number of cookies only if you click \"Accept\" on our cookie banner. If you click \"Reject\", none of them are set.",
-            "Analytics: Google Analytics helps us understand how visitors use the site, for example which pages are read most.",
-            "Advertising: Google Ads and the Meta Pixel (Facebook and Instagram) tell us whether our adverts lead to enquiries, so we can improve them.",
+            ids.ga4 && "Analytics: Google Analytics helps us understand how visitors use the site, for example which pages are read most.",
+            (ids.googleAds || ids.metaPixel) &&
+              `Advertising: ${[ids.googleAds && "Google Ads", ids.metaPixel && "the Meta Pixel (Facebook and Instagram)"].filter(Boolean).join(" and ")} ${ids.googleAds && ids.metaPixel ? "tell" : "tells"} us whether our adverts lead to enquiries, so we can improve them.`,
             "We save your choice in your browser so we do not ask again on every page. You can change it at any time with the \"Cookie settings\" link at the bottom of every page.",
-          ]
+          ].filter(Boolean)
         : [
             "This website does not currently use cookies for analytics or advertising.",
             "If we add analytics or advertising tools in the future, we will update this policy and ask for your consent before setting those cookies.",
