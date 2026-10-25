@@ -196,6 +196,7 @@ export const services = [
           "Nafis is the UAE federal programme that supports Emirati citizens working in the private sector. Your HR team can find details on the official Nafis platform.",
       },
     ],
+    relatedPost: "emiratisation-targets-uae-private-companies",
   },
   {
     slug: "executive-search",
