@@ -10,8 +10,14 @@ import { sectors } from "@/data/sectors";
 import { services } from "@/data/services";
 import { siteConfig } from "@/data/site";
 import { isReal } from "@/lib/content";
+import { whatsappLink } from "@/lib/contactLinks";
 
-const social = siteConfig.social.filter((s) => isReal(s.url));
+// Social accounts plus WhatsApp, in the footer's "Follow us" line. Facebook appears once its link is added.
+const social = [
+  ...siteConfig.social.filter((s) => isReal(s.url) && s.label !== "LinkedIn"),
+  whatsappLink && { label: "WhatsApp", url: whatsappLink },
+  ...siteConfig.social.filter((s) => isReal(s.url) && s.label === "LinkedIn"),
+].filter(Boolean);
 
 const columns = [
   { title: "Services", links: services.map((s) => ({ label: s.navTitle, href: `/services/${s.slug}` })) },
