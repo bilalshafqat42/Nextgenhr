@@ -27,7 +27,7 @@ export const siteConfig = {
     { label: "Facebook", url: "[Facebook page link]" },
     { label: "Instagram", url: "https://www.instagram.com/nextgenhrae/" },
     { label: "Threads", url: "https://www.threads.com/@nextgenhrae" },
-    { label: "LinkedIn", url: "[LinkedIn company page link]" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/company/nextgen-hr-consultancy/" },
   ],
   // The two activities on the trade licence, word for word.
   activities: [
