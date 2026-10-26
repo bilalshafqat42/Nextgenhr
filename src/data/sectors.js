@@ -10,9 +10,14 @@ export const sectors = [
     description:
       "Real estate recruitment agency in Dubai. We recruit property consultants, leasing staff, property managers and development teams for UAE employers.",
     intro:
-      "Dubai's property market moves fast, and so does hiring in it. We recruit for developers, brokerages and property managers, from sales and leasing to operations and support roles.",
+      "Dubai's property market moves fast, and so does hiring in it. Our team has spent years hiring for UAE developers and brokerages, and has set up HR teams for new developers. We recruit from sales and leasing to operations, support and senior roles.",
     roles: ["Property consultants and sales agents", "Leasing consultants", "Property and facilities managers", "Sales administrators and coordinators", "Customer relations staff", "Development and project staff"],
     faq: [
+      {
+        question: "Can you help a new developer build its team?",
+        answer:
+          "Yes. We can recruit the first senior hires and, through our HR consultancy, set up the structure, policies and HR processes a new developer needs.",
+      },
       {
         question: "Do you recruit RERA-qualified agents?",
         answer:
@@ -62,7 +67,7 @@ export const sectors = [
     description:
       "Retail recruitment agency in Dubai. We recruit sales associates, store managers, visual merchandisers and area managers for retail brands across the UAE.",
     intro:
-      "Retail depends on people who can sell and serve well. We recruit store teams and managers for retail brands across the UAE's malls and high streets.",
+      "Retail depends on people who can sell and serve well. Our team has years of experience hiring for international retail franchise operations in the UAE, and we recruit store teams and managers for retail brands across the country's malls and high streets.",
     roles: ["Sales associates", "Store and assistant managers", "Visual merchandisers", "Cashiers and customer service staff", "Stock and warehouse staff", "Area managers"],
     faq: [
       {

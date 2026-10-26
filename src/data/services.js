@@ -67,10 +67,10 @@ export const services = [
     seoTitle: "HR Consultancy in Dubai and the UAE",
     heading: "HR consultancy in Dubai and the UAE",
     description:
-      "HR consultancy in Dubai, Abu Dhabi and across the UAE: HR policies, employee handbooks, team structure and practical HR advice for growing companies.",
+      "HR consultancy in Dubai and across the UAE: HR set-up for new companies, policies and handbooks, appraisals, salary benchmarking and practical HR advice.",
     summary: "HR policies, employee handbooks, team structure and ongoing HR advice for growing UAE companies.",
     intro:
-      "Growing companies often hire faster than their HR can keep up. Our HR consultancy in Dubai helps you put the basics in place: clear policies, a handbook your team understands and a structure that scales.",
+      "Growing companies often hire faster than their HR can keep up. Our HR consultancy in Dubai helps you build an HR function that holds up as the business grows: clear policies, a handbook your team understands, fair performance reviews and a structure that scales.",
     includes: [
       { title: "HR policies", text: "Clear, practical policies written for how your company actually works." },
       { title: "Employee handbook", text: "One document that explains rules, benefits and expectations to your team." },
@@ -103,6 +103,36 @@ export const services = [
         ],
       },
       {
+        heading: "Setting up HR for a new company",
+        paragraphs: [
+          "Our team has set up HR functions from the ground up, including for new real estate developers. For a new company or a first HR hire, we put the foundations in place: structure, core policies, contracts and processes, and the first senior hires.",
+        ],
+      },
+      {
+        heading: "Performance management and appraisals",
+        paragraphs: [
+          "We design appraisal cycles your managers can actually run, such as mid-year and year-end reviews, with clear objectives and fair improvement plans when performance falls short.",
+        ],
+      },
+      {
+        heading: "Salary benchmarking and reward",
+        paragraphs: [
+          "We compare your salaries and benefits with the UAE market for similar roles, and help you design bonus and reward structures that are fair, affordable and easy to explain.",
+        ],
+      },
+      {
+        heading: "HR systems",
+        paragraphs: [
+          "Choosing and setting up an HR system (HRIS) is easier with someone who has done it before. We help you define what you need, compare options and plan the move from spreadsheets or an older system.",
+        ],
+      },
+      {
+        heading: "Employee relations",
+        paragraphs: [
+          "Grievances, investigations and disciplinary matters need to be handled fairly and consistently. We guide your managers through the process so the outcome would look the same whoever it applied to.",
+        ],
+      },
+      {
         heading: "Onboarding",
         paragraphs: [
           "A consistent onboarding process helps new hires settle in faster. We set up simple checklists and first-week plans your managers can follow.",
@@ -116,6 +146,11 @@ export const services = [
         question: "Do you replace an in-house HR team?",
         answer:
           "No. We support companies that have no HR function yet, and HR teams that need extra hands or a second opinion.",
+      },
+      {
+        question: "Can you set up HR for a new company?",
+        answer:
+          "Yes. We can build your HR function from the ground up: structure, policies, handbook, appraisal process and the first key hires, so the basics are right from day one.",
       },
       {
         question: "Do you offer HR consultancy outside Dubai?",
@@ -222,6 +257,12 @@ export const services = [
         paragraphs: [
           "The best senior candidates are usually busy doing a good job elsewhere and are not reading job adverts. Executive search finds them through research and direct, discreet conversations.",
           "We keep you informed at each stage: the market map, the people approached, their level of interest and the final shortlist. Candidates hear about the role only in the way you have agreed.",
+        ],
+      },
+      {
+        heading: "Senior hiring in real estate",
+        paragraphs: [
+          "Real estate is where our team has spent much of its career. For developers and brokerages, we search for senior and specialist roles through long-standing relationships across the UAE property market.",
         ],
       },
     ],

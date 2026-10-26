@@ -21,7 +21,12 @@ export default function AboutPage() {
     <>
       <JsonLd data={breadcrumbSchema([{ name: "About", path: "/about" }])} />
       <PageHero title={aboutPage.title} intro={aboutPage.intro} crumbs={[{ name: "About", path: "/about" }]} />
-      <Prose sections={[{ heading: "Our story", paragraphs: aboutPage.story }]} />
+      <Prose
+        sections={[
+          { heading: "Our story", paragraphs: aboutPage.story },
+          { heading: "How we work", paragraphs: aboutPage.principles },
+        ]}
+      />
       <About facts />
       <ListBlock
         title="Licensed activities"

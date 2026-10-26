@@ -253,6 +253,13 @@ export const aboutPage = {
     "Our team brings more than 20 years of experience recruiting across the UAE market, in sectors from real estate and construction to hospitality, retail and technology.",
     "We work for employers. We never charge candidates a fee, and the companies we work with hire their new team members directly.",
   ],
+  // "How we work" on the About page.
+  principles: [
+    "Fair and consistent. A people decision is only right if it would look the same applied to anyone else in the business.",
+    "Built to stand up to inspection. Policies, contracts and records that are clear and correct let a company grow with confidence.",
+    "Close to the business plan. Hiring and HR decisions are business decisions, so we start from your growth plans, not from a template.",
+    "Plain language for multicultural teams. UAE teams span many nationalities, so we keep policies and communication simple and clear.",
+  ],
 };
 
 // The Hire landing page (/hire), used only for Google Ads visitors. Kept short and focused on one action.
