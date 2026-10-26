@@ -32,6 +32,7 @@ export function organizationSchema() {
     areaServed: { "@type": "Country", name: "United Arab Emirates" },
     knowsAbout: ["Recruitment", "HR consultancy", "Executive search", "Emiratisation hiring"],
     knowsLanguage: ["en"],
+    sameAs: siteConfig.social.map((s) => s.url).filter(isReal),
   };
 }
 

@@ -21,6 +21,14 @@ export const siteConfig = {
   licenceNumber: "[Licence No.]",
   // Google Search Console "HTML tag" code: only the part inside content="..." (verification is already done by file).
   googleVerification: "[Google code]",
+  // Official social accounts. Shown in the footer and listed for Google and AI assistants as the
+  // company's own profiles. Links still in [brackets] are hidden until filled in.
+  social: [
+    { label: "Instagram", url: "https://www.instagram.com/nextgenhrae/" },
+    { label: "Threads", url: "https://www.threads.com/@nextgenhrae" },
+    { label: "Facebook", url: "[Facebook page link]" },
+    { label: "LinkedIn", url: "[LinkedIn company page link]" },
+  ],
   // The two activities on the trade licence, word for word.
   activities: [
     { name: "Human resources consultancy", code: "7490.14" },

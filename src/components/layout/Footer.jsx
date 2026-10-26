@@ -9,6 +9,9 @@ import { locations } from "@/data/locations";
 import { sectors } from "@/data/sectors";
 import { services } from "@/data/services";
 import { siteConfig } from "@/data/site";
+import { isReal } from "@/lib/content";
+
+const social = siteConfig.social.filter((s) => isReal(s.url));
 
 const columns = [
   { title: "Services", links: services.map((s) => ({ label: s.navTitle, href: `/services/${s.slug}` })) },
@@ -62,6 +65,16 @@ export default async function Footer() {
           <span>
             © {year} {siteConfig.legalName} · {siteConfig.licence}
           </span>
+          {social.length > 0 && (
+            <span className="flex flex-wrap gap-x-4 gap-y-1">
+              Follow us:
+              {social.map((s) => (
+                <a key={s.url} href={s.url} target="_blank" rel="me noopener noreferrer" className="hover:text-paper">
+                  {s.label}
+                </a>
+              ))}
+            </span>
+          )}
           <CookieSettings />
         </div>
       </Container>
