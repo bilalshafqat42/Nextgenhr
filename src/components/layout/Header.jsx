@@ -5,6 +5,7 @@
 
 import Link from "next/link";
 import MobileMenu from "@/components/layout/MobileMenu";
+import EnquiryLink from "@/components/ui/EnquiryLink";
 import StickyHeader from "@/components/layout/StickyHeader";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
@@ -26,12 +27,9 @@ function HeaderBar({ compact = false }) {
       </nav>
 
       <div className="flex items-center gap-2 sm:gap-3">
-        <Link
-          href="/contact"
-          className="rounded-full bg-paper px-3 py-3 text-sm font-medium whitespace-nowrap text-ink hover:opacity-85 sm:px-5 sm:text-[15px]"
-        >
+        <EnquiryLink className="rounded-full bg-paper px-3 py-3 text-sm font-medium whitespace-nowrap text-ink hover:opacity-85 sm:px-5 sm:text-[15px]">
           Hire talent
-        </Link>
+        </EnquiryLink>
         <MobileMenu links={navLinks} />
       </div>
     </Container>

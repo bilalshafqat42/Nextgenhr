@@ -17,6 +17,7 @@ export default function LandingLayout({ children }) {
           <span className="flex gap-6">
             <Link href="/privacy-policy" className="hover:text-paper">Privacy Policy</Link>
             <Link href="/cookie-policy" className="hover:text-paper">Cookie Policy</Link>
+            <Link href="/terms" className="hover:text-paper">Terms of Use</Link>
           </span>
         </Container>
       </footer>

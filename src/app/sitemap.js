@@ -22,6 +22,7 @@ export default function sitemap() {
     { path: "/contact", priority: 0.7 },
     { path: "/privacy-policy", priority: 0.2 },
     { path: "/cookie-policy", priority: 0.2 },
+    { path: "/terms", priority: 0.2 },
   ];
 
   return pages.map((page) => ({

@@ -12,8 +12,8 @@ export const siteConfig = {
   title: "Recruitment Agency & HR Consultancy in Dubai | NextGen HR",
   description:
     "Licensed recruitment agency and HR consultancy in Dubai. Screened shortlists and practical HR support for employers across the UAE. Candidates never pay a fee.",
-  phone: "[+971 XX XXX XXXX]",
-  whatsapp: "[+971 XX XXX XXXX]",
+  phone: "+971 50 310 6920",
+  whatsapp: "+971 50 310 6920",
   email: "info@nextgenhr.ae",
   address: ["Meydan Grandstand, 6th floor, Meydan Road", "Nad Al Sheba, Dubai, UAE"],
   hours: "Monday to Friday, [9am to 6pm]",
@@ -234,6 +234,12 @@ export const contact = {
   consent:
     "I agree that NextGen HR may use these details to reply to my enquiry and, if I am a job seeker, to match me with suitable roles, as explained in the Privacy Policy.",
   button: "Send message",
+};
+
+// The enquiry popup, opened by the "Hire talent" and "Send your brief" buttons.
+export const enquiryPopup = {
+  title: "Tell us who you need to hire",
+  intro: "Share the role and we will reply on working days, Monday to Friday. Prefer to talk? Call or WhatsApp us.",
 };
 
 export const aboutPage = {
