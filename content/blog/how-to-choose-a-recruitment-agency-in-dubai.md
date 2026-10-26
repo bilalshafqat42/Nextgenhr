@@ -46,4 +46,4 @@ Clear communication saves time. Agree how often you will get updates, who your c
 
 Licence, sector knowledge, real screening, no fees for candidates, clear terms in writing and good communication: an agency that ticks these boxes is worth working with.
 
-NextGen HR Consultancy is a licensed [recruitment agency in Dubai](/), and its team brings more than 20 years of UAE recruitment experience. Employers comparing [recruiters in Dubai](/recruitment-agency/dubai) or [recruitment companies in Abu Dhabi](/recruitment-agency/abu-dhabi) can send us a brief at any time. See our [recruitment services](/services/recruitment) or [send us your brief](/contact).
+NextGen HR Consultancy is a licensed [recruitment agency in Dubai](/), and its team brings more than 18 years of HR and recruitment experience, most of it in the UAE. Employers comparing [recruiters in Dubai](/recruitment-agency/dubai) or [recruitment companies in Abu Dhabi](/recruitment-agency/abu-dhabi) can send us a brief at any time. See our [recruitment services](/services/recruitment) or [send us your brief](/contact).
