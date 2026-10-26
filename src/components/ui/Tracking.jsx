@@ -34,6 +34,13 @@ export default function Tracking() {
   if (!trackingEnabled) return null;
 
   const googleId = ids.ga4 || ids.googleAds;
+  const ads = ids.googleAds || ids.metaPixel;
+  // Describes only the tools that are switched on.
+  const bannerText = ids.ga4 && ads
+    ? "We use cookies to see how visitors use our site and to measure our advertising."
+    : ids.ga4
+      ? "We use cookies to see how visitors use our site."
+      : "We use cookies to measure our advertising.";
 
   return (
     <>
@@ -47,7 +54,7 @@ export default function Tracking() {
           className="fixed inset-x-3 bottom-3 z-50 flex flex-col gap-4 border border-paper/15 bg-ink p-5 text-sm text-text-on-dark shadow-2xl sm:right-auto sm:left-5 sm:bottom-5 sm:max-w-[420px]"
         >
           <p>
-            We use cookies to see how visitors use our site and to measure our advertising. You can accept or reject them.{" "}
+            {bannerText} You can accept or reject them.{" "}
             <Link href="/cookie-policy" className="underline underline-offset-2 hover:text-paper">
               Cookie Policy
             </Link>

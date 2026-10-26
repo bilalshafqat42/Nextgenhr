@@ -7,7 +7,7 @@ import { ids, trackingEnabled } from "@/lib/tracking";
 export const privacyPolicy = {
   slug: "privacy-policy",
   title: "Privacy Policy",
-  description: "How NextGen HR Consultancy collects, uses and protects personal data.",
+  description: "How NextGen HR Consultancy collects, uses and protects personal data from employers, job seekers and website visitors, and how to contact us about it.",
   lastUpdated: "23 October 2026",
   sections: [
     {
@@ -71,7 +71,7 @@ export const privacyPolicy = {
 export const cookiePolicy = {
   slug: "cookie-policy",
   title: "Cookie Policy",
-  description: "How the NextGen HR website uses cookies.",
+  description: "How the NextGen HR website uses cookies, which tools we use only with your consent, and how to change your cookie choice at any time.",
   lastUpdated: "24 October 2026",
   sections: [
     {
