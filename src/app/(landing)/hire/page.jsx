@@ -23,18 +23,18 @@ export default function HirePage() {
     <>
       <section className="bg-ink text-paper">
         {/* Minimal header: logo plus call and WhatsApp, so visitors stay focused on the form */}
-        <Container className="flex items-center justify-between gap-4 py-6">
+        <Container className="flex items-center justify-between gap-3 py-6 sm:gap-4">
           <Link href="/" aria-label="NextGen HR home">
-            <Logo theme="dark" className="text-[19px] sm:text-[22px]" />
+            <Logo theme="dark" className="text-[17px] sm:text-[22px]" />
           </Link>
-          <div className="flex gap-3 text-sm font-medium">
+          <div className="flex gap-2 text-[13px] font-medium sm:gap-3 sm:text-sm">
             {phoneLink && (
-              <a href={phoneLink} className="rounded-full border border-paper/40 px-4 py-2.5 whitespace-nowrap">
+              <a href={phoneLink} className="rounded-full border border-paper/40 px-3 py-2.5 whitespace-nowrap sm:px-4">
                 Call us
               </a>
             )}
             {whatsappLink && (
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#25D366] px-4 py-2.5 whitespace-nowrap text-ink">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#25D366] px-3 py-2.5 whitespace-nowrap text-ink sm:px-4">
                 WhatsApp
               </a>
             )}
