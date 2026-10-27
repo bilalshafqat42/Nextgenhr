@@ -314,12 +314,38 @@ export const aboutPage = {
   title: "About NextGen HR",
   description:
     "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai, Meydan Free Zone. Our team has 18+ years of combined HR and recruitment experience.",
-  intro:
-    "We help UAE employers find the right people and put good HR foundations in place, from our office in Meydan, Dubai.",
-  story: [
-    "NextGen HR was founded in Dubai in 2024 to offer a more personal kind of recruitment: fewer CVs, better matches and honest advice.",
-    "Our team brings more than 18 years of combined HR and recruitment experience, most of it in the UAE, with deep roots in real estate, property and retail.",
-    "We work for employers. We never charge candidates a fee, and the companies we work with hire their new team members directly.",
+  // The company tagline, shown under the About page title.
+  intro: "Strategic HR solutions. Exceptional talent. Sustainable growth.",
+  // The company description, word for word with the LinkedIn page and the WhatsApp profile.
+  sections: [
+    {
+      heading: "Recruitment",
+      paragraphs: [
+        "NextGen HR Consultancy is a recruitment and HR consultancy licensed by Meydan Free Zone in Dubai. We partner with businesses across the UAE to attract and secure top talent through permanent and fixed-term recruitment solutions.",
+        "Our end-to-end recruitment process covers candidate sourcing, screening, interviews and assessments, delivering carefully shortlisted professionals aligned with each client's requirements, culture and business objectives.",
+      ],
+    },
+    {
+      heading: "HR consultancy and organisational development",
+      paragraphs: [
+        "We help businesses establish, strengthen and optimise their HR functions through practical, business-focused solutions, including:",
+      ],
+      items: [
+        "HR function set-up and operational frameworks",
+        "HR policies, procedures and employee handbooks",
+        "Organisational design and workforce planning",
+        "Performance management and appraisal systems",
+        "Salary benchmarking and compensation structures",
+      ],
+    },
+    {
+      heading: "Experience you can trust",
+      paragraphs: [
+        "With over 18 years of combined HR and recruitment experience, predominantly in the UAE market, our team brings strong local expertise and a results-driven approach to every engagement.",
+        "We work closely with employers to deliver tailored solutions that support business growth, improve organisational effectiveness and strengthen workforce capability.",
+        "We never charge candidates recruitment fees.",
+      ],
+    },
   ],
   // "How we work" on the About page.
   principles: [

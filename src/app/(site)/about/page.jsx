@@ -23,7 +23,7 @@ export default function AboutPage() {
       <PageHero title={aboutPage.title} intro={aboutPage.intro} crumbs={[{ name: "About", path: "/about" }]} />
       <Prose
         sections={[
-          { heading: "Our story", paragraphs: aboutPage.story },
+          ...aboutPage.sections,
           { heading: "How we work", paragraphs: aboutPage.principles },
         ]}
       />

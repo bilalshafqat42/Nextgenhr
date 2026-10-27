@@ -1,5 +1,6 @@
 // Plain text sections, used for the About story and the Privacy and Cookie policies.
-// sections: [{ heading, paragraphs: ["…", "…"] }]; a section without a heading shows only its text.
+// sections: [{ heading, paragraphs: ["…", "…"], items: ["…"] }]; a section without a heading shows only its text,
+// and the optional items show as a bullet list after the paragraphs.
 // Paragraphs still containing a [placeholder] are hidden until completed.
 
 import Section from "@/components/ui/Section";
@@ -20,6 +21,13 @@ export default function Prose({ sections, note }) {
                 {text}
               </p>
             ))}
+            {section.items && (
+              <ul className="flex list-disc flex-col gap-2 pl-6 text-lg leading-relaxed text-ink/85 marker:text-accent">
+                {section.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
