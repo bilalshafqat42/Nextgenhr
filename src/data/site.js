@@ -24,7 +24,7 @@ export const siteConfig = {
   // Official social accounts. Shown in the footer and listed for Google and AI assistants as the
   // company's own profiles. Links still in [brackets] are hidden until filled in.
   social: [
-    { label: "Facebook", url: "https://www.facebook.com/people/NextGen-HR-Consultancy/61595748248009/" },
+    { label: "Facebook", url: "https://www.facebook.com/nextgenhrconsultancy" },
     { label: "Instagram", url: "https://www.instagram.com/nextgenhrae/" },
     { label: "Threads", url: "https://www.threads.com/@nextgenhrae" },
     { label: "LinkedIn", url: "https://www.linkedin.com/company/nextgen-hr-consultancy/" },
