@@ -68,13 +68,13 @@ export const services = [
     heading: "HR consultancy in Dubai and the UAE",
     description:
       "HR consultancy in Dubai and across the UAE: HR set-up for new companies, policies and handbooks, appraisals, salary benchmarking and practical HR advice.",
-    summary: "HR policies, employee handbooks, team structure and ongoing HR advice for growing UAE companies.",
+    summary: "HR set-up, policies and handbooks, organisational design, appraisals and salary benchmarking for growing UAE companies.",
     intro:
       "Growing companies often hire faster than their HR can keep up. Our HR consultancy in Dubai helps you build an HR function that holds up as the business grows: clear policies, a handbook your team understands, fair performance reviews and a structure that scales.",
     includes: [
       { title: "HR policies", text: "Clear, practical policies written for how your company actually works." },
       { title: "Employee handbook", text: "One document that explains rules, benefits and expectations to your team." },
-      { title: "Team structure", text: "Roles, reporting lines and job descriptions that support your next stage of growth." },
+      { title: "Organisational design", text: "Roles, reporting lines, job descriptions and workforce plans that support your next stage of growth." },
       { title: "Ongoing HR advice", text: "A team to ask when day-to-day people questions come up." },
     ],
     details: [
@@ -97,9 +97,10 @@ export const services = [
         ],
       },
       {
-        heading: "Job descriptions and team structure",
+        heading: "Organisational design and workforce planning",
         paragraphs: [
           "Clear roles make hiring and performance conversations easier. We map your structure, define reporting lines and write job descriptions that match the work people actually do.",
+          "We also help you plan the team you will need as the business grows: which roles to add, when to hire them and how they fit the structure, so hiring follows a plan rather than urgent gaps.",
         ],
       },
       {

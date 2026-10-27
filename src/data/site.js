@@ -67,7 +67,7 @@ export const hero = {
   heading: "Recruitment agency and HR consultancy in Dubai, UAE",
   titleLine1: "People first.",
   titleLine2: "Hiring done right.",
-  text: "A licensed recruitment agency and HR consultancy in Dubai. Share your brief and our team, with 18+ years of HR and recruitment experience, sends you a shortlist of interviewed, checked candidates you hire directly.",
+  text: "A licensed recruitment agency and HR consultancy in Dubai. Share your brief and our team, with 18+ years of combined HR and recruitment experience, sends you a shortlist of interviewed, checked candidates you hire directly.",
   links: [
     { label: "Send your hiring brief →", href: "/contact" },
     { label: "Looking for a job? →", href: "/#jobs" },
@@ -85,7 +85,7 @@ export const about = {
   facts: [
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
     { label: "Founded", value: "2024, Dubai" },
-    { label: "Team experience", value: "18+ years in HR and recruitment, most of it in the UAE" },
+    { label: "Team experience", value: "18+ years of combined HR and recruitment experience, most of it in the UAE" },
     { label: "Based in", value: "Meydan, Dubai, UAE" },
     { label: "Licensed by", value: "Meydan Free Zone, Dubai" },
     { label: "Services", value: "Recruitment and HR consultancy" },
@@ -97,7 +97,7 @@ export const about = {
 // links: optional small tags shown on a wide tile. When real figures are available
 // (placements, employers served, average days to shortlist), they can replace any tile.
 export const stats = [
-  { value: "18+", label: "Years of HR and recruitment experience in our team", icon: "experience", tone: "bronze", size: "big" },
+  { value: "18+", label: "Years of combined HR and recruitment experience", icon: "experience", tone: "bronze", size: "big" },
   { value: "Direct", label: "You hire every candidate on your own contract", icon: "direct", tone: "stone" },
   { value: "No fees", label: "For candidates, ever", icon: "shield", tone: "dark" },
   {
@@ -144,7 +144,7 @@ export const whyUs = {
   items: [
     {
       title: "A team with 18+ years in HR and hiring",
-      text: "Founded in 2024, NextGen HR is led by a team with more than 18 years of HR and recruitment experience, most of it in the UAE.",
+      text: "Founded in 2024, NextGen HR is led by a team with more than 18 years of combined HR and recruitment experience, most of it in the UAE.",
     },
     { title: "Screened shortlists", text: "Every candidate is interviewed and checked before you meet them." },
     { title: "Recruitment and HR in one place", text: "Hiring support plus HR policies, handbooks and day-to-day advice." },
@@ -313,12 +313,12 @@ export const enquiryPopup = {
 export const aboutPage = {
   title: "About NextGen HR",
   description:
-    "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai, Meydan Free Zone. Our team has 18+ years of HR and recruitment experience.",
+    "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai, Meydan Free Zone. Our team has 18+ years of combined HR and recruitment experience.",
   intro:
     "We help UAE employers find the right people and put good HR foundations in place, from our office in Meydan, Dubai.",
   story: [
     "NextGen HR was founded in Dubai in 2024 to offer a more personal kind of recruitment: fewer CVs, better matches and honest advice.",
-    "Our team brings more than 18 years of HR and recruitment experience, most of it in the UAE, with deep roots in real estate, property and retail.",
+    "Our team brings more than 18 years of combined HR and recruitment experience, most of it in the UAE, with deep roots in real estate, property and retail.",
     "We work for employers. We never charge candidates a fee, and the companies we work with hire their new team members directly.",
   ],
   // "How we work" on the About page.
@@ -335,7 +335,7 @@ export const hirePage = {
   title: "Hire screened candidates in the UAE",
   description: "Tell NextGen HR the role you need to fill and receive a shortlist of interviewed, checked candidates.",
   intro:
-    "Tell us the role you need to fill. Our team, with 18+ years of HR and recruitment experience, sends you a shortlist of interviewed and checked candidates.",
+    "Tell us the role you need to fill. Our team, with 18+ years of combined HR and recruitment experience, sends you a shortlist of interviewed and checked candidates.",
   points: [
     "Screened, interview-ready candidates",
     "Permanent and fixed-term roles, from entry level to management",
