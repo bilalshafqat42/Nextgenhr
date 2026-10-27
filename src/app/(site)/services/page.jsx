@@ -1,11 +1,13 @@
-// /services — the list of all services.
+// /services — the list of all services and common questions about choosing one.
 
 import CtaBand from "@/components/sections/CtaBand";
+import Faq from "@/components/sections/Faq";
 import LinkList from "@/components/sections/LinkList";
 import PageHero from "@/components/sections/PageHero";
 import JsonLd from "@/components/ui/JsonLd";
 import { services } from "@/data/services";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { servicesFaq } from "@/data/site";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -18,7 +20,7 @@ export const metadata = pageMetadata({
 export default function ServicesPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Services", path: "/services" }])} />
+      <JsonLd data={[breadcrumbSchema([{ name: "Services", path: "/services" }]), faqSchema(servicesFaq)]} />
       <PageHero
         title="Recruitment and HR consultancy services"
         intro="Five ways we help UAE employers hire well and set up HR properly. Every service sits under our two licensed activities: Human resources consultancy and Labor Recruitment Brokerage Office Services."
@@ -28,6 +30,7 @@ export default function ServicesPage() {
         title="Our services"
         items={services.map((s) => ({ title: s.title, description: s.summary, href: `/services/${s.slug}` }))}
       />
+      <Faq title="Choosing a service" byline={null} items={servicesFaq} />
       <CtaBand />
     </>
   );

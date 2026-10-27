@@ -24,7 +24,7 @@ export const siteConfig = {
   // Official social accounts. Shown in the footer and listed for Google and AI assistants as the
   // company's own profiles. Links still in [brackets] are hidden until filled in.
   social: [
-    { label: "Facebook", url: "[Facebook page link]" },
+    { label: "Facebook", url: "https://www.facebook.com/people/NextGen-HR-Consultancy/61595748248009/" },
     { label: "Instagram", url: "https://www.instagram.com/nextgenhrae/" },
     { label: "Threads", url: "https://www.threads.com/@nextgenhrae" },
     { label: "LinkedIn", url: "https://www.linkedin.com/company/nextgen-hr-consultancy/" },
@@ -243,6 +243,63 @@ export const contact = {
     "I agree that NextGen HR may use these details to reply to my enquiry and, if I am a job seeker, to match me with suitable roles, as explained in the Privacy Policy.",
   button: "Send message",
 };
+
+// Questions shown on the Contact page.
+export const contactFaq = [
+  {
+    question: "How do I send a hiring brief?",
+    answer:
+      "Fill in the form on this page, email info@nextgenhr.ae, or message us on WhatsApp. Tell us the role and we will come back to you to confirm the details.",
+  },
+  {
+    question: "What should my hiring brief include?",
+    answer:
+      "The job title, number of hires, key skills and experience, salary range, work location and preferred start date. If you are not sure of everything yet, send what you have and we will help you complete it.",
+  },
+  {
+    question: "I am looking for a job. How do I send my CV?",
+    answer:
+      "Email your CV to info@nextgenhr.ae with the role you want in the subject line. We match candidates with suitable roles and never charge candidates a fee.",
+  },
+  {
+    question: "Do you work with companies outside Dubai?",
+    answer:
+      "Yes. From our office at Meydan Grandstand in Dubai, we work with employers in Abu Dhabi, Sharjah and across the UAE.",
+  },
+  {
+    question: "When will you reply?",
+    answer: "We reply to enquiries on working days, Monday to Friday.",
+  },
+];
+
+// Questions shown on the Services page.
+export const servicesFaq = [
+  {
+    question: "Which service do I need?",
+    answer:
+      "For most roles, choose recruitment. For senior leaders, choose executive search. For skilled tradespeople and operations teams, choose skilled workforce recruitment. If your hiring is growing faster than your HR, HR consultancy helps you put policies, handbooks and structure in place.",
+  },
+  {
+    question: "Can you help with both hiring and HR?",
+    answer:
+      "Yes. Many growing companies use both: we recruit the people they need and set up the HR policies, handbook, appraisals and team structure to support them.",
+  },
+  {
+    question: "Do you supply staff on your own payroll?",
+    answer:
+      "No. Employers hire every candidate directly, on their own contract and visa. We find, interview and check candidates, and you make the hiring decision.",
+  },
+  {
+    question: "Which sectors do you recruit for?",
+    answer:
+      "We recruit for real estate, construction, hospitality, retail and technology companies across the UAE.",
+  },
+  {
+    question: "Are you licensed?",
+    answer:
+      "Yes. NextGen HR Consultancy is licensed by Meydan Free Zone, Dubai, for Human resources consultancy and Labor Recruitment Brokerage Office Services.",
+  },
+];
 
 // The enquiry popup, opened by the "Hire talent" and "Send your brief" buttons.
 export const enquiryPopup = {

@@ -1,10 +1,11 @@
-// /contact — contact details and the enquiry form.
+// /contact — contact details, the enquiry form and common questions.
 
 import Contact from "@/components/sections/Contact";
+import Faq from "@/components/sections/Faq";
 import PageHero from "@/components/sections/PageHero";
 import JsonLd from "@/components/ui/JsonLd";
-import { contact } from "@/data/site";
-import { breadcrumbSchema } from "@/lib/schema";
+import { contact, contactFaq } from "@/data/site";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -17,9 +18,10 @@ export const metadata = pageMetadata({
 export default function ContactPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Contact", path: "/contact" }])} />
+      <JsonLd data={[breadcrumbSchema([{ name: "Contact", path: "/contact" }]), faqSchema(contactFaq)]} />
       <PageHero title="Contact NextGen HR" intro={contact.intro} crumbs={[{ name: "Contact", path: "/contact" }]} />
       <Contact />
+      <Faq title="Before you get in touch" byline={null} items={contactFaq} />
     </>
   );
 }
