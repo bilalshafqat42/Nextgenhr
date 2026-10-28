@@ -12,8 +12,8 @@ export const siteConfig = {
   title: "Recruitment Agency & HR Consultancy in Dubai | NextGen HR",
   description:
     "Licensed recruitment agency and HR consultancy in Dubai. Screened shortlists and practical HR support for employers across the UAE. Candidates never pay a fee.",
-  phone: "+971 50 310 6920",
-  whatsapp: "+971 50 310 6920",
+  phone: "+971 50 301 5933",
+  whatsapp: "+971 50 301 5933",
   email: "info@nextgenhr.ae",
   address: ["Meydan Grandstand, 6th floor, Meydan Road", "Nad Al Sheba, Dubai, UAE"],
   hours: "Monday to Friday, [9am to 6pm]",

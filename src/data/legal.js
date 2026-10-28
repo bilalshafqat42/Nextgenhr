@@ -53,7 +53,7 @@ export const privacyPolicy = {
       heading: "Your rights",
       paragraphs: [
         "Under UAE data protection law, including Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data, you can ask to see the personal data we hold about you, correct it, delete it, or withdraw your consent.",
-        "To make a request, email us at info@nextgenhr.ae or call +971 50 310 6920. We may ask you to confirm your identity before acting on a request. We will reply within a reasonable time.",
+        "To make a request, email us at info@nextgenhr.ae or call +971 50 301 5933. We may ask you to confirm your identity before acting on a request. We will reply within a reasonable time.",
       ],
     },
     {
@@ -71,7 +71,7 @@ export const privacyPolicy = {
     {
       heading: "Contact us",
       paragraphs: [
-        "NextGen HR Consultancy L.L.C-FZ, Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, UAE. Email: info@nextgenhr.ae. Phone: +971 50 310 6920.",
+        "NextGen HR Consultancy L.L.C-FZ, Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, UAE. Email: info@nextgenhr.ae. Phone: +971 50 301 5933.",
       ],
     },
   ],
@@ -197,7 +197,7 @@ export const termsOfUse = {
     {
       heading: "Contact us",
       paragraphs: [
-        "Questions about these terms: email info@nextgenhr.ae or call +971 50 310 6920.",
+        "Questions about these terms: email info@nextgenhr.ae or call +971 50 301 5933.",
       ],
     },
   ],
