@@ -13,7 +13,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Recruitment and HR Consultancy Services in the UAE",
   description:
-    "NextGen HR services: recruitment, skilled workforce recruitment, Emiratisation hiring, executive search and HR consultancy for UAE employers.",
+    "NextGen HR services: executive search, recruitment, HR consultancy, HR on demand and Emiratisation hiring for UAE employers.",
   path: "/services",
 });
 

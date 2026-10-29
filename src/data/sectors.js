@@ -31,14 +31,14 @@ export const sectors = [
     seoTitle: "Construction Recruitment Agency in the UAE",
     heading: "Construction recruitment in the UAE",
     description:
-      "Construction recruitment agency in the UAE. We recruit civil and MEP engineers, site supervisors, quantity surveyors and skilled trades for contractors.",
+      "Construction recruitment agency in the UAE. We recruit project managers, engineers, quantity surveyors and senior site leaders for contractors and developers.",
     intro:
-      "Construction projects run on tight schedules and depend on the right people being on site. We recruit engineers, supervisors, skilled trades and project support staff for contractors and developers.",
-    roles: ["Civil, MEP and site engineers", "Site supervisors and foremen", "Quantity surveyors", "Skilled trades: electricians, plumbers, welders", "Safety officers", "Project coordinators"],
+      "Construction projects run on tight schedules and depend on the right people being on site. We recruit project leaders, engineers and commercial specialists for contractors and developers. We do not recruit labour or trades staff.",
+    roles: ["Project directors and project managers", "Civil, MEP and site engineers", "Quantity surveyors and commercial managers", "Construction managers", "HSE managers", "Planning and contracts specialists"],
     faq: [
       {
         question: "Can you recruit for a project start date?",
-        answer: "Yes. Share the number of roles and the mobilisation date, and we plan the search to match.",
+        answer: "Yes. Share the roles and the project start date, and we plan the search to match.",
       },
     ],
   },

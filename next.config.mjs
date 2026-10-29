@@ -17,6 +17,7 @@ const nextConfig = {
       { source: "/career", destination: "/#jobs", permanent: true },
       { source: "/consultancy", destination: "/services/hr-consultancy", permanent: true },
       { source: "/sectors/healthcare", destination: "/sectors", permanent: true },
+      { source: "/services/workforce-recruitment", destination: "/services/recruitment", permanent: true },
     ];
   },
 

@@ -15,7 +15,7 @@ export const locations = [
       "Looking for recruiters in Dubai? NextGen HR is a licensed recruitment firm based at Meydan Grandstand. Our recruiters find, interview and shortlist candidates for Dubai employers, who hire them directly.",
     points: [
       "Office in Meydan Grandstand, Dubai",
-      "Permanent, fixed-term and skilled workforce recruitment",
+      "Senior, managerial and specialist recruitment",
       "Screened shortlists, not piles of CVs",
       "HR consultancy for growing Dubai companies",
       "Licensed by Meydan Free Zone, Dubai",
@@ -60,7 +60,7 @@ export const locations = [
     points: [
       "Recruitment for Abu Dhabi employers",
       "Permanent and fixed-term roles",
-      "Office, skilled and operations staff",
+      "Professional and management roles",
       "Every candidate interviewed and checked",
       "HR consultancy for Abu Dhabi companies",
       "Candidates never pay a fee",
@@ -88,7 +88,7 @@ export const locations = [
       {
         question: "Which roles do you recruit for in Abu Dhabi?",
         answer:
-          "Office, management, skilled workforce and operations roles in real estate, construction, hospitality, retail and technology.",
+          "Professional, management and senior leadership roles in real estate, construction, hospitality, retail and technology.",
       },
     ],
   },
@@ -98,12 +98,12 @@ export const locations = [
     seoTitle: "Recruitment Agency in Sharjah",
     heading: "Recruitment agency in Sharjah",
     description:
-      "Recruitment agency for Sharjah employers. NextGen HR finds and screens permanent, fixed-term and skilled workforce candidates for Sharjah companies.",
+      "Recruitment agency for Sharjah employers. NextGen HR finds and screens professional, managerial and senior candidates for Sharjah companies.",
     intro:
-      "We recruit office, skilled and operations staff for Sharjah employers from our Dubai office, and help growing companies put their HR foundations in place.",
+      "We recruit professional, managerial and senior staff for Sharjah employers from our Dubai office, and help growing companies put their HR foundations in place.",
     points: [
       "Recruitment for Sharjah employers",
-      "Skilled workforce and operations roles",
+      "Heads of department and senior managers",
       "Office and management roles",
       "Every candidate interviewed and checked",
       "HR consultancy for growing companies",
@@ -113,7 +113,7 @@ export const locations = [
       {
         heading: "Roles we recruit for in Sharjah",
         paragraphs: [
-          "Sharjah employers come to us for skilled tradespeople, technicians, warehouse and operations staff, as well as office, sales and management roles. Every candidate is interviewed and their experience checked before you meet them.",
+          "Sharjah employers come to us for sales, finance, operations and management roles, as well as heads of department. Every candidate is interviewed and their experience checked before you meet them.",
         ],
       },
     ],

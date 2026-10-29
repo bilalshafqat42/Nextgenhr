@@ -7,6 +7,57 @@
 
 export const services = [
   {
+    slug: "executive-search",
+    title: "Executive search",
+    navTitle: "Executive search",
+    licence: "Labor Recruitment Brokerage Office Services",
+    seoTitle: "Executive Search Firm and Headhunters in Dubai",
+    heading: "Executive search and headhunters in Dubai",
+    description:
+      "Executive search and headhunting in Dubai: NextGen HR finds senior managers and leaders for UAE companies through a confidential, research-led search.",
+    summary: "Confidential search for heads of department, senior managers and leaders.",
+    intro:
+      "Senior hires shape a company for years. As headhunters in Dubai, we find heads of department, senior managers and specialists for UAE companies. We run a confidential, research-led search, approach people who are not actively looking, and present a small number of leaders worth your time.",
+    includes: [
+      { title: "Confidential brief", text: "We agree the role, the leadership profile and how discreet the search must be." },
+      { title: "Market research", text: "We map who is doing similar work in the UAE and the wider region." },
+      { title: "Direct approach", text: "We approach strong people directly, including those not looking to move." },
+      { title: "Shortlist and close", text: "We present a shortlist, manage interviews and help close the offer." },
+    ],
+    details: [
+      {
+        heading: "Roles we search for",
+        paragraphs: [
+          "Heads of department and senior managers in sales, finance, HR, operations, marketing and technology, as well as general managers, directors and senior specialists. We search across the UAE and internationally, including multilingual professionals and candidates with international market experience, depending on what the role requires.",
+        ],
+      },
+      {
+        heading: "How a senior search differs",
+        paragraphs: [
+          "The best senior candidates are usually busy doing a good job elsewhere and are not reading job adverts. Executive search finds them through research and direct, discreet conversations.",
+          "We keep you informed at each stage: the market map, the people approached, their level of interest and the final shortlist. Candidates hear about the role only in the way you have agreed.",
+        ],
+      },
+      {
+        heading: "Senior hiring in real estate",
+        paragraphs: [
+          "Real estate is where our team has spent much of its career. For developers and brokerages, we search for senior and specialist roles through long-standing relationships across the UAE property market.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is the search confidential?",
+        answer: "Yes. We agree with you how the role is described and who is approached before the search begins.",
+      },
+      {
+        question: "How is executive search different from recruitment?",
+        answer:
+          "Executive search is a targeted search for senior roles, often approaching people who are not applying for jobs. Recruitment covers a wider range of roles and candidates.",
+      },
+    ],
+  },
+  {
     slug: "recruitment",
     title: "Recruitment",
     navTitle: "Recruitment",
@@ -15,7 +66,7 @@ export const services = [
     heading: "Recruitment consultancy in Dubai",
     description:
       "Recruitment consultancy in Dubai for UAE employers. We find, interview and shortlist candidates for permanent and fixed-term roles you hire directly.",
-    summary: "Permanent and fixed-term hiring. We source, interview and check candidates, then send you a shortlist.",
+    summary: "Permanent and fixed-term hiring for professional, managerial and specialist roles, with a screened shortlist.",
     intro:
       "Hiring the wrong person costs time and money. As a licensed recruitment consultancy in Dubai, we take your brief, search our network and the market, interview and check every candidate, and send you a shortlist of people who genuinely fit the role.",
     includes: [
@@ -41,7 +92,7 @@ export const services = [
       {
         heading: "Roles we recruit for",
         paragraphs: [
-          "We recruit for permanent and fixed-term roles from entry level to management, in real estate, construction, hospitality, retail and technology. For senior leadership roles, see our executive search service.",
+          "We recruit for permanent and fixed-term professional, managerial and specialist roles in real estate, construction, hospitality, retail and technology. Many of our clients need people with international experience or language skills, and we search beyond the UAE when the role calls for it. For heads of department and senior leaders, see our executive search service.",
         ],
       },
     ],
@@ -50,7 +101,7 @@ export const services = [
       {
         question: "What roles do you recruit for?",
         answer:
-          "We recruit for permanent and fixed-term roles from entry level to management, across sectors including real estate, construction, hospitality, retail and technology.",
+          "We recruit for permanent and fixed-term professional, managerial and specialist roles, across sectors including real estate, construction, hospitality, retail and technology. We do not recruit labour or blue-collar staff.",
       },
       {
         question: "Can you recruit for fixed-term roles?",
@@ -166,39 +217,48 @@ export const services = [
     ],
   },
   {
-    slug: "workforce-recruitment",
-    title: "Skilled workforce recruitment",
-    navTitle: "Skilled workforce",
-    licence: "Labor Recruitment Brokerage Office Services",
-    seoTitle: "Skilled and Blue-Collar Recruitment in the UAE",
-    heading: "Skilled workforce recruitment in the UAE",
+    slug: "hr-on-demand",
+    title: "HR on demand",
+    navTitle: "HR on demand",
+    licence: "Human resources consultancy",
+    seoTitle: "Freelance HR and Outsourced HR Support in Dubai",
+    heading: "Freelance HR support in Dubai",
     description:
-      "Skilled workforce recruitment in the UAE. NextGen HR finds tradespeople, technicians and operations staff for employers who hire them directly.",
-    summary: "We find skilled tradespeople and operations staff for your projects, hired directly by your company.",
+      "Freelance and outsourced HR support for UAE companies without a full HR team: policies, contracts, appraisals, salary reviews and day-to-day HR advice.",
+    summary: "An experienced HR team when you need one, without hiring a full-time HR manager.",
     intro:
-      "Projects and operations depend on reliable people on the ground. We find skilled tradespeople, technicians and operations staff, check their experience, and introduce them to you to hire directly.",
+      "Not every company needs a full-time HR manager, but every company needs HR done properly. Our freelance HR support gives you an experienced team to call on for day-to-day HR work and advice, on an ongoing basis or for a defined project.",
     includes: [
-      { title: "Skilled trades", text: "Electricians, plumbers, HVAC technicians, welders, carpenters and other trades." },
-      { title: "Operations staff", text: "Drivers, operators, warehouse and logistics staff." },
+      { title: "Day-to-day HR advice", text: "A team to ask when people questions come up, from contracts to performance concerns." },
+      { title: "Documents and policies", text: "Offer letters, job descriptions, policies and handbook updates, written for your company." },
+      { title: "Performance and reviews", text: "Appraisal cycles, objectives and salary reviews your managers can run." },
+      { title: "Hiring support", text: "Interview support for your own hiring, or a full search when you need one." },
+    ],
+    details: [
       {
-        title: "Hospitality and service",
-        text: "Hotel, restaurant and facilities staff: kitchen, housekeeping and front-line service roles for businesses.",
+        heading: "Who it suits",
+        paragraphs: [
+          "Growing companies with no HR manager yet, founders who spend too much time on HR questions, and HR teams that need extra hands for a busy period or a specific project.",
+        ],
       },
-      { title: "Experience checks", text: "We check work history and trade experience before every introduction." },
+      {
+        heading: "How it works",
+        paragraphs: [
+          "We start by understanding your company, your team and what HR you already have in place. We then agree the scope of support, how often we are in touch and the fee, in writing, before any work starts.",
+          "For questions about employment law, we work alongside your legal adviser rather than replacing them.",
+        ],
+      },
     ],
     faq: [
       {
-        question: "Do you supply workers on your own visas?",
+        question: "What is freelance or outsourced HR?",
         answer:
-          "No. NextGen HR is a recruitment brokerage. We find and introduce candidates, and your company hires them directly on your own visas.",
+          "It means an external HR team handles your HR work and advice, so you get experienced support without hiring a full-time HR manager.",
       },
       {
-        question: "Do you recruit domestic workers?",
-        answer: "No. We recruit for businesses only, not for private households.",
-      },
-      {
-        question: "Can you recruit several workers at once?",
-        answer: "Yes. Tell us the number of roles and the start date, and we plan the search around it.",
+        question: "Can you support us for a single project?",
+        answer:
+          "Yes. We can support you on an ongoing basis or for a defined project, such as writing a handbook or running your first appraisal cycle.",
       },
     ],
   },
@@ -233,51 +293,6 @@ export const services = [
       },
     ],
     relatedPost: "emiratisation-targets-uae-private-companies",
-  },
-  {
-    slug: "executive-search",
-    title: "Executive search",
-    navTitle: "Executive search",
-    licence: "Labor Recruitment Brokerage Office Services",
-    seoTitle: "Executive Search Firm and Headhunters in Dubai",
-    heading: "Executive search and headhunters in Dubai",
-    description:
-      "Executive search and headhunting in Dubai: NextGen HR finds senior managers and leaders for UAE companies through a confidential, research-led search.",
-    summary: "Confidential search for senior managers and leaders.",
-    intro:
-      "Senior hires shape a company for years. As headhunters in Dubai, we run a confidential, research-led search, approach people who are not actively looking, and present a small number of leaders worth your time.",
-    includes: [
-      { title: "Confidential brief", text: "We agree the role, the leadership profile and how discreet the search must be." },
-      { title: "Market research", text: "We map who is doing similar work in the UAE and the wider region." },
-      { title: "Direct approach", text: "We approach strong people directly, including those not looking to move." },
-      { title: "Shortlist and close", text: "We present a shortlist, manage interviews and help close the offer." },
-    ],
-    details: [
-      {
-        heading: "How a senior search differs",
-        paragraphs: [
-          "The best senior candidates are usually busy doing a good job elsewhere and are not reading job adverts. Executive search finds them through research and direct, discreet conversations.",
-          "We keep you informed at each stage: the market map, the people approached, their level of interest and the final shortlist. Candidates hear about the role only in the way you have agreed.",
-        ],
-      },
-      {
-        heading: "Senior hiring in real estate",
-        paragraphs: [
-          "Real estate is where our team has spent much of its career. For developers and brokerages, we search for senior and specialist roles through long-standing relationships across the UAE property market.",
-        ],
-      },
-    ],
-    faq: [
-      {
-        question: "Is the search confidential?",
-        answer: "Yes. We agree with you how the role is described and who is approached before the search begins.",
-      },
-      {
-        question: "How is executive search different from recruitment?",
-        answer:
-          "Executive search is a targeted search for senior roles, often approaching people who are not applying for jobs. Recruitment covers a wider range of roles and candidates.",
-      },
-    ],
   },
 ];
 

@@ -26,7 +26,7 @@ You pay part of the fee upfront to start the search, with the rest due at agreed
 
 ### Fixed fee or volume pricing
 
-For several similar roles, such as a team of sales staff or skilled workers, agencies often agree a fixed price per hire or a package price. This makes costs predictable when you are hiring at scale.
+For several similar roles, such as a team of sales executives or engineers, agencies often agree a fixed price per hire or a package price. This makes costs predictable when you are hiring at scale.
 
 ## What affects the cost
 

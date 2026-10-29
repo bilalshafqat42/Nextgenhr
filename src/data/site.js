@@ -65,9 +65,9 @@ export const navLinks = [
 export const hero = {
   // The page's main heading (H1) for Google: says exactly what NextGen is and where.
   heading: "Recruitment agency and HR consultancy in Dubai, UAE",
-  titleLine1: "People first.",
-  titleLine2: "Hiring done right.",
-  text: "A licensed recruitment agency and HR consultancy in Dubai. Share your brief and our team, with 18+ years of combined HR and recruitment experience, sends you a shortlist of interviewed, checked candidates you hire directly.",
+  titleLine1: "Exceptional talent.",
+  titleLine2: "Strategic HR.",
+  text: "A licensed recruitment and HR consultancy in Dubai. We find heads of department, senior managers and specialists for UAE companies, and help you build HR that supports growth, backed by 18+ years of combined HR and recruitment experience.",
   links: [
     { label: "Send your hiring brief →", href: "/contact" },
     { label: "Looking for a job? →", href: "/#jobs" },
@@ -131,7 +131,7 @@ export const stats = [
 
 export const servicesIntro = {
   title: "Services",
-  intro: "Recruitment services and HR consultancy from one licensed Dubai team that knows UAE hiring inside out.",
+  intro: "Senior and specialist recruitment and HR consultancy from one licensed Dubai team that knows UAE hiring inside out.",
 };
 
 export const sectorsIntro = {
@@ -147,7 +147,7 @@ export const whyUs = {
       text: "Founded in 2024, NextGen HR is led by a team with more than 18 years of combined HR and recruitment experience, most of it in the UAE.",
     },
     { title: "Screened shortlists", text: "Every candidate is interviewed and checked before you meet them." },
-    { title: "Recruitment and HR in one place", text: "Hiring support plus HR policies, handbooks and day-to-day advice." },
+    { title: "Recruitment and HR in one place", text: "Senior hiring plus HR set-up, policies and ongoing HR support." },
     { title: "Licensed and transparent", text: "Licensed by Meydan Free Zone, Dubai. Candidates never pay a fee." },
   ],
 };
@@ -280,7 +280,7 @@ export const servicesFaq = [
   {
     question: "Which service do I need?",
     answer:
-      "For most roles, choose recruitment. For senior leaders, choose executive search. For skilled tradespeople and operations teams, choose skilled workforce recruitment. If your hiring is growing faster than your HR, HR consultancy helps you put policies, handbooks and structure in place.",
+      "For heads of department and senior leaders, choose executive search. For professional and specialist roles, choose recruitment. To set up or improve your HR, choose HR consultancy, and for ongoing HR support without a full-time HR manager, choose HR on demand.",
   },
   {
     question: "Can you help with both hiring and HR?",
@@ -364,7 +364,7 @@ export const hirePage = {
     "Tell us the role you need to fill. Our team, with 18+ years of combined HR and recruitment experience, sends you a shortlist of interviewed and checked candidates.",
   points: [
     "Screened, interview-ready candidates",
-    "Permanent and fixed-term roles, from entry level to management",
+    "Senior, managerial and specialist roles, permanent or fixed-term",
     "Licensed by Meydan Free Zone, Dubai",
     "You hire directly, on your own contract and visa",
   ],
