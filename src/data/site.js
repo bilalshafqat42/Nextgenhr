@@ -313,7 +313,7 @@ export const enquiryPopup = {
 export const aboutPage = {
   title: "About NextGen HR",
   description:
-    "NextGen HR Consultancy is a licensed recruitment agency and HR consultancy in Dubai, Meydan Free Zone. Our team has 18+ years of combined HR and recruitment experience.",
+    "NextGen HR Consultancy is a licensed recruitment and HR consultancy in Dubai, Meydan Free Zone, with 18+ years of combined HR and recruitment experience.",
   // The company tagline, shown under the About page title.
   intro: "Strategic HR solutions. Exceptional talent. Sustainable growth.",
   // The company description, word for word with the LinkedIn page and the WhatsApp profile.
