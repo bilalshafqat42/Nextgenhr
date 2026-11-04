@@ -70,7 +70,7 @@ export const hero = {
   text: "A licensed recruitment and HR consultancy in Dubai. We find heads of department, senior managers and specialists for UAE companies, and help you build HR that supports growth, backed by 18+ years of combined HR and recruitment experience.",
   links: [
     { label: "Send your hiring brief →", href: "/contact" },
-    { label: "Looking for a job? →", href: "/#jobs" },
+    { label: "Explore HR consultancy →", href: "/services/hr-consultancy" },
   ],
   image: { src: "/images/hero-dubai-skyline.jpg", alt: "Dubai skyline at night with the Burj Khalifa" },
 };
@@ -179,6 +179,7 @@ export const hrProcess = {
   ],
 };
 
+// Job seekers are not the target audience: the home page section is hidden and a one-line note sits in the footer.
 export const jobSeekers = {
   label: "For job seekers",
   title: "Find your next role in the UAE.",
@@ -234,7 +235,7 @@ export const faq = {
 
 export const contact = {
   title: "Let's talk.",
-  intro: "Employers: tell us who you need to hire. Job seekers: email your CV to info@nextgenhr.ae. We reply on working days, Monday to Friday.",
+  intro: "For employers: tell us who you need to hire or the HR support you need, and we will reply on working days, Monday to Friday. Job seekers, please email your CV to info@nextgenhr.ae.",
   fields: [
     { name: "name", label: "Full name", required: true, autoComplete: "name", maxLength: 120 },
     { name: "company", label: "Company", autoComplete: "organization", maxLength: 120 },

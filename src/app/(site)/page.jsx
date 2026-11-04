@@ -8,8 +8,8 @@ import CtaBand from "@/components/sections/CtaBand";
 import Faq from "@/components/sections/Faq";
 import Hero from "@/components/sections/Hero";
 import ItemGrid from "@/components/sections/ItemGrid";
-import JobSeekers from "@/components/sections/JobSeekers";
 import LinkList from "@/components/sections/LinkList";
+// The job seekers section (JobSeekers) is hidden: the site speaks to employers. To show it again, import it and add <JobSeekers /> above <Faq />.
 // Stats (the six-tile key facts grid) is hidden for now. To show it again, add back:
 //   import Stats from "@/components/sections/Stats";  and  <Stats />  below <About />
 import Testimonial from "@/components/sections/Testimonial";
@@ -55,7 +55,6 @@ export default function HomePage() {
         spacing="bottom"
         items={locations.map((l) => ({ title: l.seoTitle, href: `/recruitment-agency/${l.slug}` }))}
       />
-      <JobSeekers />
       <Faq />
       {latestPosts.length > 0 && (
         <LinkList

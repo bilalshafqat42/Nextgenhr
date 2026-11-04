@@ -81,6 +81,10 @@ export default async function Footer() {
               ))}
             </span>
           )}
+          <span>
+            Job seekers: please email your CV to{" "}
+            <a href={`mailto:${siteConfig.email}`} className="hover:text-paper">{siteConfig.email}</a>. We never charge candidates a fee.
+          </span>
           <CookieSettings />
         </div>
       </Container>

@@ -14,7 +14,7 @@ const nextConfig = {
         permanent: true,
       },
       // Old addresses Google still remembers, sent to the closest page on this site.
-      { source: "/career", destination: "/#jobs", permanent: true },
+      { source: "/career", destination: "/contact", permanent: true },
       { source: "/consultancy", destination: "/services/hr-consultancy", permanent: true },
       { source: "/sectors/healthcare", destination: "/sectors", permanent: true },
       { source: "/services/workforce-recruitment", destination: "/services/recruitment", permanent: true },

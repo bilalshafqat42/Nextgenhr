@@ -8,5 +8,5 @@ const digits = (number) => number.replace(/[^\d]/g, "");
 export const phoneLink = isReal(siteConfig.phone) ? `tel:+${digits(siteConfig.phone)}` : null;
 
 export const whatsappLink = isReal(siteConfig.whatsapp)
-  ? `https://wa.me/${digits(siteConfig.whatsapp)}?text=${encodeURIComponent("Hello NextGen HR, I would like to discuss a hiring need.")}`
+  ? `https://wa.me/${digits(siteConfig.whatsapp)}?text=${encodeURIComponent("Hello NextGen HR, I'm an employer and would like to discuss hiring or HR support.")}`
   : null;
