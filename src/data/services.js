@@ -14,7 +14,7 @@ export const services = [
     seoTitle: "Executive Search Firm and Headhunters in Dubai",
     heading: "Executive search and headhunters in Dubai",
     description:
-      "Executive search and headhunting in Dubai: NextGen HR finds senior managers and leaders for UAE companies through a confidential, research-led search.",
+      "Executive search and headhunters in Dubai: NextGen HR finds heads of department, senior managers and leaders for UAE companies through a confidential search.",
     summary: "Confidential search for heads of department, senior managers and leaders.",
     intro:
       "Senior hires shape a company for years. As headhunters in Dubai, we find heads of department, senior managers and specialists for UAE companies. We run a confidential, research-led search, approach people who are not actively looking, and present a small number of leaders worth your time.",
@@ -224,7 +224,7 @@ export const services = [
     seoTitle: "Freelance HR and Outsourced HR Support in Dubai",
     heading: "Freelance HR support in Dubai",
     description:
-      "Freelance and outsourced HR support for UAE companies without a full HR team: policies, contracts, appraisals, salary reviews and day-to-day HR advice.",
+      "Freelance and outsourced HR support in Dubai for companies without a full HR team: policies, contracts, appraisals, salary reviews and day-to-day advice.",
     summary: "An experienced HR team when you need one, without hiring a full-time HR manager.",
     intro:
       "Not every company needs a full-time HR manager, but every company needs HR done properly. Our freelance HR support gives you an experienced team to call on for day-to-day HR work and advice, on an ongoing basis or for a defined project.",
