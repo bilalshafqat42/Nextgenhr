@@ -1,5 +1,6 @@
 // The sectors, one page each at /sectors/<slug>.
 // seoTitle = the browser tab and Google title. heading = the visible page heading (sentence case).
+// roles = senior, managerial and specialist roles only: NextGen HR does not recruit labour or entry-level staff.
 
 export const sectors = [
   {
@@ -8,10 +9,10 @@ export const sectors = [
     seoTitle: "Real Estate Recruitment Agency in Dubai",
     heading: "Real estate recruitment in Dubai",
     description:
-      "Real estate recruitment agency in Dubai. We recruit property consultants, leasing staff, property managers and development teams for UAE employers.",
+      "Real estate recruitment agency in Dubai. We recruit sales leaders, senior property consultants, property managers and development teams for UAE employers.",
     intro:
-      "Dubai's property market moves fast, and so does hiring in it. Our team has spent years hiring for UAE developers and brokerages, and has set up HR teams for new developers. We recruit from sales and leasing to operations, support and senior roles.",
-    roles: ["Property consultants and sales agents", "Leasing consultants", "Property and facilities managers", "Sales administrators and coordinators", "Customer relations staff", "Development and project staff"],
+      "Dubai's property market moves fast, and so does hiring in it. Our team has spent years hiring for UAE developers and brokerages, and has set up HR teams for new developers. We recruit sales leaders, senior consultants, operations managers and development specialists.",
+    roles: ["Sales directors and sales managers", "Senior property consultants", "Leasing and property managers", "Facilities and community managers", "Customer relations and handover managers", "Development, project and design managers"],
     faq: [
       {
         question: "Can you help a new developer build its team?",
@@ -22,6 +23,11 @@ export const sectors = [
         question: "Do you recruit RERA-qualified agents?",
         answer:
           "Yes. For broker roles in Dubai we check whether candidates hold, or can obtain, the RERA broker registration the role requires.",
+      },
+      {
+        question: "Can you design a commission structure for a sales team?",
+        answer:
+          "Yes. Through our HR consultancy we can review your salary and commission structure against the UAE market, so it attracts strong sales people and stays affordable.",
       },
     ],
   },
@@ -40,6 +46,16 @@ export const sectors = [
         question: "Can you recruit for a project start date?",
         answer: "Yes. Share the roles and the project start date, and we plan the search to match.",
       },
+      {
+        question: "Do you check professional qualifications?",
+        answer:
+          "Yes. We check degrees, professional memberships and project experience against the role, and confirm whether any UAE professional registration the role requires is in place or can be obtained.",
+      },
+      {
+        question: "Do you recruit site labour or trades staff?",
+        answer:
+          "No. We recruit project leaders, engineers and commercial specialists only. We do not supply labour or trades staff.",
+      },
     ],
   },
   {
@@ -48,14 +64,24 @@ export const sectors = [
     seoTitle: "Hospitality Recruitment Agency in Dubai",
     heading: "Hospitality recruitment in Dubai",
     description:
-      "Hospitality recruitment agency in Dubai. We recruit front office, F&B, kitchen, housekeeping and outlet management staff for UAE hotels and restaurants.",
+      "Hospitality recruitment agency in Dubai. We recruit general managers, F&B and rooms division leaders, sales directors and head chefs for UAE hotels.",
     intro:
-      "Guests notice the people first. We recruit for hotels, restaurants and service businesses, focusing on attitude and service skills as much as experience.",
-    roles: ["Front office and guest relations", "Food and beverage staff", "Chefs and kitchen staff", "Housekeeping", "Supervisors and outlet managers", "Sales and events staff"],
+      "Guests notice the people first, and the leaders set the standard. We recruit general managers, department heads and senior specialists for hotels, restaurant groups and hospitality businesses, focusing on leadership and service culture as much as experience.",
+    roles: ["General managers and hotel managers", "Food and beverage directors and managers", "Rooms division and front office managers", "Directors of sales and revenue managers", "Executive chefs and head chefs", "HR, finance and operations managers for hospitality groups"],
     faq: [
       {
         question: "Do you recruit for new openings?",
-        answer: "Yes. For openings we plan the hiring in stages so key roles are in place before the wider team.",
+        answer: "Yes. For openings we plan the hiring in stages so the leadership team and key department heads are in place before the wider team is hired.",
+      },
+      {
+        question: "Can you recruit for a restaurant group rather than a hotel?",
+        answer:
+          "Yes. We recruit operations managers, area managers, head chefs and support functions such as HR and finance for restaurant and F&B groups.",
+      },
+      {
+        question: "Do you recruit waiters, housekeeping or kitchen staff?",
+        answer:
+          "No. We focus on managers, department heads and senior specialists. Entry-level and operational hospitality staff are outside our service.",
       },
     ],
   },
@@ -65,14 +91,24 @@ export const sectors = [
     seoTitle: "Retail Recruitment Agency in Dubai",
     heading: "Retail recruitment in Dubai",
     description:
-      "Retail recruitment agency in Dubai. We recruit sales associates, store managers, visual merchandisers and area managers for retail brands across the UAE.",
+      "Retail recruitment agency in Dubai. We recruit store, area and retail operations managers, buyers and e-commerce leaders for retail brands across the UAE.",
     intro:
-      "Retail depends on people who can sell and serve well. Our team has years of experience hiring for international retail franchise operations in the UAE, and we recruit store teams and managers for retail brands across the country's malls and high streets.",
-    roles: ["Sales associates", "Store and assistant managers", "Visual merchandisers", "Cashiers and customer service staff", "Stock and warehouse staff", "Area managers"],
+      "Retail depends on leaders who can sell, serve and run a profitable store. Our team has years of experience hiring for international retail franchise operations in the UAE, and we recruit managers and specialists for retail brands across the country's malls and high streets.",
+    roles: ["Store managers and assistant store managers", "Area and regional managers", "Retail operations managers", "Buyers and merchandise planners", "Visual merchandising managers", "E-commerce and digital retail managers"],
     faq: [
       {
-        question: "Can you recruit for seasonal peaks?",
-        answer: "Yes. Tell us the number of roles and the dates, and we plan the search ahead of the peak.",
+        question: "Can you recruit managers for a new store opening?",
+        answer: "Yes. Tell us the opening date and the roles, and we plan the search so the store and area managers are in place before you hire the wider team.",
+      },
+      {
+        question: "Do you recruit for franchise brands?",
+        answer:
+          "Yes. Our team has hiring experience with international retail franchise operations in the UAE and understands how brand standards and franchise reporting shape each role.",
+      },
+      {
+        question: "Do you recruit sales associates or cashiers?",
+        answer:
+          "No. We focus on managers and specialists. Store-level sales and cashier roles are outside our service.",
       },
     ],
   },
@@ -82,14 +118,24 @@ export const sectors = [
     seoTitle: "IT and Tech Recruitment Agency in Dubai",
     heading: "IT and technology recruitment in Dubai",
     description:
-      "IT recruitment agency in Dubai. We recruit software developers, IT support, network and security specialists and data analysts for UAE employers.",
+      "IT recruitment agency in Dubai. We recruit IT managers, senior software engineers, cyber security, data and ERP specialists for UAE employers.",
     intro:
-      "Good technical people are in demand everywhere. We recruit developers, IT support and technical specialists, and check skills properly so your interview time goes on candidates with the right skills.",
-    roles: ["Software developers", "IT support and systems administrators", "Network and security specialists", "Data analysts", "Product and project managers", "Technical sales"],
+      "Good technical people are in demand everywhere. We recruit technology leaders and senior specialists, and check skills properly so your interview time goes on candidates with the right experience for your systems and your team.",
+    roles: ["Heads of IT and IT managers", "Senior software engineers and engineering leads", "Cyber security specialists", "Data analysts and data engineers", "ERP and business systems specialists", "Product and project managers"],
     faq: [
       {
         question: "Do you test technical skills?",
         answer: "We screen technical experience in interview and can arrange a skills task you provide.",
+      },
+      {
+        question: "Can you recruit a first head of IT for a growing company?",
+        answer:
+          "Yes. We help you define what the role must achieve, set a realistic package, and find leaders who can both run day-to-day IT and plan for growth.",
+      },
+      {
+        question: "Can you keep a technology search confidential?",
+        answer:
+          "Yes. For confidential roles, such as replacing a current manager, we approach candidates discreetly and share your company name only when you agree.",
       },
     ],
   },

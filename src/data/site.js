@@ -233,6 +233,30 @@ export const faq = {
   ],
 };
 
+// Questions for job seekers, shown on the FAQ page only, so candidates get answers before they message us.
+export const jobSeekerFaq = [
+  {
+    question: "I am looking for a job. Can NextGen HR help?",
+    answer:
+      "We work for UAE employers, mainly on senior, managerial and specialist roles, so we do not have jobs to offer on request. If you are an experienced professional, email your CV to info@nextgenhr.ae with your job title in the subject line, and we will contact you if a suitable role opens with one of our clients.",
+  },
+  {
+    question: "Do you recruit freshers, labour, drivers or household staff?",
+    answer:
+      "No. We do not recruit for fresher, labour, warehouse, driver or domestic roles. In the UAE, domestic workers are hired through licensed Tadbeer centres.",
+  },
+  {
+    question: "Can you arrange a UAE visa or a job from abroad?",
+    answer:
+      "No. We do not arrange visas or relocation on request. When one of our clients hires a candidate, the employer makes the job offer and arranges the work permit and visa.",
+  },
+  {
+    question: "Can I send my CV on WhatsApp?",
+    answer:
+      "Please email it to info@nextgenhr.ae instead. For your privacy, we do not keep CVs sent on WhatsApp. We never charge candidates any fee, and if anyone asks you for money in our name, please do not pay.",
+  },
+];
+
 export const contact = {
   title: "Let's talk.",
   intro: "For employers: tell us who you need to hire or the HR support you need, and we will reply on working days, Monday to Friday. Job seekers, please email your CV to info@nextgenhr.ae.",
@@ -263,7 +287,7 @@ export const contactFaq = [
   {
     question: "I am looking for a job. How do I send my CV?",
     answer:
-      "Email your CV to info@nextgenhr.ae with the role you want in the subject line. We match candidates with suitable roles and never charge candidates a fee.",
+      "Email your CV to info@nextgenhr.ae with the role you want in the subject line. We work mainly on senior and specialist roles for our clients, contact candidates when a suitable role opens, and never charge candidates a fee.",
   },
   {
     question: "Do you work with companies outside Dubai?",

@@ -11,7 +11,7 @@ export default function Contact() {
   const links = [
     isReal(siteConfig.email) && { label: siteConfig.email, href: `mailto:${siteConfig.email}` },
     phoneLink && { label: siteConfig.phone, href: phoneLink },
-    whatsappLink && { label: "WhatsApp →", href: whatsappLink },
+    whatsappLink && { label: "WhatsApp for employers →", href: whatsappLink },
   ].filter(Boolean);
 
   return (

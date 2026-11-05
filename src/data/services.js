@@ -222,7 +222,7 @@ export const services = [
     navTitle: "HR on demand",
     licence: "Human resources consultancy",
     seoTitle: "Freelance HR and Outsourced HR Support in Dubai",
-    heading: "Freelance HR support in Dubai",
+    heading: "Outsourced and freelance HR support in Dubai",
     description:
       "Freelance and outsourced HR support in Dubai for companies without a full HR team: policies, contracts, appraisals, salary reviews and day-to-day advice.",
     summary: "An experienced HR team when you need one, without hiring a full-time HR manager.",
@@ -261,6 +261,7 @@ export const services = [
           "Yes. We can support you on an ongoing basis or for a defined project, such as writing a handbook or running your first appraisal cycle.",
       },
     ],
+    relatedPost: "outsourced-hr-for-uae-smes",
   },
   {
     slug: "emiratisation",
