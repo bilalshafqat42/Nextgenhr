@@ -7,6 +7,7 @@ import ItemGrid from "@/components/sections/ItemGrid";
 import LinkList from "@/components/sections/LinkList";
 import ListBlock from "@/components/sections/ListBlock";
 import PageHero from "@/components/sections/PageHero";
+import Prose from "@/components/sections/Prose";
 import JsonLd from "@/components/ui/JsonLd";
 import { getSector, sectors } from "@/data/sectors";
 import { services } from "@/data/services";
@@ -48,6 +49,7 @@ export default async function SectorPage({ params }) {
       />
       <PageHero title={sector.heading} intro={sector.intro} crumbs={crumbs} />
       <ListBlock title="Roles we recruit" items={sector.roles} />
+      {sector.details && <Prose sections={sector.details} />}
       <ItemGrid title={process.title} items={process.items} prefix="Step" />
       <Faq title={`${sector.title} recruitment: questions`} byline={null} items={sector.faq} />
       <LinkList

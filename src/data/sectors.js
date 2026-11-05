@@ -1,6 +1,7 @@
 // The sectors, one page each at /sectors/<slug>.
 // seoTitle = the browser tab and Google title. heading = the visible page heading (sentence case).
 // roles = senior, managerial and specialist roles only: NextGen HR does not recruit labour or entry-level staff.
+// details = optional extra sections shown on the page (heading, paragraphs and an optional bullet list).
 
 export const sectors = [
   {
@@ -9,15 +10,36 @@ export const sectors = [
     seoTitle: "Real Estate Recruitment Agency in Dubai",
     heading: "Real estate recruitment in Dubai",
     description:
-      "Real estate recruitment agency in Dubai. We recruit sales leaders, senior property consultants, property managers and development teams for UAE employers.",
+      "Real estate recruitment agency in Dubai. We recruit property consultants, sales managers and leasing teams for brokerages, and leaders for UAE developers.",
     intro:
-      "Dubai's property market moves fast, and so does hiring in it. Our team has spent years hiring for UAE developers and brokerages, and has set up HR teams for new developers. We recruit sales leaders, senior consultants, operations managers and development specialists.",
-    roles: ["Sales directors and sales managers", "Senior property consultants", "Leasing and property managers", "Facilities and community managers", "Customer relations and handover managers", "Development, project and design managers"],
+      "Real estate is where our team's experience runs deepest. Dubai's property market moves fast, and so does hiring in it. Our team has spent years hiring for UAE developers and brokerages, and has set up HR teams for new developers. We recruit experienced property consultants, sales leaders, operations managers and development specialists.",
+    roles: ["Property consultants for secondary sales, off-plan and leasing", "Sales directors and sales managers", "Leasing and property managers", "Facilities and community managers", "Customer relations and handover managers", "Development, project and design managers"],
+    details: [
+      {
+        heading: "How we recruit property consultants",
+        paragraphs: [
+          "A good agent is judged on results, not on a CV. Before you meet anyone, we check what each candidate has actually done in the Dubai market.",
+        ],
+        items: [
+          "Specialism: secondary sales, off-plan or leasing, and the communities they know",
+          "Track record: deals closed, listings handled and the price range they work in",
+          "RERA broker registration: whether they hold it, or can obtain it for your brokerage",
+          "Languages and the client markets they can serve",
+          "Fit with your commission structure and the way your team works",
+        ],
+      },
+      {
+        heading: "For new and growing brokerages",
+        paragraphs: [
+          "Building a sales team means more than hiring agents. We can recruit your first sales manager, plan hiring in stages as you grow, and, through our HR consultancy, set up contracts, commission policies and onboarding so new agents become productive quickly.",
+        ],
+      },
+    ],
     faq: [
       {
-        question: "Can you help a new developer build its team?",
+        question: "Can you recruit several agents at once?",
         answer:
-          "Yes. We can recruit the first senior hires and, through our HR consultancy, set up the structure, policies and HR processes a new developer needs.",
+          "Yes. Tell us how many agents you need and the split across secondary sales, off-plan and leasing, and we plan the search so you meet suitable candidates for each.",
       },
       {
         question: "Do you recruit RERA-qualified agents?",
@@ -28,6 +50,11 @@ export const sectors = [
         question: "Can you design a commission structure for a sales team?",
         answer:
           "Yes. Through our HR consultancy we can review your salary and commission structure against the UAE market, so it attracts strong sales people and stays affordable.",
+      },
+      {
+        question: "Can you help a new developer build its team?",
+        answer:
+          "Yes. We can recruit the first senior hires and, through our HR consultancy, set up the structure, policies and HR processes a new developer needs.",
       },
     ],
   },
