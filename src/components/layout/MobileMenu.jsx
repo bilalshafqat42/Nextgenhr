@@ -33,7 +33,7 @@ export default function MobileMenu({ links }) {
 
   return (
     <details ref={menu} className="lg:hidden">
-      <summary className="flex h-11 cursor-pointer list-none items-center rounded-full border border-paper/40 px-3 text-sm text-paper sm:px-4 [&::-webkit-details-marker]:hidden">
+      <summary className="flex h-11 cursor-pointer list-none items-center border border-paper/40 px-3 text-sm text-paper sm:px-4 [&::-webkit-details-marker]:hidden">
         Menu
       </summary>
       <nav aria-label="Mobile" className="absolute inset-x-4 top-full flex flex-col bg-paper p-2 text-lg text-ink shadow-xl sm:inset-x-5">

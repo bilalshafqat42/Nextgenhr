@@ -13,7 +13,7 @@ export function SubmitButton({ children }) {
     <button
       type="submit"
       disabled={pending}
-      className="h-14 self-start rounded-full bg-accent px-9 font-medium text-paper hover:opacity-90 disabled:cursor-wait disabled:opacity-60"
+      className="h-14 self-start bg-accent px-9 font-medium text-paper hover:opacity-90 disabled:cursor-wait disabled:opacity-60"
     >
       {pending ? "Sending…" : children}
     </button>

@@ -1,7 +1,8 @@
 // The main website: every page except the ads landing page.
-// Adds the full footer, the floating WhatsApp button and the enquiry popup.
+// Adds the full footer, the floating WhatsApp button (phones: the bottom action bar) and the enquiry popup.
 
 import Footer from "@/components/layout/Footer";
+import MobileActionBar from "@/components/layout/MobileActionBar";
 import EnquiryDialog from "@/components/ui/EnquiryDialog";
 import EnquiryForm from "@/components/ui/EnquiryForm";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
@@ -19,6 +20,7 @@ export default function SiteLayout({ children }) {
       <main id="content">{children}</main>
       <Footer />
       <WhatsAppButton />
+      <MobileActionBar />
       <EnquiryDialog title={enquiryPopup.title} intro={enquiryPopup.intro} quickLinks={quickLinks}>
         <EnquiryForm />
       </EnquiryDialog>

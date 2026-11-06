@@ -14,9 +14,9 @@ export default function Hero() {
       <div aria-hidden="true" className="absolute inset-0 bg-linear-to-t from-ink/85 via-ink/40 to-transparent" />
       <Header />
 
-      <Container className="relative mt-auto flex flex-col gap-12 pb-16">
+      <Container className="relative mt-auto flex flex-col gap-12 pb-16 sm:pb-28">
         <h1 className="rise flex items-center gap-3 text-sm text-text-on-dark">
-          <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-full bg-accent-light" />
+          <span aria-hidden="true" className="h-2 w-2 shrink-0 bg-accent-light" />
           {hero.heading}
         </h1>
 
@@ -27,8 +27,11 @@ export default function Hero() {
         </p>
 
         <div className="rise-late flex flex-wrap items-end justify-between gap-8 border-t border-paper/25 pt-7">
-          <p className="max-w-[500px] text-lg leading-relaxed text-text-on-dark">{hero.text}</p>
-          <div className="flex flex-wrap gap-10">
+          <div className="flex max-w-[500px] flex-col gap-4">
+            <p className="text-lg leading-relaxed text-text-on-dark">{hero.text}</p>
+            <p className="text-sm text-text-on-dark/70">{hero.jobSeekers}</p>
+          </div>
+          <div className="flex flex-wrap gap-x-10 gap-y-2">
             {hero.links.map((link) => (
               <TextLink key={link.label} href={link.href} dark>
                 {link.label}

@@ -22,10 +22,10 @@ export default function SendError({ reason }) {
       <PageHero title="Sorry, your message was not sent." intro={intro} crumbs={[{ name: "Contact", path: "/contact" }]} />
       <Section innerClassName="flex flex-col gap-8">
         <div className="flex flex-wrap gap-6">
-          <Link href="/contact" className="rounded-full bg-accent px-8 py-4 font-medium text-paper hover:opacity-90">
+          <Link href="/contact" className="bg-accent px-8 py-4 font-medium text-paper hover:opacity-90">
             Try again
           </Link>
-          <a href={`mailto:${siteConfig.email}`} className="rounded-full border border-ink px-8 py-4 font-medium">
+          <a href={`mailto:${siteConfig.email}`} className="border border-ink px-8 py-4 font-medium">
             Email {siteConfig.email}
           </a>
         </div>

@@ -60,10 +60,10 @@ export default function Tracking() {
             </Link>
           </p>
           <div className="flex gap-3">
-            <button type="button" onClick={() => setConsent("granted")} className="rounded-full bg-paper px-5 py-2.5 font-medium text-ink hover:opacity-85">
+            <button type="button" onClick={() => setConsent("granted")} className="bg-paper px-5 py-2.5 font-medium text-ink hover:opacity-85">
               Accept
             </button>
-            <button type="button" onClick={() => setConsent("denied")} className="rounded-full border border-paper/40 px-5 py-2.5 font-medium text-paper hover:bg-paper/10">
+            <button type="button" onClick={() => setConsent("denied")} className="border border-paper/40 px-5 py-2.5 font-medium text-paper hover:bg-paper/10">
               Reject
             </button>
           </div>

@@ -1,4 +1,5 @@
-// The top bar: logo, navigation and the "Hire talent" button.
+// The top bar: logo, navigation and the "Send your brief" button.
+// On phones the button is left to the bottom action bar (MobileActionBar.jsx), so the top bar stays uncluttered.
 // It sits on dark backgrounds, so it uses the dark (white text) logo.
 // On phones the links fold into a "Menu" button (see MobileMenu.jsx).
 // A compact copy also appears fixed at the top once the visitor scrolls down (see StickyHeader.jsx).
@@ -27,8 +28,8 @@ function HeaderBar({ compact = false }) {
       </nav>
 
       <div className="flex items-center gap-2 sm:gap-3">
-        <EnquiryLink className="rounded-full bg-paper px-3 py-3 text-sm font-medium whitespace-nowrap text-ink hover:opacity-85 sm:px-5 sm:text-[15px]">
-          Hire talent
+        <EnquiryLink className="hidden bg-paper px-5 py-3 text-[15px] font-medium whitespace-nowrap text-ink hover:opacity-85 sm:inline-block">
+          Send your brief
         </EnquiryLink>
         <MobileMenu links={navLinks} />
       </div>

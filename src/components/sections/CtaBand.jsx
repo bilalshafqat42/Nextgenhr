@@ -13,10 +13,10 @@ export default function CtaBand({ title = "Ready to hire? Send us your brief." }
             {title}
           </h2>
           <div className="flex flex-wrap gap-3">
-            <EnquiryLink className="rounded-full bg-accent px-8 py-4 font-medium text-paper hover:opacity-90">
+            <EnquiryLink className="bg-accent px-8 py-4 font-medium text-paper hover:opacity-90">
               Send your brief
             </EnquiryLink>
-            <a href={companyProfile.href} target="_blank" className="rounded-full border border-paper/40 px-8 py-4 font-medium text-paper hover:bg-paper hover:text-ink">
+            <a href={companyProfile.href} target="_blank" className="border border-paper/40 px-8 py-4 font-medium text-paper hover:bg-paper hover:text-ink">
               Company profile (PDF)
             </a>
           </div>

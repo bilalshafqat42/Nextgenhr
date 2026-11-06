@@ -61,7 +61,10 @@ export default function EnquiryForm({ fields = contact.fields, button = contact.
           <ConsentText text={contact.consent} />
         </span>
       </label>
-      <SubmitButton>{button}</SubmitButton>
+      <div className="flex flex-col gap-3">
+        <SubmitButton>{button}</SubmitButton>
+        <p className="text-[13px] leading-normal text-muted">{contact.nextSteps}</p>
+      </div>
     </form>
   );
 }

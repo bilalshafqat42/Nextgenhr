@@ -36,7 +36,7 @@ export default function EnquiryDialog({ title, intro, quickLinks = [], children 
             type="button"
             onClick={() => dialog.current.close()}
             aria-label="Close"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink text-xl hover:bg-ink hover:text-paper"
+            className="flex h-10 w-10 shrink-0 items-center justify-center border border-ink text-xl hover:bg-ink hover:text-paper"
           >
             ×
           </button>
@@ -50,7 +50,7 @@ export default function EnquiryDialog({ title, intro, quickLinks = [], children 
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className={`rounded-full px-4 py-2.5 ${link.whatsapp ? "bg-[#25D366] text-ink" : "border border-ink"}`}
+                className={`px-4 py-2.5 ${link.whatsapp ? "bg-[#25D366] text-ink" : "border border-ink"}`}
               >
                 {link.label}
               </a>

@@ -75,10 +75,12 @@ export const hero = {
   titleLine1: "Exceptional talent.",
   titleLine2: "Strategic HR.",
   text: "A licensed recruitment and HR consultancy in Dubai. We find heads of department, senior managers and specialists for UAE companies, and help you build HR that supports growth, backed by 18+ years of combined HR and recruitment experience, much of it in UAE real estate.",
+  // Two doors: hiring (opens the brief form) and HR support. Job seekers get a quiet way out underneath.
   links: [
-    { label: "Send your hiring brief →", href: "/contact" },
-    { label: "Explore HR consultancy →", href: "/services/hr-consultancy" },
+    { label: "Send your brief →", href: "/contact" },
+    { label: "Get HR support →", href: "/services/hr-consultancy" },
   ],
+  jobSeekers: "Looking for a job? Please email your CV to info@nextgenhr.ae.",
   image: { src: "/images/hero-dubai-skyline.jpg", alt: "Dubai skyline at night with the Burj Khalifa" },
 };
 
@@ -97,6 +99,26 @@ export const about = {
     { label: "Based in", value: "Meydan, Dubai, UAE" },
     { label: "Licensed by", value: "Meydan Free Zone, Dubai" },
     { label: "Services", value: "Executive search, recruitment, HR consultancy and outsourced HR" },
+  ],
+};
+
+// The trust strip under the home page hero: the four facts an employer should see first.
+// Team figures come from the team's previous in-house HR roles, not NextGen placements.
+export const trust = [
+  { value: "18+", label: "Years of combined HR and recruitment experience" },
+  { value: "3,700+", label: "People hired by our team in previous in-house HR roles" },
+  { value: "5", label: "New UAE developers given an HR department by our team" },
+  { value: "Licensed", label: "By Meydan Free Zone, Dubai. Candidates never pay a fee." },
+];
+
+// The real estate band on the home page: the team's strongest sector.
+export const realEstateBand = {
+  label: "Our strongest sector",
+  title: "Real estate recruitment, from people who know property.",
+  text: "Our team has led HR and hiring inside UAE developers and brokerages, and built HR departments for five new developers. We recruit property consultants, sales leaders and development specialists, with track record and RERA registration checked before you meet anyone.",
+  links: [
+    { label: "Real estate recruitment →", href: "/sectors/real-estate" },
+    { label: "Executive search →", href: "/services/executive-search" },
   ],
 };
 
@@ -278,7 +300,9 @@ export const contact = {
   // The words "Privacy Policy" become a link to /privacy-policy.
   consent:
     "I agree that NextGen HR may use these details to reply to my enquiry and, if I am a job seeker, to match me with suitable roles, as explained in the Privacy Policy.",
-  button: "Send message",
+  button: "Send your brief",
+  // Shown under the button, so visitors know what happens after they send.
+  nextSteps: "What happens next: we read your brief and reply on working days, Monday to Friday, with any questions or a proposal.",
 };
 
 // Questions shown on the Contact page.
@@ -415,7 +439,7 @@ export const hirePage = {
       maxLength: 2000,
     },
   ],
-  button: "Send my brief",
+  button: "Send your brief",
 };
 
 // The page shown for any address that does not exist.

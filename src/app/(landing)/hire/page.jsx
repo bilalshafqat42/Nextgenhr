@@ -29,12 +29,12 @@ export default function HirePage() {
           </Link>
           <div className="flex gap-2 text-[13px] font-medium sm:gap-3 sm:text-sm">
             {phoneLink && (
-              <a href={phoneLink} className="rounded-full border border-paper/40 px-3 py-2.5 whitespace-nowrap sm:px-4">
+              <a href={phoneLink} className="border border-paper/40 px-3 py-2.5 whitespace-nowrap sm:px-4">
                 Call us
               </a>
             )}
             {whatsappLink && (
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#25D366] px-3 py-2.5 whitespace-nowrap text-ink sm:px-4">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-[#25D366] px-3 py-2.5 whitespace-nowrap text-ink sm:px-4">
                 WhatsApp
               </a>
             )}
@@ -50,7 +50,7 @@ export default function HirePage() {
             <ul className="flex flex-col gap-3 text-base">
               {hirePage.points.map((point) => (
                 <li key={point} className="flex items-center gap-3">
-                  <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-full bg-accent-light" />
+                  <span aria-hidden="true" className="h-2 w-2 shrink-0 bg-accent-light" />
                   {point}
                 </li>
               ))}
