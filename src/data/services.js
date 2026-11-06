@@ -41,7 +41,7 @@ export const services = [
       {
         heading: "Senior hiring in real estate",
         paragraphs: [
-          "Real estate is where our team has spent much of its career. For developers and brokerages, we search for senior and specialist roles through long-standing relationships across the UAE property market.",
+          "Real estate is where our team has spent much of its career, including leading HR and hiring inside UAE developers and brokerages. As real estate headhunters in Dubai, we search for sales directors, development leaders and senior specialists through long-standing relationships across the UAE property market.",
         ],
       },
     ],
@@ -121,9 +121,9 @@ export const services = [
       "HR consultancy in Dubai and across the UAE: HR set-up for new companies, policies and handbooks, appraisals, salary benchmarking and practical HR advice.",
     summary: "HR set-up, policies and handbooks, organisational design, appraisals and salary benchmarking for growing UAE companies.",
     intro:
-      "Growing companies often hire faster than their HR can keep up. Our HR consultancy in Dubai helps you build an HR function that holds up as the business grows: clear policies, a handbook your team understands, fair performance reviews and a structure that scales.",
+      "Growing companies often hire faster than their HR can keep up. Our HR consultants in Dubai have led HR inside UAE companies, and help you build an HR function that holds up as the business grows: clear policies, a handbook your team understands, fair performance reviews and a structure that scales.",
     includes: [
-      { title: "HR policies", text: "Clear, practical policies written for how your company actually works." },
+      { title: "HR policies and audits", text: "Clear, practical policies written for how your company actually works, and audits of what you already have." },
       { title: "Employee handbook", text: "One document that explains rules, benefits and expectations to your team." },
       { title: "Organisational design", text: "Roles, reporting lines, job descriptions and workforce plans that support your next stage of growth." },
       { title: "Ongoing HR advice", text: "A team to ask when day-to-day people questions come up." },
@@ -136,9 +136,9 @@ export const services = [
         ],
       },
       {
-        heading: "HR policy review",
+        heading: "HR policy review and HR audit",
         paragraphs: [
-          "We review the policies you already have, identify what is missing or out of date, and rewrite them in plain language so managers apply them the same way.",
+          "We audit the policies, contracts and HR records you already have, identify what is missing or out of date, and rewrite them in plain language so managers apply them the same way and your records stand up to inspection.",
         ],
       },
       {
@@ -151,13 +151,13 @@ export const services = [
         heading: "Organisational design and workforce planning",
         paragraphs: [
           "Clear roles make hiring and performance conversations easier. We map your structure, define reporting lines and write job descriptions that match the work people actually do.",
-          "We also help you plan the team you will need as the business grows: which roles to add, when to hire them and how they fit the structure, so hiring follows a plan rather than urgent gaps.",
+          "We also help you plan the team you will need as the business grows: which roles to add, when to hire them and how they fit the structure, so hiring follows a plan rather than urgent gaps. For key roles, we help you build succession plans and develop the next generation of leaders.",
         ],
       },
       {
-        heading: "Setting up HR for a new company",
+        heading: "HR department set-up for a new company",
         paragraphs: [
-          "Our team has set up HR functions from the ground up, including for new real estate developers. For a new company or a first HR hire, we put the foundations in place: structure, core policies, contracts and processes, and the first senior hires.",
+          "Our team has built HR departments from the ground up for five new UAE real estate developers, and has rebuilt inherited HR functions in established companies. For a new company or a first HR hire, we put the foundations in place: structure, core policies, contracts, payroll processes and the first senior hires.",
         ],
       },
       {
@@ -175,7 +175,7 @@ export const services = [
       {
         heading: "HR systems",
         paragraphs: [
-          "Choosing and setting up an HR system (HRIS) is easier with someone who has done it before. We help you define what you need, compare options and plan the move from spreadsheets or an older system.",
+          "Choosing and setting up an HR system (HRIS) is easier with someone who has done it before. Our team has run group payroll and HR on platforms such as Oracle HCM, SAP and cloud HRMS. We help you define what you need, compare options and plan the move from spreadsheets or an older system, including payroll migration.",
         ],
       },
       {
@@ -231,7 +231,7 @@ export const services = [
     includes: [
       { title: "Day-to-day HR advice", text: "A team to ask when people questions come up, from contracts to performance concerns." },
       { title: "Documents and policies", text: "Offer letters, job descriptions, policies and handbook updates, written for your company." },
-      { title: "Performance and reviews", text: "Appraisal cycles, objectives and salary reviews your managers can run." },
+      { title: "Performance and retention", text: "Appraisal cycles, objectives, salary reviews and retention plans your managers can run." },
       { title: "Hiring support", text: "Interview support for your own hiring, or a full search when you need one." },
     ],
     details: [

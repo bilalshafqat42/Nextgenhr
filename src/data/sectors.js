@@ -12,7 +12,7 @@ export const sectors = [
     description:
       "Real estate recruitment agency in Dubai. We recruit property consultants, sales managers and leasing teams for brokerages, and leaders for UAE developers.",
     intro:
-      "Real estate is where our team's experience runs deepest. Dubai's property market moves fast, and so does hiring in it. Our team has spent years hiring for UAE developers and brokerages, and has set up HR teams for new developers. We recruit experienced property consultants, sales leaders, operations managers and development specialists.",
+      "Real estate is where our team's experience runs deepest. Dubai's property market moves fast, and so does hiring in it. Our team has spent years leading HR and hiring inside UAE developers and brokerages, and has built HR departments for five new developers. We recruit experienced property consultants, sales leaders, operations managers and development specialists.",
     roles: ["Property consultants for secondary sales, off-plan and leasing", "Sales directors and sales managers", "Leasing and property managers", "Facilities and community managers", "Customer relations and handover managers", "Development, project and design managers"],
     details: [
       {
@@ -120,7 +120,7 @@ export const sectors = [
     description:
       "Retail recruitment agency in Dubai. We recruit store, area and retail operations managers, buyers and e-commerce leaders for retail brands across the UAE.",
     intro:
-      "Retail depends on leaders who can sell, serve and run a profitable store. Our team has years of experience hiring for international retail franchise operations in the UAE, and we recruit managers and specialists for retail brands across the country's malls and high streets.",
+      "Retail depends on leaders who can sell, serve and run a profitable store. Our team has years of experience running HR, hiring and compliance audits across 17 UAE stores for an international retail franchise operator, and we recruit managers and specialists for retail brands across the country's malls and high streets.",
     roles: ["Store managers and assistant store managers", "Area and regional managers", "Retail operations managers", "Buyers and merchandise planners", "Visual merchandising managers", "E-commerce and digital retail managers"],
     faq: [
       {

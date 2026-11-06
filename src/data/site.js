@@ -11,7 +11,7 @@ export const siteConfig = {
   foundingYear: "2024",
   title: "Recruitment Agency & HR Consultancy in Dubai | NextGen HR",
   description:
-    "Licensed recruitment agency and HR consultancy in Dubai. Screened shortlists and practical HR support for employers across the UAE. Candidates never pay a fee.",
+    "Licensed recruitment agency and HR consultancy in Dubai: executive search, senior hiring, HR set-up and outsourced HR for UAE companies. Candidates never pay a fee.",
   phone: "+971 50 301 5933",
   whatsapp: "+971 50 301 5933",
   email: "info@nextgenhr.ae",
@@ -67,7 +67,7 @@ export const hero = {
   heading: "Recruitment agency and HR consultancy in Dubai, UAE",
   titleLine1: "Exceptional talent.",
   titleLine2: "Strategic HR.",
-  text: "A licensed recruitment and HR consultancy in Dubai. We find heads of department, senior managers and specialists for UAE companies, and help you build HR that supports growth, backed by 18+ years of combined HR and recruitment experience.",
+  text: "A licensed recruitment and HR consultancy in Dubai. We find heads of department, senior managers and specialists for UAE companies, and help you build HR that supports growth, backed by 18+ years of combined HR and recruitment experience, much of it in UAE real estate.",
   links: [
     { label: "Send your hiring brief →", href: "/contact" },
     { label: "Explore HR consultancy →", href: "/services/hr-consultancy" },
@@ -80,15 +80,16 @@ export const about = {
   // Heading in two lines: the first large, the second about 70% of its size.
   titleLine1: "A licensed recruitment agency",
   titleLine2: "and HR consultancy in Dubai.",
-  text: "NextGen HR Consultancy helps employers in Dubai, Abu Dhabi and Sharjah hire permanent and fixed-term staff directly, and sets up the HR policies, handbooks and team structure growing companies need.",
+  text: "NextGen HR Consultancy helps employers in Dubai, Abu Dhabi and Sharjah hire senior and specialist staff directly, and sets up the HR department, policies, handbooks and team structure growing companies need.",
   link: { label: "More about us →", href: "/about" },
   facts: [
     { label: "Company", value: "NextGen HR Consultancy L.L.C-FZ" },
     { label: "Founded", value: "2024, Dubai" },
     { label: "Team experience", value: "18+ years of combined HR and recruitment experience, most of it in the UAE" },
+    { label: "Team track record", value: "3,700+ people hired in previous in-house HR roles; HR departments built for 5 new UAE developers" },
     { label: "Based in", value: "Meydan, Dubai, UAE" },
     { label: "Licensed by", value: "Meydan Free Zone, Dubai" },
-    { label: "Services", value: "Recruitment and HR consultancy" },
+    { label: "Services", value: "Executive search, recruitment, HR consultancy and outsourced HR" },
   ],
 };
 
@@ -96,9 +97,10 @@ export const about = {
 // tone: "bronze", "stone", "dark" or "white". size: "big" (the large tile) or "wide" (spans two columns).
 // links: optional small tags shown on a wide tile. When real figures are available
 // (placements, employers served, average days to shortlist), they can replace any tile.
+// Team figures come from the team's previous in-house HR roles, not NextGen placements, and never name the people or employers.
 export const stats = [
   { value: "18+", label: "Years of combined HR and recruitment experience", icon: "experience", tone: "bronze", size: "big" },
-  { value: "Direct", label: "You hire every candidate on your own contract", icon: "direct", tone: "stone" },
+  { value: "3,700+", label: "People hired by our team in previous in-house HR roles", icon: "direct", tone: "stone" },
   { value: "No fees", label: "For candidates, ever", icon: "shield", tone: "dark" },
   {
     value: "3 Emirates",
@@ -112,7 +114,7 @@ export const stats = [
       { label: "Sharjah", href: "/recruitment-agency/sharjah" },
     ],
   },
-  { value: "2024", label: "Founded in Meydan, Dubai", icon: "location", tone: "stone" },
+  { value: "5", label: "New UAE real estate developers given an HR department by our team", icon: "location", tone: "stone" },
   {
     value: "5 Sectors",
     label: "Hiring for the industries driving the UAE economy.",
@@ -144,10 +146,10 @@ export const whyUs = {
   items: [
     {
       title: "A team with 18+ years in HR and hiring",
-      text: "Founded in 2024, NextGen HR is led by a team with more than 18 years of combined HR and recruitment experience, most of it in the UAE.",
+      text: "Founded in 2024, NextGen HR is led by HR professionals who have run HR inside UAE developers, brokerages and international retail franchise groups, hired more than 3,700 people in those in-house roles, and built HR departments for five new developers.",
     },
     { title: "Screened shortlists", text: "Every candidate is interviewed and checked before you meet them." },
-    { title: "Recruitment and HR in one place", text: "Senior hiring plus HR set-up, policies and ongoing HR support." },
+    { title: "Recruitment and HR in one place", text: "Executive search and senior hiring, plus HR department set-up, policies and outsourced HR support." },
     { title: "Licensed and transparent", text: "Licensed by Meydan Free Zone, Dubai. Candidates never pay a fee." },
   ],
 };
