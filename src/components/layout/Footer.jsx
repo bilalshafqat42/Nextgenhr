@@ -64,28 +64,45 @@ export default async function Footer() {
           </span>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-line-dark pt-6 pb-20 text-sm sm:pb-0">
-          <span>
-            <a href={`mailto:${siteConfig.email}`} className="hover:text-paper">{siteConfig.email}</a> · {siteConfig.address[0]}, Dubai
-          </span>
-          <span>
-            © {year} {siteConfig.legalName} · {siteConfig.licence}
-          </span>
-          {social.length > 0 && (
-            <span className="flex flex-wrap gap-x-4 gap-y-1">
-              Follow us:
-              {social.map((s) => (
-                <a key={s.url} href={s.url} target="_blank" rel="me noopener noreferrer" className="hover:text-paper">
-                  {s.label}
-                </a>
-              ))}
+        {/* Bottom bar: contact and social, the job seekers note, then legal and credit.
+            The extra bottom padding keeps the last row clear of the floating WhatsApp button. */}
+        <div className="flex flex-col gap-8 border-t border-line-dark pt-8 pb-24 text-sm">
+          <div className="flex flex-wrap items-start justify-between gap-x-12 gap-y-4">
+            <span className="flex flex-col gap-1.5">
+              <a href={`mailto:${siteConfig.email}`} className="text-paper hover:text-accent-light">{siteConfig.email}</a>
+              <span>{siteConfig.address[0]}, Dubai</span>
             </span>
-          )}
-          <span>
+            {social.length > 0 && (
+              <span className="flex flex-wrap items-center gap-x-6 gap-y-2">
+                <span className="text-paper">Follow us</span>
+                {social.map((s) => (
+                  <a key={s.url} href={s.url} target="_blank" rel="me noopener noreferrer" className="hover:text-paper">
+                    {s.label}
+                  </a>
+                ))}
+              </span>
+            )}
+          </div>
+
+          <p>
             Job seekers: please email your CV to{" "}
-            <a href={`mailto:${siteConfig.email}`} className="hover:text-paper">{siteConfig.email}</a>. We never charge candidates a fee.
-          </span>
-          <CookieSettings />
+            <a href={`mailto:${siteConfig.email}`} className="text-paper hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.
+          </p>
+
+          <div className="flex flex-wrap items-center justify-between gap-x-12 gap-y-3 border-t border-line-dark pt-6 text-[13px]">
+            <span>
+              © {year} {siteConfig.legalName} · {siteConfig.licence}
+            </span>
+            <span className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              <CookieSettings />
+              <span>
+                Designed and developed by{" "}
+                <a href="https://bilalshafqat.com/" target="_blank" className="text-paper hover:text-accent-light">
+                  Bilal Shafqat
+                </a>
+              </span>
+            </span>
+          </div>
         </div>
       </Container>
     </footer>
