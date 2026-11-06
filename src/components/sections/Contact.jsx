@@ -3,7 +3,7 @@
 
 import EnquiryForm from "@/components/ui/EnquiryForm";
 import Section from "@/components/ui/Section";
-import { contact, siteConfig } from "@/data/site";
+import { companyProfile, contact, siteConfig } from "@/data/site";
 import { isReal } from "@/lib/content";
 import { phoneLink, whatsappLink } from "@/lib/contactLinks";
 
@@ -12,6 +12,7 @@ export default function Contact() {
     isReal(siteConfig.email) && { label: siteConfig.email, href: `mailto:${siteConfig.email}` },
     phoneLink && { label: siteConfig.phone, href: phoneLink },
     whatsappLink && { label: "WhatsApp for employers →", href: whatsappLink },
+    { label: "Company profile (PDF) →", href: companyProfile.href, newTab: true },
   ].filter(Boolean);
 
   return (
@@ -23,7 +24,7 @@ export default function Contact() {
         {links.length > 0 && (
           <div className="flex flex-col gap-2.5 font-display text-2xl tracking-[-0.02em] sm:text-[28px]">
             {links.map((link) => (
-              <a key={link.href} href={link.href} className="hover:text-accent">
+              <a key={link.href} href={link.href} target={link.newTab ? "_blank" : undefined} className="hover:text-accent">
                 {link.label}
               </a>
             ))}

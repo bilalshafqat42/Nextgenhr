@@ -8,7 +8,7 @@ import { LogoMark } from "@/components/ui/Logo";
 import { locations } from "@/data/locations";
 import { sectors } from "@/data/sectors";
 import { services } from "@/data/services";
-import { siteConfig } from "@/data/site";
+import { companyProfile, siteConfig } from "@/data/site";
 import { isReal } from "@/lib/content";
 import { whatsappLink } from "@/lib/contactLinks";
 
@@ -30,6 +30,7 @@ const columns = [
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },
+      { label: "Company profile (PDF)", href: companyProfile.href, file: true },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Cookie Policy", href: "/cookie-policy" },
       { label: "Terms of Use", href: "/terms" },
@@ -48,16 +49,22 @@ export default async function Footer() {
           {columns.map((column) => (
             <div key={column.title} className="flex flex-col gap-3">
               <span className="font-medium text-paper">{column.title}</span>
-              {column.links.map((link) => (
-                <Link key={link.href} href={link.href} className="hover:text-paper">
-                  {link.label}
-                </Link>
-              ))}
+              {column.links.map((link) =>
+                link.file ? (
+                  <a key={link.href} href={link.href} target="_blank" className="hover:text-paper">
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link key={link.href} href={link.href} className="hover:text-paper">
+                    {link.label}
+                  </Link>
+                ),
+              )}
             </div>
           ))}
         </nav>
 
-        <div className="flex flex-wrap items-center gap-6 sm:gap-9">
+        <div className="flex flex-wrap items-center gap-6 sm:gap-9 lg:justify-center">
           <LogoMark theme="dark" className="h-16 w-auto sm:h-32" />
           <span className="font-display text-6xl leading-[0.85] font-semibold tracking-[-0.06em] text-paper sm:text-9xl">
             NextGen <span className="font-normal text-muted-on-dark">HR</span>

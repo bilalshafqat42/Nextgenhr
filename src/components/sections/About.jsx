@@ -6,7 +6,7 @@ import Section from "@/components/ui/Section";
 import SectionLabel from "@/components/ui/SectionLabel";
 import TextLink from "@/components/ui/TextLink";
 import Logo from "@/components/ui/Logo";
-import { about } from "@/data/site";
+import { about, companyProfile } from "@/data/site";
 
 export default function About({ facts = false }) {
   return (
@@ -18,11 +18,10 @@ export default function About({ facts = false }) {
           <span className="text-[clamp(1.12rem,2.45vw,2.275rem)] leading-[1.1] text-muted">{about.titleLine2}</span>
         </h2>
         <p className="max-w-[600px] text-lg leading-relaxed text-muted">{about.text}</p>
-        {!facts && (
-          <div>
-            <TextLink href={about.link.href}>{about.link.label}</TextLink>
-          </div>
-        )}
+        <div className="flex flex-wrap gap-x-10 gap-y-2">
+          {!facts && <TextLink href={about.link.href}>{about.link.label}</TextLink>}
+          <TextLink href={companyProfile.href}>{companyProfile.label} →</TextLink>
+        </div>
       </div>
 
       {facts ? (

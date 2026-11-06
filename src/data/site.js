@@ -53,6 +53,13 @@ export const tracking = {
   metaPixel: "[Meta Pixel ID]",
 };
 
+// The company profile PDF in /public. Linked from the About section, Contact section, footer and closing band,
+// and shareable on WhatsApp and email as https://nextgenhr.ae/nextgen-hr-company-profile.pdf
+export const companyProfile = {
+  label: "Download our company profile (PDF)",
+  href: "/nextgen-hr-company-profile.pdf",
+};
+
 export const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Sectors", href: "/sectors" },
