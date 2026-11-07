@@ -10,7 +10,7 @@ export default function FeatureBand({ content }) {
       <Container>
         <div className="grid gap-10 bg-accent px-8 py-14 text-paper sm:px-14 lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16 lg:py-20">
           <div className="flex flex-col gap-5">
-            <span className="text-[13px] font-medium tracking-[0.08em] text-accent-light uppercase">{content.label}</span>
+            <span className="text-[13px] font-medium tracking-[0.08em] text-paper uppercase">{content.label}</span>
             <h2 className="font-display text-4xl leading-[1.05] font-medium tracking-[-0.035em] sm:text-6xl">{content.title}</h2>
           </div>
           <div className="flex flex-col gap-7">

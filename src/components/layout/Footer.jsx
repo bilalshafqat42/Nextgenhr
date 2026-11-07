@@ -93,7 +93,7 @@ export default async function Footer() {
 
           <p>
             Job seekers: please email your CV to{" "}
-            <a href={`mailto:${siteConfig.email}`} className="text-paper hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.
+            <a href={`mailto:${siteConfig.email}`} className="text-paper underline underline-offset-4 hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.
           </p>
 
           <div className="flex flex-wrap items-center justify-between gap-x-12 gap-y-3 border-t border-line-dark pt-6 text-[13px]">
@@ -104,7 +104,7 @@ export default async function Footer() {
               <CookieSettings />
               <span>
                 Designed and developed by{" "}
-                <a href="https://bilalshafqat.com/" target="_blank" className="text-paper hover:text-accent-light">
+                <a href="https://bilalshafqat.com/" target="_blank" className="text-paper underline underline-offset-4 hover:text-accent-light">
                   Bilal Shafqat
                 </a>
               </span>
