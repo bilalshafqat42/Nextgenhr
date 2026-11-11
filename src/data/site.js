@@ -219,6 +219,55 @@ export const jobSeekers = {
   image: { src: "/images/job-seekers-handshake.jpg", alt: "A candidate and an employer shaking hands after an interview" },
 };
 
+// The /job-seekers page: one link to send in reply to job seeker messages on WhatsApp and email.
+// Kept out of Google search (the site targets employers); the job seeker questions are marked up on /faq.
+export const jobSeekerPage = {
+  title: "For job seekers",
+  description:
+    "How to send your CV to NextGen HR, what happens next, and why we never charge candidates a fee.",
+  intro:
+    "We recruit for UAE employers. We do not have jobs to offer on request, but we keep experienced professionals' CVs on file and contact you if a suitable role opens with one of our clients.",
+  emailSubject: "CV: [Job title], [years] years experience",
+  sections: [
+    {
+      heading: "How to send your CV",
+      paragraphs: ["Email your CV to info@nextgenhr.ae. Please do not send it on WhatsApp."],
+      items: [
+        "Subject line: your job title and years of experience, for example \"Accountant, 5 years experience\".",
+        "Attach your CV as a PDF.",
+        "In the email, mention where you are based and when you can start.",
+        "Designers, developers and other creative or technical roles: add a portfolio or GitHub link.",
+      ],
+    },
+    {
+      heading: "What happens next",
+      paragraphs: [
+        "We keep your CV on file and contact you only when a role with one of our clients matches your experience. We receive many CVs, so we may not be able to reply to every email.",
+        "Sending your CV does not guarantee an interview or a job offer.",
+      ],
+    },
+    {
+      heading: "Roles we recruit for",
+      paragraphs: [
+        "We mainly recruit senior, managerial and specialist roles for companies in real estate, construction, hospitality, retail and technology.",
+        "We do not recruit for fresher, labour, warehouse, driver or domestic roles, and we do not arrange visas or jobs from abroad on request.",
+      ],
+    },
+    {
+      heading: "We never charge candidates",
+      paragraphs: [
+        "NextGen HR never asks job seekers for money, at any stage. If anyone asks you for a fee in our name, please do not pay and tell us at info@nextgenhr.ae.",
+      ],
+    },
+    {
+      heading: "Your privacy",
+      paragraphs: [
+        "We only keep CVs sent by email, and we use them only to match you with roles. You can ask us to update or delete your CV at any time by emailing info@nextgenhr.ae. Our Privacy Policy explains how we handle your data.",
+      ],
+    },
+  ],
+};
+
 // General questions, shown on the home page and the FAQ page.
 export const faq = {
   title: "Questions, answered",

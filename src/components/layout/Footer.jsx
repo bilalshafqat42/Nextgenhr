@@ -93,7 +93,8 @@ export default async function Footer() {
 
           <p>
             Job seekers: please email your CV to{" "}
-            <a href={`mailto:${siteConfig.email}`} className="text-paper underline underline-offset-4 hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.
+            <a href={`mailto:${siteConfig.email}`} className="text-paper underline underline-offset-4 hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.{" "}
+            <Link href="/job-seekers" className="text-paper underline underline-offset-4 hover:text-accent-light">How to apply</Link>
           </p>
 
           <div className="flex flex-wrap items-center justify-between gap-x-12 gap-y-3 border-t border-line-dark pt-6 text-[13px]">
