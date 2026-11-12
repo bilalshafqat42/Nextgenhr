@@ -31,7 +31,7 @@ export const siteConfig = {
   ],
   // Google Business Profile share link (from the profile's "Share" button, once verified).
   // Listed for Google as the company's own profile, not shown in the footer.
-  googleBusiness: "[Google Business Profile link]",
+  googleBusiness: "https://share.google/fnZfX4jcMEFiFrkTl",
   // The two activities on the trade licence, word for word.
   activities: [
     { name: "Human resources consultancy", code: "7490.14" },
