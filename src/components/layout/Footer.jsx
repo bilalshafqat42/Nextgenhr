@@ -93,7 +93,7 @@ export default async function Footer() {
 
           <p>
             Job seekers: please email your CV to{" "}
-            <a href={`mailto:${siteConfig.email}`} className="text-paper underline underline-offset-4 hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.{" "}
+            <a data-track-type="cvEmail" href={`mailto:${siteConfig.email}`} className="text-paper underline underline-offset-4 hover:text-accent-light">{siteConfig.email}</a>. We never charge candidates a fee.{" "}
             <Link href="/job-seekers" className="text-paper underline underline-offset-4 hover:text-accent-light">How to apply</Link>
           </p>
 

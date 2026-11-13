@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
-import { fbq, getConsent, ids, setConsent, setupTags, trackingEnabled } from "@/lib/tracking";
+import { clickType, fbq, getConsent, ids, setConsent, setupTags, trackClick, trackingEnabled } from "@/lib/tracking";
 
 export default function Tracking() {
   const [consent, setConsentState] = useState("unknown");
@@ -30,6 +30,29 @@ export default function Tracking() {
     setupTags();
     if (ids.metaPixel) fbq("track", "PageView");
   }, [granted, pathname]);
+
+  // One listener for the whole site: records clicks on WhatsApp, phone, email, the profile PDF and
+  // "Send your brief" links, wherever they are. Nothing is sent without consent (see trackClick).
+  useEffect(() => {
+    if (!trackingEnabled) return;
+    function onClick(event) {
+      const link = event.target.closest?.("a[href]");
+      if (!link) return;
+      const path = window.location.pathname;
+      const type = link.dataset.trackType || clickType(link.getAttribute("href"), path);
+      if (!type) return;
+      const area =
+        link.closest("[data-track-area]")?.dataset.trackArea ||
+        (link.closest("dialog") && "brief_popup") ||
+        (link.closest("footer") && "footer") ||
+        (link.closest("header") && "header") ||
+        "page";
+      const text = (link.getAttribute("aria-label") || link.textContent || "").trim().slice(0, 60);
+      trackClick(type, { pathname: path, area, text });
+    }
+    document.addEventListener("click", onClick, { capture: true });
+    return () => document.removeEventListener("click", onClick, { capture: true });
+  }, []);
 
   if (!trackingEnabled) return null;
 

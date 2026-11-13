@@ -6,7 +6,7 @@ import { whatsappLink } from "@/lib/contactLinks";
 
 export default function MobileActionBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-paper/10 bg-ink sm:hidden">
+    <div data-track-area="mobile_bar" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-paper/10 bg-ink sm:hidden">
       <EnquiryLink className="flex h-14 items-center justify-center bg-accent font-medium text-paper">Send your brief</EnquiryLink>
       {whatsappLink && (
         <a

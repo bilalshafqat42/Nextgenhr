@@ -66,6 +66,42 @@ export function setupTags() {
   }
 }
 
+// What each kind of link click is called in Google Analytics. "lead" clicks are ways an employer
+// contacts us, also sent to Meta as a Contact. Job seeker CV emails are kept separate on purpose.
+const clickEvents = {
+  whatsapp: { name: "whatsapp_click", lead: true },
+  phone: { name: "phone_click", lead: true },
+  email: { name: "email_click", lead: true },
+  cvEmail: { name: "cv_email_click", lead: false },
+  profile: { name: "profile_download", lead: false },
+  brief: { name: "brief_open", lead: false },
+};
+
+// Works out which kind of link was clicked, or null for links we do not track.
+export function clickType(href, pathname) {
+  if (!href) return null;
+  if (/wa\.me\/|whatsapp\.com\//i.test(href)) return "whatsapp";
+  if (href.startsWith("tel:")) return "phone";
+  if (href.startsWith("mailto:")) {
+    const subject = decodeURIComponent(href.split("subject=")[1] || "");
+    return pathname === "/job-seekers" || /^CV\b/i.test(subject) ? "cvEmail" : "email";
+  }
+  const path = href.startsWith("/") ? href.split(/[?#]/)[0] : href.replace(/^https?:\/\/(www\.)?nextgenhr\.ae/i, "").split(/[?#]/)[0];
+  if (path.endsWith(".pdf")) return "profile";
+  if (path === "/contact") return "brief";
+  return null;
+}
+
+// Records one link click (only for visitors who accepted cookies).
+// link_area says where on the page it was: header, footer, mobile bar, floating button or the page itself.
+export function trackClick(type, { pathname, area, text }) {
+  const event = clickEvents[type];
+  if (!event || !trackingEnabled || getConsent() !== "granted") return;
+  setupTags();
+  if (ids.ga4) gtag("event", event.name, { page_path: pathname, link_area: area, link_text: text });
+  if (ids.metaPixel && event.lead) fbq("track", "Contact", { content_name: type });
+}
+
 // Records one enquiry as a lead in every tool that is switched on. source: "contact" or "hire".
 export function trackLead(source) {
   if (!trackingEnabled || getConsent() !== "granted") return;
