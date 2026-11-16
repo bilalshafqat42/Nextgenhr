@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
       target="_blank"
       data-track-area="floating_button"
       rel="noopener noreferrer"
-      aria-label="Employers: chat with NextGen HR on WhatsApp"
+      aria-label="For employers: chat with NextGen HR on WhatsApp"
       className="fixed right-5 bottom-5 z-40 hidden h-14 items-center gap-2 bg-[#25D366] pr-5 pl-3.5 text-[15px] font-medium text-ink shadow-lg transition-transform hover:scale-105 sm:right-8 sm:bottom-8 sm:flex"
     >
       <svg viewBox="0 0 32 32" className="h-7 w-7 shrink-0" fill="#FFFFFF" aria-hidden="true">

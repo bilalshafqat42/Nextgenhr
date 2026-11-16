@@ -13,7 +13,7 @@ export default function MobileActionBar() {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Employers: chat with NextGen HR on WhatsApp"
+          aria-label="WhatsApp: employers, chat with NextGen HR"
           className="flex h-14 items-center justify-center gap-2 font-medium text-paper"
         >
           <span aria-hidden="true" className="h-2 w-2 bg-[#25D366]" />

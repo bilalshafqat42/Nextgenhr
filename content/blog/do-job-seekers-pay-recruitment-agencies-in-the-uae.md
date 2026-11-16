@@ -11,7 +11,7 @@ This article is general information, not legal advice. For questions about a spe
 
 ## What UAE labour law says
 
-The UAE labour law, [Federal Decree-Law No. 33 of 2021](https://u.ae/-/media/Mohre-2024/Federal-DecreeLaw-No-33-of-2021-Regarding-the-Regulation-of-Employment-Relationship-and-its-amendmen.pdf), states that employers may not charge workers recruitment or employment fees, whether directly or indirectly. The cost of hiring sits with the employer.
+The UAE labour law, [Federal Decree-Law No. 33 of 2021](https://www.mohre.gov.ae/assets/download/3bde4984/Federal%20Decree-Law%20No.%2033%20of%202021%20Regarding%20the%20Regulation%20of%20Employment%20Relationship%20and%20its%20amendments_638990571068264034.pdf.aspx), states that employers may not charge workers recruitment or employment fees, whether directly or indirectly. The cost of hiring sits with the employer.
 
 ## Common warning signs
 
